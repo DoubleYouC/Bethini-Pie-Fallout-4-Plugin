@@ -4,7 +4,9 @@
   "Default": "",
   "INIs": {
     "Bethini.ini": "",
-    "theme.ini": "sTheme"
+    "theme.ini": "sTheme",
+    "Fallout4.ini": "sFallout 4INIPath",
+    "Fallout4Prefs.ini": "sFallout 4INIPath"
   },
   "customFunctions": {
     "FUNCThemes": "{}",
