@@ -1,5 +1,5 @@
 {
-  "valueTypes": [],
+  "valueTypes": [ "default", "fixedDefault", "Vanilla Low", "Vanilla Medium", "Vanilla High", "Vanilla Ultra", "Bethini Poor", "Bethini Low", "Bethini Medium", "Bethini High", "Bethini Ultra" ],
   "presetsIgnoreTheseSettings": [],
   "Default": "",
   "INIs": {
@@ -9,6 +9,16 @@
     "Fallout4Prefs.ini": "sFallout 4INIPath"
   },
   "customFunctions": {
+    "FUNCBackups": "{}",
+    "FUNCBackupsFormat": "getBackups",
+    "FUNCCurrentResolution": "{}",
+    "FUNCCurrentResolutionFormat": "getCurrentResolution",
+    "FUNCGamePath": "{}",
+    "FUNCGamePathFormat": "getBethesdaGameFolder",
+    "FUNCgetMODirectory": "{}",
+    "FUNCgetMODirectoryFormat": "getMODirectory",
+    "FUNCINIPath": "{}",
+    "FUNCINIPathFormat": "getINILocations",
     "FUNCThemes": "{}",
     "FUNCThemesFormat": "getThemes"
   },
@@ -17,7 +27,46 @@
       "NoLabelFrame": {
         "NumberOfVerticallyStackedSettings": "6",
         "Settings": {
-          "": ""
+          "Game Path": {
+            "browse": [ "directory", "Fallout4.exe", "file" ],
+            "choices": [ "FUNCGamePath", "Browse...", "Manual..." ],
+            "customWidth": "18",
+            "forceSelect": "1",
+            "settings": [ "sFallout 4Path" ],
+            "targetINIs": [ "Bethini.ini" ],
+            "targetSections": [ "Directories" ],
+            "tooltip": "Specifies the path to the game directory.",
+            "type": "Dropdown"
+          },
+          "ModOrganizer.ini": {
+            "browse": [ "directory", "ModOrganizer.ini", "file" ],
+            "choices": "FUNCgetMODirectory",
+            "customWidth": "18",
+            "forceSelect": "1",
+            "settings": [ "sFallout 4ModOrganizerINIPath" ],
+            "targetINIs": [ "Bethini.ini" ],
+            "targetSections": [ "Directories" ],
+            "tooltip": "Specifies the location to the ModOrganizer.ini file (required to find the location of MO profiles).",
+            "type": "Dropdown"
+          },
+          "INI Path": {
+            "browse": [ "directory", "Fallout4.ini", "file" ],
+            "choices": "FUNCINIPath",
+            "customWidth": "18",
+            "forceSelect": "1",
+            "settings": [ "sFallout 4INIPath" ],
+            "targetINIs": [ "Bethini.ini" ],
+            "targetSections": [ "Directories" ],
+            "tooltip": "Specifies the path to the INI files.",
+            "type": "Dropdown"
+          },
+          "Restore Backup": {
+            "choices": "FUNCBackups",
+            "customFunction": "RestoreBackup",
+            "customWidth": "18",
+            "tooltip": "Select the backup you wish to restore.",
+            "type": "Dropdown"
+          }
         }
       }
     },
@@ -228,11 +277,426 @@
         }
       }
     },
-    "Placeholder": {
-      "NoLabelFrame": {
-        "NumberOfVerticallyStackedSettings": "6",
+    "Basic": {
+      "Display": {
+        "NumberOfVerticallyStackedSettings": "2",
         "Settings": {
-          "": ""
+          "Resolution": {
+            "choices": [ "FUNCCurrentResolution", "1920x1080", "1440x810", "1280x720", "800x450", "Manual..." ],
+            "customWidth": "12",
+            "delimiter": "x",
+            "settings": [ "iSize W", "iSize H" ],
+            "targetINIs": [ "Fallout4Prefs.ini", "Fallout4Prefs.ini" ],
+            "targetSections": [ "Display", "Display" ],
+            "tooltip": "Changes the resolution.",
+            "type": "Dropdown"
+          },
+          "Antialiasing": {
+            "choices": [ "TAA", "FXAA", "Off" ],
+            "customWidth": "12",
+            "performance": [ "2", "1", "0" ],
+            "settingChoices": {
+              "TAA": [ "TAA" ],
+              "FXAA": [ "FXAA" ],
+              "Off": [ "" ]
+            },
+            "settings": [ "sAntiAliasing" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Specifies the antialiasing (AA) applied to edges to make them smoother and less jagged.",
+            "type": "Dropdown"
+          },
+          "Anisotropic Filtering": {
+            "choices": [ "None", "2x", "4x", "8x", "16x" ],
+            "customWidth": "12",
+            "settingChoices": {
+              "None": [ "0" ],
+              "2x": [ "2" ],
+              "4x": [ "4" ],
+              "8x": [ "8" ],
+              "16x": [ "16" ]
+            },
+            "settings": [ "iMaxAnisotropy" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Sets the level of anisotropic filtering (AF), improving the texture quality of distant objects.",
+            "type": "Dropdown"
+          },
+          "Field of View": {
+            "choices": [ "55.41", "64.44", "70", "86.07" ],
+            "customWidth": "11",
+            "settings": [ "fDefaultWorldFOV" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Changes the default field of view (FOV). This will only take effect on new saves.",
+            "type": "Combobox",
+            "validate": "float",
+            "width": "12"
+          },
+          "Havok FPS": {
+            "customWidth": "11",
+            "decimal places": "0",
+            "entryWidth": "5",
+            "formula": "1/{}",
+            "settings": [ "fMaxTime" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "HAVOK" ],
+            "tooltip": "Sets the maximum framerate supported by game physics.",
+            "type": "Entry",
+            "validate": "counting"
+          },
+          "Gamma": {
+            "decimal places": "3",
+            "digits": "4",
+            "from": "0",
+            "increment": "0.001",
+            "length": "100",
+            "resolution": "0.01",
+            "settings": [ "fGamma" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "2",
+            "tooltip": "Sets the gamma (brightness/darkness).",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7"
+          },
+          "Windowed Mode": {
+            "Offvalue": [ [ "1" ] ],
+            "Onvalue": [ [ "0" ] ],
+            "settings": [ "bFull Screen" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Toggles windowed/fullscreen mode.",
+            "type": "Checkbutton"
+          },
+          "Borderless": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bBorderless" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Toggles the window border.",
+            "type": "Checkbutton"
+          },
+          "Always Active": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bAlwaysActive" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "General" ],
+            "tooltip": "Toggles the ability of the game to remain active when it is out of focus (i.e. if in a windowed mode setup, if one clicks outside the game window with this enabled, the game will not pause).",
+            "type": "Checkbutton"
+          },
+          "Always On Top": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bTopMostWindow" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Toggles the ability for the game window to always be the top-most window.",
+            "type": "Checkbutton"
+          },
+          "Maximize Window": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bMaximizeWindow" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Toggles the ability for the game window to maximize, stretching across your resolution. If used incorrectly, it can cause the game to be distorted. It is recommended to be off in most cases, but you can experiment with it.",
+            "type": "Checkbutton"
+          },
+          "VSync": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1", "2" ] ],
+            "settings": [ "iPresentInterval" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Toggles vertical synchronization (VSync), which removes screen tearing.",
+            "type": "Checkbutton"
+          },
+          "Half Hertz": {
+            "dependentSettings": {
+              "VSync": {
+                "setToOff": "1",
+                "operator": "equal",
+                "value": [ [ "1", "2" ] ]
+              }
+            },
+            "Offvalue": [ [ "1", "0" ] ],
+            "Onvalue": [ [ "2" ] ],
+            "settings": [ "iPresentInterval" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Toggles vertical synchronization (VSync), which removes screen tearing, at half your screen's refresh rate.",
+            "type": "Checkbutton"
+          }
+        }
+      },
+      "Decals": {
+        "NumberOfVerticallyStackedSettings": "8",
+        "Settings": {
+          "Decals": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bDecals" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Decals" ],
+            "tooltip": "Toggles decals (mostly blood effects).",
+            "type": "Checkbutton"
+          },
+          "Disable Gore": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bDisableAllGore" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "General" ],
+            "tooltip": "Toggles gory effects, such as blood.",
+            "type": "Checkbutton"
+          },
+          "Max Decals Per Frame": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "3",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "iMaxDecalsPerFrame" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "250",
+            "tooltip": "Sets the maximum number of decals that can be shown per frame.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7",
+            "dependentSettings": {
+              "Decals": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
+          "Max Skinned Decals": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "3",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "uMaxSkinDecals" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Decals" ],
+            "to": "100",
+            "tooltip": "Sets the maximum number of skinned decals.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7",
+            "dependentSettings": {
+              "Decals": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
+          "Max Skinned Decals Per Frame": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "3",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "iMaxSkinDecalsPerFrame" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "100",
+            "tooltip": "Sets the maximum number of skinned decals that can be shown per frame.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7",
+            "dependentSettings": {
+              "Decals": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
+          "Max Skinned Decals Per Actor": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "2",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "uMaxSkinDecalPerActor" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Decals" ],
+            "to": "60",
+            "tooltip": "Sets the maximum number of skinned decals per actor.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7",
+            "dependentSettings": {
+              "Decals": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
+          "Decal Lifetime": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "3",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "fDecalLifetime" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "300",
+            "tooltip": "Sets the time in seconds that some decals will stay visible.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7",
+            "dependentSettings": {
+              "Decals": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          }
+        }
+      },
+      "Presets": {
+        "NumberOfVerticallyStackedSettings": "2",
+        "Settings": {
+          "Reset to Default": {
+            "preset id": "Default",
+            "tooltip": "Resets your INI files to their default values.\n\nNote that not all settings will be set to their default values, as you probably don't want us to touch your screen resolution and mouse look sensitivity... that sorta thing ;)",
+            "type": "preset"
+          },
+          "Apply Recommended Tweaks": {
+            "preset id": "recommended",
+            "tooltip": "This sets certain recommended tweaks for all users.",
+            "type": "preset"
+          },
+          "": "",
+          "EmptyLabel1": "",
+          "Bethini Presets": {
+            "type": "radioPreset",
+            "tooltip": "Changes the preset buttons to use Bethini Presets.\n\nHint: These presets are better ;)",
+            "value": "Bethini"
+          },
+          "Poor": {
+            "preset id": "Poor",
+            "tooltip": "Sets the Poor preset.",
+            "type": "preset",
+            "dependentSettings": {
+              "Bethini Presets": {
+                "operator": "equal",
+                "value": "Bethini"
+              }
+            }
+          },
+          "Vanilla Presets": {
+            "type": "radioPreset",
+            "tooltip": "Changes the preset buttons to use the vanilla presets.",
+            "value": "Vanilla"
+          },
+          "Low": {
+            "preset id": "Low",
+            "tooltip": "Sets the Low preset.",
+            "type": "preset"
+          },
+          "EmptyLabel6": "",
+          "Medium": {
+            "preset id": "Medium",
+            "tooltip": "Sets the Medium preset.",
+            "type": "preset"
+          },
+          "EmptyLabel9": "",
+          "High": {
+            "preset id": "High",
+            "tooltip": "Sets the High preset.",
+            "type": "preset"
+          },
+          "EmptyLabel11": "",
+          "Ultra": {
+            "preset id": "Ultra",
+            "tooltip": "Sets the Ultra preset.",
+            "type": "preset"
+          }
+        }
+      },
+      "Effects": {
+        "NumberOfVerticallyStackedSettings": "2",
+        "Settings": {
+          "Particles": {
+            "choices": [ "250", "750", "1500", "3000", "4500", "6000", "8000", "10000" ],
+            "decimal places": "0",
+            "settings": [ "iMaxDesired" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Particles" ],
+            "tooltip": "Sets the amount of particle effects.",
+            "type": "Combobox",
+            "validate": "whole",
+            "width": "12"
+          },
+          "Godrays": {
+            "choices": [ "None", "Low", "Medium", "High" ],
+            "settingChoices": {
+              "None": [ "0", "0" ],
+              "Low": [ "1", "0" ],
+              "Medium": [ "1", "1" ],
+              "High": [ "1", "2" ],
+              "Ultra": [ "1", "3" ]
+            },
+            "settings": [ "bVolumetricLightingEnable", "iVolumetricLightingQuality" ],
+            "targetINIs": [ "Fallout4Prefs.ini", "Fallout4Prefs.ini" ],
+            "targetSections": [ "Display", "Display" ],
+            "tooltip": "Sets Godrays (volumetric lighting) quality.",
+            "type": "Dropdown"
+          },
+          "Depth of Field": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bDoDepthOfField" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Imagespace" ],
+            "tooltip": "Toggles depth of field (DOF), a kind of blurring to imitate the human eye's perception. This is most noticeable under water, reducing visibility to realistic levels (it looks clear otherwise).",
+            "type": "Checkbutton"
+          },
+          "Bokeh": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bScreenSpaceBokeh" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Toggles bokeh depth of field (DOF), which blurs the background in a more aesthetically pleasing manner than standard DOF.",
+            "type": "Checkbutton"
+          },
+          "Lens Flare": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bLensFlare" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Imagespace" ],
+            "tooltip": "Toggles lens flare.",
+            "type": "Checkbutton"
+          },
+          "Motion Blur": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bMBEnable" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Imagespace" ],
+            "tooltip": "Toggles motion blur.",
+            "type": "Checkbutton"
+          }
         }
       }
     }
