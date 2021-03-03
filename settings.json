@@ -6144,7 +6144,16 @@
       "alwaysPrint": true,
       "type": "float",
       "value": {
-        "default": 30.0000
+        "default": 30.0000,
+        "Vanilla Low": 30.0,
+        "Vanilla Medium": 30.0,
+        "Vanilla High": 30.0,
+        "Vanilla Ultra": 30.0,
+        "Bethini Poor": 20.0,
+        "Bethini Low": 30.0,
+        "Bethini Medium": 240.0,
+        "Bethini High": 300.0,
+        "Bethini Ultra": 300.0
       }
     },
     {
@@ -15777,7 +15786,16 @@
       "alwaysPrint": true,
       "type": "number",
       "value": {
-        "default": 750
+        "default": 750,
+        "Vanilla Low": 750,
+        "Vanilla Medium": 750,
+        "Vanilla High": 750,
+        "Vanilla Ultra": 750,
+        "Bethini Poor": 100,
+        "Bethini Low": 250,
+        "Bethini Medium": 750,
+        "Bethini High": 2000,
+        "Bethini Ultra": 6000
       }
     },
     {

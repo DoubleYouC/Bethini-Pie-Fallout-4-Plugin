@@ -308,7 +308,7 @@
           },
           "Anisotropic Filtering": {
             "choices": [ "None", "2x", "4x", "8x", "16x" ],
-            "customWidth": "20",
+            "customWidth": "16",
             "settingChoices": {
               "None": [ "0" ],
               "2x": [ "2" ],
@@ -324,7 +324,7 @@
           },
           "Field of View": {
             "choices": [ "55.41", "64.44", "70", "86.07" ],
-            "customWidth": "20",
+            "customWidth": "16",
             "settings": [ "fDefaultWorldFOV" ],
             "targetINIs": [ "Fallout4.ini" ],
             "targetSections": [ "Display" ],
@@ -647,7 +647,7 @@
             "Onvalue": [ [ "1" ] ],
             "settings": [ "bScreenSpaceBokeh" ],
             "targetINIs": [ "Fallout4Prefs.ini" ],
-            "targetSections": [ "Display" ],
+            "targetSections": [ "Imagespace" ],
             "tooltip": "Toggles bokeh depth of field (DOF), which blurs the background in a more aesthetically pleasing manner than standard DOF.",
             "type": "Checkbutton"
           },
