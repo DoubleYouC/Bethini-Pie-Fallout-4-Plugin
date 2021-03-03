@@ -689,8 +689,10 @@
       "name": "bInvalidateOlderFiles",
       "section": "Archive",
       "type": "boolean",
+      "alwaysPrint": true,
       "value": {
-        "default": 0
+        "default": 0,
+        "fixedDefault": 1
       }
     },
     {
@@ -752,7 +754,6 @@
     {
       "name": "sArchiveList",
       "section": "Archive",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -761,6 +762,7 @@
     {
       "name": "sCellResourceIndexFileList",
       "section": "Archive",
+      "alwaysPrint": true,
       "type": "string",
       "value": {
         "default": "Fallout4.cdx"
@@ -785,6 +787,7 @@
     {
       "name": "sGeometryPackageList",
       "section": "Archive",
+      "alwaysPrint": true,
       "type": "string",
       "value": {
         "default": "Fallout4 - Geometry.csg"
@@ -801,7 +804,6 @@
     {
       "name": "sResourceArchive2List",
       "section": "Archive",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -811,6 +813,7 @@
       "name": "sResourceArchiveList",
       "section": "Archive",
       "type": "string",
+      "alwaysPrint": true,
       "value": {
         "default": "Fallout4 - Voices.ba2, Fallout4 - Meshes.ba2, Fallout4 - MeshesExtra.ba2, Fallout4 - Misc.ba2, Fallout4 - Sounds.ba2, Fallout4 - Materials.ba2"
       }
@@ -818,6 +821,7 @@
     {
       "name": "sResourceArchiveList2",
       "section": "Archive",
+      "alwaysPrint": true,
       "type": "string",
       "value": {
         "default": "Fallout4 - Animations.ba2"
@@ -834,7 +838,6 @@
     {
       "name": "sResourceArchiveRetainFileNameList",
       "section": "Archive",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -844,13 +847,16 @@
       "name": "sResourceDataDirsFinal",
       "section": "Archive",
       "type": "string",
+      "alwaysPrint": true,
       "value": {
-        "default": "STRINGS\\"
+        "default": "STRINGS\\",
+        "fixedDefault": ""
       }
     },
     {
       "name": "sResourceIndexFileList",
       "section": "Archive",
+      "alwaysPrint": true,
       "type": "string",
       "value": {
         "default": "Fallout4 - Textures1.ba2, Fallout4 - Textures2.ba2, Fallout4 - Textures3.ba2, Fallout4 - Textures4.ba2, Fallout4 - Textures5.ba2, Fallout4 - Textures6.ba2, Fallout4 - Textures7.ba2, Fallout4 - Textures8.ba2, Fallout4 - Textures9.ba2"
@@ -867,6 +873,7 @@
     {
       "name": "sResourceStartUpArchiveList",
       "section": "Archive",
+      "alwaysPrint": true,
       "type": "string",
       "value": {
         "default": "Fallout4 - Startup.ba2, Fallout4 - Shaders.ba2, Fallout4 - Interface.ba2"
@@ -1458,7 +1465,6 @@
     {
       "name": "sMissingAssetSoundFile",
       "section": "Audio",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -1587,7 +1593,8 @@
     {
       "name": "fAudioMasterVolume",
       "section": "AudioMenu",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 1.0000
@@ -1596,7 +1603,8 @@
     {
       "name": "fVal0",
       "section": "AudioMenu",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 0.6500
@@ -1605,7 +1613,8 @@
     {
       "name": "fVal1",
       "section": "AudioMenu",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 0.6500
@@ -1614,7 +1623,8 @@
     {
       "name": "fVal2",
       "section": "AudioMenu",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 1.0000
@@ -1623,7 +1633,8 @@
     {
       "name": "fVal3",
       "section": "AudioMenu",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 0.6500
@@ -1632,7 +1643,8 @@
     {
       "name": "fVal4",
       "section": "AudioMenu",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 0.6500
@@ -1641,7 +1653,8 @@
     {
       "name": "fVal5",
       "section": "AudioMenu",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 1.0000
@@ -1650,7 +1663,8 @@
     {
       "name": "fVal6",
       "section": "AudioMenu",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 1.0000
@@ -1659,7 +1673,8 @@
     {
       "name": "fVal7",
       "section": "AudioMenu",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 1.0000
@@ -1668,7 +1683,8 @@
     {
       "name": "uID0",
       "section": "AudioMenu",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": 554685
@@ -1677,7 +1693,8 @@
     {
       "name": "uID1",
       "section": "AudioMenu",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": 466532
@@ -1686,7 +1703,8 @@
     {
       "name": "uID2",
       "section": "AudioMenu",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": 94881
@@ -1695,7 +1713,8 @@
     {
       "name": "uID3",
       "section": "AudioMenu",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": 1007612
@@ -1704,7 +1723,8 @@
     {
       "name": "uID4",
       "section": "AudioMenu",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": 138006
@@ -1713,7 +1733,8 @@
     {
       "name": "uID5",
       "section": "AudioMenu",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": 0
@@ -1722,7 +1743,8 @@
     {
       "name": "uID6",
       "section": "AudioMenu",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": 0
@@ -1731,7 +1753,8 @@
     {
       "name": "uID7",
       "section": "AudioMenu",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": 0
@@ -1964,7 +1987,6 @@
     {
       "name": "sAccountsURL",
       "section": "Bethesda.net",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -1973,7 +1995,6 @@
     {
       "name": "sBethesdaBeam",
       "section": "Bethesda.net",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -1982,7 +2003,6 @@
     {
       "name": "sBethesdaBeamKey",
       "section": "Bethesda.net",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -1991,7 +2011,6 @@
     {
       "name": "sBethesdaCDP",
       "section": "Bethesda.net",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -2000,7 +2019,6 @@
     {
       "name": "sBethesdaEntitlements",
       "section": "Bethesda.net",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -2009,7 +2027,6 @@
     {
       "name": "sBethesdaLoggingKey",
       "section": "Bethesda.net",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -2018,7 +2035,6 @@
     {
       "name": "sBethesdaOAuthId",
       "section": "Bethesda.net",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -2027,7 +2043,6 @@
     {
       "name": "sBethesdaSession",
       "section": "Bethesda.net",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -2036,7 +2051,6 @@
     {
       "name": "sBethesdaUGC",
       "section": "Bethesda.net",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -2045,7 +2059,6 @@
     {
       "name": "sBethesdaUSL",
       "section": "Bethesda.net",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -2054,7 +2067,6 @@
     {
       "name": "sBethesdaVCCS",
       "section": "Bethesda.net",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -2071,7 +2083,6 @@
     {
       "name": "sCreationsInstallDirectory",
       "section": "Bethesda.net",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -2080,7 +2091,6 @@
     {
       "name": "sDeveloperEmail",
       "section": "Bethesda.net",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -2089,7 +2099,6 @@
     {
       "name": "sDeveloperUsername",
       "section": "Bethesda.net",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -2114,7 +2123,6 @@
     {
       "name": "sModsInstallDirectory",
       "section": "Bethesda.net",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -2123,7 +2131,6 @@
     {
       "name": "sModsURL",
       "section": "Bethesda.net",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -2180,7 +2187,8 @@
     {
       "name": "uPersistentUuidData0",
       "section": "Bethesda.net",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": 2448494249
@@ -2189,7 +2197,8 @@
     {
       "name": "uPersistentUuidData1",
       "section": "Bethesda.net",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": 2480164837
@@ -2198,7 +2207,8 @@
     {
       "name": "uPersistentUuidData2",
       "section": "Bethesda.net",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": 2835979065
@@ -2207,7 +2217,8 @@
     {
       "name": "uPersistentUuidData3",
       "section": "Bethesda.net",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": 4104173247
@@ -3280,7 +3291,6 @@
     {
       "name": "sOffsetID",
       "section": "CameraPath",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -4311,7 +4321,8 @@
     {
       "name": "bAlwaysRunByDefault",
       "section": "Controls",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 1
@@ -4368,7 +4379,8 @@
     {
       "name": "bGamePadRumble",
       "section": "Controls",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 1
@@ -4385,7 +4397,8 @@
     {
       "name": "bInvertYValues",
       "section": "Controls",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 0
@@ -4506,7 +4519,8 @@
     {
       "name": "fGamepadHeadingSensitivity",
       "section": "Controls",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 0.6667
@@ -4739,7 +4753,8 @@
     {
       "name": "fMouseHeadingSensitivity",
       "section": "Controls",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 0.0300
@@ -4773,6 +4788,7 @@
       "name": "fMouseHeadingXScale",
       "section": "Controls",
       "type": "float",
+      "alwaysPrint": true,
       "value": {
         "default": 0.0210
       }
@@ -4781,8 +4797,10 @@
       "name": "fMouseHeadingYScale",
       "section": "Controls",
       "type": "float",
+      "alwaysPrint": true,
       "value": {
-        "default": 0.0210
+        "default": 0.0210,
+        "fixedDefault": 0.042
       }
     },
     {
@@ -5181,12 +5199,18 @@
       "name": "bDecals",
       "section": "Decals",
       "type": "boolean",
+      "alwaysPrint": true,
       "value": {
         "default": 1,
-        "low": 0,
-        "medium": 1,
-        "high": 1,
-        "ultra": 1
+        "Vanilla Low": 1,
+        "Vanilla Medium": 1,
+        "Vanilla High": 1,
+        "Vanilla Ultra": 1,
+        "Bethini Poor": 1,
+        "Bethini Low": 1,
+        "Bethini Medium": 1,
+        "Bethini High": 1,
+        "Bethini Ultra": 1
       }
     },
     {
@@ -5220,34 +5244,56 @@
     {
       "name": "uMaxDecals",
       "section": "Decals",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": 100,
-        "low": 0,
-        "medium": 100,
-        "high": 250,
-        "ultra": 1000
+        "Vanilla Low": 0,
+        "Vanilla Medium": 100,
+        "Vanilla High": 250,
+        "Vanilla Ultra": 1000,
+        "Bethini Poor": 10,
+        "Bethini Low": 20,
+        "Bethini Medium": 100,
+        "Bethini High": 200,
+        "Bethini Ultra": 1000
       }
     },
     {
       "name": "uMaxSkinDecalPerActor",
       "section": "Decals",
       "type": "number",
+      "alwaysPrint": true,
       "value": {
-        "default": "25"
+        "default": 25,
+        "Vanilla Low": 25,
+        "Vanilla Medium": 25,
+        "Vanilla High": 25,
+        "Vanilla Ultra": 25,
+        "Bethini Poor": 1,
+        "Bethini Low": 2,
+        "Bethini Medium": 20,
+        "Bethini High": 40,
+        "Bethini Ultra": 60
       }
     },
     {
       "name": "uMaxSkinDecals",
       "section": "Decals",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": 100,
-        "low": 0,
-        "medium": "35",
-        "high": "50",
-        "ultra": 100
+        "Vanilla Low": 100,
+        "Vanilla Medium": 100,
+        "Vanilla High": 100,
+        "Vanilla Ultra": 100,
+        "Bethini Poor": 1,
+        "Bethini Low": 3,
+        "Bethini Medium": 35,
+        "Bethini High": 50,
+        "Bethini Ultra": 100
       }
     },
     {
@@ -5597,7 +5643,8 @@
     {
       "name": "bAllowShadowcasterNPCLights",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 0
@@ -5622,7 +5669,8 @@
     {
       "name": "bBorderless",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 0
@@ -5647,7 +5695,8 @@
     {
       "name": "bComputeShaderDeferredTiledLighting",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 1
@@ -5712,14 +5761,20 @@
     {
       "name": "bEnableWetnessMaterials",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 1,
-        "low": 0,
-        "medium": 1,
-        "high": 1,
-        "ultra": 1
+        "Vanilla Low": 0,
+        "Vanilla Medium": 1,
+        "Vanilla High": 1,
+        "Vanilla Ultra": 1,
+        "Bethini Poor": 0,
+        "Bethini Low": 0,
+        "Bethini Medium": 1,
+        "Bethini High": 1,
+        "Bethini Ultra": 1
       }
     },
     {
@@ -5733,20 +5788,27 @@
     {
       "name": "bForceIgnoreSmoothness",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 0,
-        "low": 1,
-        "medium": 0,
-        "high": 0,
-        "ultra": 0
+        "Vanilla Low": 1,
+        "Vanilla Medium": 0,
+        "Vanilla High": 0,
+        "Vanilla Ultra": 0,
+        "Bethini Poor": 1,
+        "Bethini Low": 1,
+        "Bethini Medium": 0,
+        "Bethini High": 0,
+        "Bethini Ultra": 0
       }
     },
     {
       "name": "bFull Screen",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 0
@@ -5787,7 +5849,8 @@
     {
       "name": "bMaximizeWindow",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 0
@@ -5876,7 +5939,8 @@
     {
       "name": "bPrecipitationOcclusion",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 1
@@ -5885,14 +5949,20 @@
     {
       "name": "bSAOEnable",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 1,
-        "low": 1,
-        "medium": 1,
-        "high": 1,
-        "ultra": 1
+        "Vanilla Low": 1,
+        "Vanilla Medium": 1,
+        "Vanilla High": 1,
+        "Vanilla Ultra": 1,
+        "Bethini Poor": 0,
+        "Bethini Low": 1,
+        "Bethini Medium": 1,
+        "Bethini High": 1,
+        "Bethini Ultra": 1
       }
     },
     {
@@ -5938,7 +6008,8 @@
     {
       "name": "bSinglePassDirShadow",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 1
@@ -5947,7 +6018,8 @@
     {
       "name": "bTopMostWindow",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 0
@@ -5988,20 +6060,27 @@
     {
       "name": "bVolumetricLightingEnable",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 1,
-        "low": 0,
-        "medium": 1,
-        "high": 1,
-        "ultra": 1
+        "Vanilla Low": 1,
+        "Vanilla Medium": 1,
+        "Vanilla High": 1,
+        "Vanilla Ultra": 1,
+        "Bethini Poor": 0,
+        "Bethini Low": 1,
+        "Bethini Medium": 1,
+        "Bethini High": 1,
+        "Bethini Ultra": 1
       }
     },
     {
       "name": "bVolumetricLightingForceCasters",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 0
@@ -6042,19 +6121,26 @@
     {
       "name": "fBlendSplitDirShadow",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 100.0000,
-        "low": 0.0000,
-        "medium": 48.0000,
-        "high": 48.0000,
-        "ultra": 48.0000
+        "Vanilla Low": 0,
+        "Vanilla Medium": 48,
+        "Vanilla High": 48,
+        "Vanilla Ultra": 48,
+        "Bethini Poor": 0,
+        "Bethini Low": 0,
+        "Bethini Medium": 48,
+        "Bethini High": 48,
+        "Bethini Ultra": 48
       }
     },
     {
       "name": "fDecalLifetime",
       "section": "Display",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 30.0000
@@ -6072,6 +6158,7 @@
       "name": "fDefault1stPersonFOV",
       "section": "Display",
       "type": "float",
+      "alwaysPrint": true,
       "value": {
         "default": 80.0000
       }
@@ -6080,6 +6167,7 @@
       "name": "fDefaultFOV",
       "section": "Display",
       "type": "float",
+      "alwaysPrint": true,
       "value": {
         "default": 80.0000
       }
@@ -6088,6 +6176,7 @@
       "name": "fDefaultWorldFOV",
       "section": "Display",
       "type": "float",
+      "alwaysPrint": true,
       "value": {
         "default": 70.0000
       }
@@ -6095,14 +6184,20 @@
     {
       "name": "fDirShadowDistance",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 3000.0000,
-        "low": 3000.0000,
-        "medium": 3000.0000,
-        "high": 14000.0000,
-        "ultra": 20000.0000
+        "Vanilla Low": 3000,
+        "Vanilla Medium": 3000,
+        "Vanilla High": 14000,
+        "Vanilla Ultra": 20000,
+        "Bethini Poor": 2800,
+        "Bethini Low": 2800,
+        "Bethini Medium": 5000,
+        "Bethini High": 14000,
+        "Bethini Ultra": 18000
       }
     },
     {
@@ -6124,7 +6219,8 @@
     {
       "name": "fInteriorMeshLODLevel1FadeDist",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 2600.0000
@@ -6133,7 +6229,8 @@
     {
       "name": "fInteriorMeshLODLevel2FadeDist",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 1950.0000
@@ -6142,7 +6239,8 @@
     {
       "name": "fLeafAnimDampenDistEnd",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 4600.0000
@@ -6151,7 +6249,8 @@
     {
       "name": "fLeafAnimDampenDistStart",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 3600.0000
@@ -6168,7 +6267,8 @@
     {
       "name": "flocalShadowMapHalveEveryXUnit",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 750.0000
@@ -6201,7 +6301,8 @@
     {
       "name": "fMaxFocusShadowMapDistance",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 450.0000
@@ -6210,7 +6311,8 @@
     {
       "name": "fMeshLODFadeBoundDefault",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 256.0000
@@ -6219,7 +6321,8 @@
     {
       "name": "fMeshLODFadePercentDefault",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 1.2000
@@ -6228,7 +6331,8 @@
     {
       "name": "fMeshLODFadeScalar",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 1.0000
@@ -6245,20 +6349,27 @@
     {
       "name": "fMeshLODLevel1FadeDist",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 3500.0000,
-        "low": 4000.0000,
-        "medium": 6000.0000,
-        "high": 8000.0000,
-        "ultra": 9999999.0000
+        "Vanilla Low": 4000,
+        "Vanilla Medium": 6000,
+        "Vanilla High": 8000,
+        "Vanilla Ultra": 999999,
+        "Bethini Poor": 2048,
+        "Bethini Low": 4096,
+        "Bethini Medium": 6144,
+        "Bethini High": 10240,
+        "Bethini Ultra": 20480
       }
     },
     {
       "name": "fMeshLODLevel1FadeTreeDistance",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 2844.0000
@@ -6267,20 +6378,27 @@
     {
       "name": "fMeshLODLevel2FadeDist",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 2000.0000,
-        "low": 1600.0000,
-        "medium": 3000.0000,
-        "high": 4000.0000,
-        "ultra": 9999999.0000
+        "Vanilla Low": 1600,
+        "Vanilla Medium": 3000,
+        "Vanilla High": 4000,
+        "Vanilla Ultra": 999999,
+        "Bethini Poor": 1024,
+        "Bethini Low": 2048,
+        "Bethini Medium": 3072,
+        "Bethini High": 7168,
+        "Bethini Ultra": 16384
       }
     },
     {
       "name": "fMeshLODLevel2FadeTreeDistance",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 2048.0000
@@ -6337,7 +6455,8 @@
     {
       "name": "focusShadowMapDoubleEveryXUnit",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 450.0000
@@ -6442,7 +6561,8 @@
     {
       "name": "fShadowBiasScale",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 1.0000
@@ -6451,14 +6571,11 @@
     {
       "name": "fShadowDistance",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
-        "default": 3000.0000,
-        "low": 3000.0000,
-        "medium": 3000.0000,
-        "high": 14000.0000,
-        "ultra": 20000.0000
+        "default": 3000.0000
       }
     },
     {
@@ -6520,7 +6637,8 @@
     {
       "name": "fTessFactorMaxDistanceScale",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 100.0000
@@ -6577,14 +6695,20 @@
     {
       "name": "iDirShadowSplits",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": 2,
-        "low": 2,
-        "medium": 2,
-        "high": 3,
-        "ultra": 3
+        "Vanilla Low": 2,
+        "Vanilla Medium": 2,
+        "Vanilla High": 3,
+        "Vanilla Ultra": 3,
+        "Bethini Poor": 2,
+        "Bethini Low": 2,
+        "Bethini Medium": 2,
+        "Bethini High": 3,
+        "Bethini Ultra": 3
       }
     },
     {
@@ -6606,53 +6730,77 @@
     {
       "name": "iMaxAnisotropy",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
-        "default": "16",
-        "low": 0,
-        "medium": "16",
-        "high": "16",
-        "ultra": "16"
+        "default": 16,
+        "Vanilla Low": 0,
+        "Vanilla Medium": 16,
+        "Vanilla High": 16,
+        "Vanilla Ultra": 16,
+        "Bethini Poor": 0,
+        "Bethini Low": 2,
+        "Bethini Medium": 4,
+        "Bethini High": 8,
+        "Bethini Ultra": 16
       }
     },
     {
       "name": "iMaxDecalsPerFrame",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
-        "default": "40",
-        "low": 0,
-        "medium": "10",
-        "high": 100,
-        "ultra": 100
+        "default": 40,
+        "Vanilla Low": 0,
+        "Vanilla Medium": 10,
+        "Vanilla High": 100,
+        "Vanilla Ultra": 100,
+        "Bethini Poor": 3,
+        "Bethini Low": 10,
+        "Bethini Medium": 60,
+        "Bethini High": 120,
+        "Bethini Ultra": 250
       }
     },
     {
       "name": "iMaxFocusShadows",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": 1,
-        "low": 0,
-        "medium": 1,
-        "high": 4,
-        "ultra": 4
+        "Vanilla Low": 1,
+        "Vanilla Medium": 2,
+        "Vanilla High": 4,
+        "Vanilla Ultra": 4,
+        "Bethini Poor": 1,
+        "Bethini Low": 1,
+        "Bethini Medium": 2,
+        "Bethini High": 4,
+        "Bethini Ultra": 4
       }
     },
     {
       "name": "iMaxFocusShadowsDialogue",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": 4,
-        "low": 4,
-        "medium": 4,
-        "high": 4,
-        "ultra": 4
+        "Vanilla Low": 4,
+        "Vanilla Medium": 4,
+        "Vanilla High": 4,
+        "Vanilla Ultra": 4,
+        "Bethini Poor": 4,
+        "Bethini Low": 4,
+        "Bethini Medium": 4,
+        "Bethini High": 4,
+        "Bethini Ultra": 4
       }
     },
     {
@@ -6674,20 +6822,27 @@
     {
       "name": "iMaxSkinDecalsPerFrame",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": 8,
-        "low": 0,
-        "medium": 3,
-        "high": "25",
-        "ultra": "25"
+        "Vanilla Low": 0,
+        "Vanilla Medium": 3,
+        "Vanilla High": 25,
+        "Vanilla Ultra": 25,
+        "Bethini Poor": 1,
+        "Bethini Low": 3,
+        "Bethini Medium": 35,
+        "Bethini High": 50,
+        "Bethini Ultra": 100
       }
     },
     {
       "name": "iPresentInterval",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": 1
@@ -6704,7 +6859,8 @@
     {
       "name": "iScreenShotIndex",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": 0
@@ -6713,20 +6869,27 @@
     {
       "name": "iShadowMapResolution",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": 2048,
-        "low": 1024,
-        "medium": 2048.0,
-        "high": 2048.0,
-        "ultra": 4096.0
+        "Vanilla Low": 1024,
+        "Vanilla Medium": 2048,
+        "Vanilla High": 2048,
+        "Vanilla Ultra": 4096,
+        "Bethini Poor": 256,
+        "Bethini Low": 512,
+        "Bethini Medium": 1024,
+        "Bethini High": 2048,
+        "Bethini Ultra": 4096
       }
     },
     {
       "name": "iSize H",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": 720
@@ -6735,7 +6898,8 @@
     {
       "name": "iSize W",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": 1280
@@ -6744,7 +6908,8 @@
     {
       "name": "iTiledLightingMinLights",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": "40"
@@ -6769,20 +6934,27 @@
     {
       "name": "iVolumetricLightingQuality",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": 0,
-        "low": 0,
-        "medium": 0,
-        "high": 1,
-        "ultra": 2
+        "Vanilla Low": 0,
+        "Vanilla Medium": 0,
+        "Vanilla High": 1,
+        "Vanilla Ultra": 2,
+        "Bethini Poor": 0,
+        "Bethini Low": 0,
+        "Bethini Medium": 1,
+        "Bethini High": 3,
+        "Bethini Ultra": 3
       }
     },
     {
       "name": "sAntiAliasing",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "string",
       "value": {
         "default": "TAA"
@@ -6791,8 +6963,8 @@
     {
       "name": "sD3DDevice",
       "section": "Display",
-      "allowPrefs": true,
-      "hideIfBlank": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "string",
       "value": {
         "default": ""
@@ -6809,7 +6981,6 @@
     {
       "name": "sHideTexturePath",
       "section": "Display",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -6842,33 +7013,46 @@
     {
       "name": "uiOrthoShadowFilter",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": 3,
-        "low": 1,
-        "medium": 2,
-        "high": 3,
-        "ultra": 3
+        "Vanilla Low": 1,
+        "Vanilla Medium": 2,
+        "Vanilla High": 3,
+        "Vanilla Ultra": 3,
+        "Bethini Poor": 1,
+        "Bethini Low": 1,
+        "Bethini Medium": 2,
+        "Bethini High": 3,
+        "Bethini Ultra": 3
       }
     },
     {
       "name": "uiShadowFilter",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": 3,
-        "low": 1,
-        "medium": 2,
-        "high": 3,
-        "ultra": 3
+        "Vanilla Low": 1,
+        "Vanilla Medium": 2,
+        "Vanilla High": 3,
+        "Vanilla Ultra": 3,
+        "Bethini Poor": 1,
+        "Bethini Low": 1,
+        "Bethini Medium": 2,
+        "Bethini High": 3,
+        "Bethini Ultra": 3
       }
     },
     {
       "name": "uPipboyTargetHeight",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": 700
@@ -6877,7 +7061,8 @@
     {
       "name": "uPipboyTargetWidth",
       "section": "Display",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": 876
@@ -7206,9 +7391,11 @@
     {
       "name": "fPlayerDisableSprintingLoadingCellDistance",
       "section": "Gameplay",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
-        "default": 4096.0000
+        "default": 4096.0000,
+        "recommended": 0
       }
     },
     {
@@ -7286,7 +7473,8 @@
     {
       "name": "bShowFloatingQuestMarkers",
       "section": "GamePlay",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 1
@@ -7295,7 +7483,8 @@
     {
       "name": "bShowQuestMarkers",
       "section": "GamePlay",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 1
@@ -7304,7 +7493,8 @@
     {
       "name": "iDifficulty",
       "section": "GamePlay",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": 2
@@ -7601,7 +7791,8 @@
     {
       "name": "bEnableStoryManagerLogging",
       "section": "General",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 0
@@ -7650,7 +7841,8 @@
     {
       "name": "bGamepadEnable",
       "section": "General",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 1
@@ -7763,7 +7955,8 @@
     {
       "name": "bPipboyCompanionEnabled",
       "section": "General",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 0
@@ -8196,9 +8389,11 @@
     {
       "name": "fChancesToPlayAlternateIntro",
       "section": "General",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
-        "default": 0.2000
+        "default": 0.2000,
+        "recommended": 0
       }
     },
     {
@@ -8684,7 +8879,8 @@
     {
       "name": "iStoryManagerLoggingEvent",
       "section": "General",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": "-1"
@@ -8797,7 +8993,6 @@
     {
       "name": "sEssentialFileCacheList",
       "section": "General",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -8814,7 +9009,6 @@
     {
       "name": "sIntroMovie",
       "section": "General",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -8823,14 +9017,17 @@
     {
       "name": "sIntroSequence",
       "section": "General",
+      "alwaysPrint": true,
       "type": "string",
       "value": {
-        "default": "GameIntro_V3_B.bk2"
+        "default": "GameIntro_V3_B.bk2",
+        "recommended": ""
       }
     },
     {
       "name": "sLanguage",
       "section": "General",
+      "alwaysPrint": true,
       "type": "string",
       "value": {
         "default": "en"
@@ -8903,7 +9100,6 @@
     {
       "name": "sStartingCell",
       "section": "General",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -8912,7 +9108,6 @@
     {
       "name": "sStartingCellX",
       "section": "General",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -8921,7 +9116,6 @@
     {
       "name": "sStartingCellY",
       "section": "General",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -8930,7 +9124,6 @@
     {
       "name": "sStartingConsoleCommand",
       "section": "General",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -8939,7 +9132,6 @@
     {
       "name": "sStartingWorld",
       "section": "General",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -8956,7 +9148,6 @@
     {
       "name": "sTestFile1",
       "section": "General",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -8965,7 +9156,6 @@
     {
       "name": "sTestFile10",
       "section": "General",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -8974,7 +9164,6 @@
     {
       "name": "sTestFile2",
       "section": "General",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -8983,7 +9172,6 @@
     {
       "name": "sTestFile3",
       "section": "General",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -8992,7 +9180,6 @@
     {
       "name": "sTestFile4",
       "section": "General",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -9001,7 +9188,6 @@
     {
       "name": "sTestFile5",
       "section": "General",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -9010,7 +9196,6 @@
     {
       "name": "sTestFile6",
       "section": "General",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -9019,7 +9204,6 @@
     {
       "name": "sTestFile7",
       "section": "General",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -9028,7 +9212,6 @@
     {
       "name": "sTestFile8",
       "section": "General",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -9037,7 +9220,6 @@
     {
       "name": "sTestFile9",
       "section": "General",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -9054,7 +9236,6 @@
     {
       "name": "sUnessentialFileCacheList",
       "section": "General",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -9096,14 +9277,17 @@
       "name": "uExterior Cell Buffer",
       "section": "General",
       "type": "number",
+      "alwaysPrint": true,
       "value": {
-        "default": "47"
+        "default": "47",
+        "fixedDefault": "36"
       }
     },
     {
       "name": "uGridsToLoad",
       "section": "General",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": 5
@@ -9185,8 +9369,10 @@
       "name": "uMainMenuDelayBeforeAllowSkip",
       "section": "General",
       "type": "number",
+      "alwaysPrint": true,
       "value": {
-        "default": 5000
+        "default": 5000,
+        "recommended": 0
       }
     },
     {
@@ -9368,9 +9554,19 @@
     {
       "name": "bAllowCreateGrass",
       "section": "Grass",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
-        "default": 1
+        "default": 1,
+        "Vanilla Low": 1,
+        "Vanilla Medium": 1,
+        "Vanilla High": 1,
+        "Vanilla Ultra": 1,
+        "Bethini Poor": 0,
+        "Bethini Low": 1,
+        "Bethini Medium": 1,
+        "Bethini High": 1,
+        "Bethini Ultra": 1
       }
     },
     {
@@ -9386,7 +9582,16 @@
       "section": "Grass",
       "type": "boolean",
       "value": {
-        "default": 1
+        "default": 1,
+        "Vanilla Low": 1,
+        "Vanilla Medium": 1,
+        "Vanilla High": 1,
+        "Vanilla Ultra": 1,
+        "Bethini Poor": 0,
+        "Bethini Low": 1,
+        "Bethini Medium": 1,
+        "Bethini High": 1,
+        "Bethini Ultra": 1
       }
     },
     {
@@ -9416,15 +9621,26 @@
     {
       "name": "fGrassFadeRange",
       "section": "Grass",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
-        "default": 1000.0000
+        "default": 1000.0000,
+        "Vanilla Low": 1000.0,
+        "Vanilla Medium": 1000.0,
+        "Vanilla High": 1000.0,
+        "Vanilla Ultra": 1000.0,
+        "Bethini Poor": 0.0,
+        "Bethini Low": 1024.0,
+        "Bethini Medium": 3072.0,
+        "Bethini High": 6144.0,
+        "Bethini Ultra": 12288.0
       }
     },
     {
       "name": "fGrassMaxStartFadeDistance",
       "section": "Grass",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 7000.0000
@@ -9433,7 +9649,8 @@
     {
       "name": "fGrassMinStartFadeDistance",
       "section": "Grass",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 1000.0000
@@ -9442,14 +9659,20 @@
     {
       "name": "fGrassStartFadeDistance",
       "section": "Grass",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 3500.0000,
-        "low": 1000.0000,
-        "medium": 2300.0000,
-        "high": 4000.0000,
-        "ultra": 7000.0000
+        "Vanilla Low": 1000,
+        "Vanilla Medium": 2000,
+        "Vanilla High": 4000,
+        "Vanilla Ultra": 7000,
+        "Bethini Poor": 0.0,
+        "Bethini Low": 512.0,
+        "Bethini Medium": 1024.0,
+        "Bethini High": 4096.0,
+        "Bethini Ultra": 6144.0
       }
     },
     {
@@ -9496,6 +9719,7 @@
       "name": "iMaxGrassTypesPerTexure",
       "section": "Grass",
       "type": "number",
+      "alwaysPrint": true,
       "value": {
         "default": 2
       }
@@ -9503,9 +9727,10 @@
     {
       "name": "iMinGrassSize",
       "section": "Grass",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
-        "default": "20"
+        "default": 20
       }
     },
     {
@@ -9553,7 +9778,7 @@
       "section": "HairLighting",
       "type": "float",
       "value": {
-        "default": "-0.4000"
+        "default": -0.4000
       }
     },
     {
@@ -10015,10 +10240,20 @@
     {
       "name": "bDoDepthOfField",
       "section": "Imagespace",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
-        "default": 1
+        "default": 1,
+        "Vanilla Low": 1,
+        "Vanilla Medium": 1,
+        "Vanilla High": 1,
+        "Vanilla Ultra": 1,
+        "Bethini Poor": 1,
+        "Bethini Low": 1,
+        "Bethini Medium": 1,
+        "Bethini High": 1,
+        "Bethini Ultra": 1
       }
     },
     {
@@ -10032,28 +10267,58 @@
     {
       "name": "bLensFlare",
       "section": "Imagespace",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
-        "default": 1
+        "default": 1,
+        "Vanilla Low": 0,
+        "Vanilla Medium": 1,
+        "Vanilla High": 1,
+        "Vanilla Ultra": 1,
+        "Bethini Poor": 0,
+        "Bethini Low": 0,
+        "Bethini Medium": 1,
+        "Bethini High": 1,
+        "Bethini Ultra": 1
       }
     },
     {
       "name": "bMBEnable",
       "section": "Imagespace",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
-        "default": 1
+        "default": 1,
+        "Vanilla Low": 0,
+        "Vanilla Medium": 1,
+        "Vanilla High": 1,
+        "Vanilla Ultra": 1,
+        "Bethini Poor": 0,
+        "Bethini Low": 0,
+        "Bethini Medium": 1,
+        "Bethini High": 1,
+        "Bethini Ultra": 1
       }
     },
     {
       "name": "bScreenSpaceBokeh",
       "section": "Imagespace",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
-        "default": 1
+        "default": 1,
+        "Vanilla Low": 0,
+        "Vanilla Medium": 0,
+        "Vanilla High": 1,
+        "Vanilla Ultra": 1,
+        "Bethini Poor": 0,
+        "Bethini Low": 0,
+        "Bethini Medium": 0,
+        "Bethini High": 1,
+        "Bethini Ultra": 1
       }
     },
     {
@@ -10147,7 +10412,8 @@
     {
       "name": "bDialogueCameraEnable",
       "section": "Interface",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 1
@@ -10156,7 +10422,8 @@
     {
       "name": "bDialogueSubtitles",
       "section": "Interface",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 0
@@ -10173,7 +10440,8 @@
     {
       "name": "bGeneralSubtitles",
       "section": "Interface",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 0
@@ -10214,7 +10482,8 @@
     {
       "name": "bShowCompass",
       "section": "Interface",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 1
@@ -12911,7 +13180,8 @@
     {
       "name": "iHUDColorB",
       "section": "Interface",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": "21"
@@ -12920,7 +13190,8 @@
     {
       "name": "iHUDColorG",
       "section": "Interface",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": 255
@@ -12929,7 +13200,8 @@
     {
       "name": "iHUDColorR",
       "section": "Interface",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": "18"
@@ -13082,7 +13354,6 @@
     {
       "name": "sForcedLoadScreenEditorID",
       "section": "Interface",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -13171,7 +13442,8 @@
     {
       "name": "uHUDActiveEffectWidget",
       "section": "Interface",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": 2
@@ -13733,50 +14005,85 @@
       "name": "bEnableFileSelection",
       "section": "Launcher",
       "type": "boolean",
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "value": {
-        "default": 0
+        "default": 0,
+        "fixedDefault": 1
       }
     },
     {
       "name": "bScreenSpaceReflections",
       "section": "LightingShader",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 1,
-        "low": 0,
-        "medium": 1,
-        "high": 1,
-        "ultra": 1
+        "Vanilla Low": 0,
+        "Vanilla Medium": 1,
+        "Vanilla High": 1,
+        "Vanilla Ultra": 1,
+        "Bethini Poor": 0,
+        "Bethini Low": 0,
+        "Bethini Medium": 1,
+        "Bethini High": 1,
+        "Bethini Ultra": 1
       }
     },
     {
       "name": "bScreenSpaceSubsurfaceScattering",
       "section": "LightingShader",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 1,
-        "low": 0,
-        "medium": 0,
-        "high": 1,
-        "ultra": 1
+        "Vanilla Low": 0,
+        "Vanilla Medium": 0,
+        "Vanilla High": 1,
+        "Vanilla Ultra": 1,
+        "Bethini Poor": 0,
+        "Bethini Low": 0,
+        "Bethini Medium": 0,
+        "Bethini High": 1,
+        "Bethini Ultra": 1
       }
     },
     {
       "name": "fDecalLODFadeEnd",
       "section": "LightingShader",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
-        "default": 0.0600
+        "default": 0.0600,
+        "Vanilla Low": 0.06,
+        "Vanilla Medium": 0.06,
+        "Vanilla High": 0.06,
+        "Vanilla Ultra": 0.06,
+        "Bethini Poor": 0.06,
+        "Bethini Low": 0.15,
+        "Bethini Medium": 0.3,
+        "Bethini High": 0.6,
+        "Bethini Ultra": 1.1
       }
     },
     {
       "name": "fDecalLODFadeStart",
       "section": "LightingShader",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
-        "default": 0.0500
+        "default": 0.0500,
+        "Vanilla Low": 0.05,
+        "Vanilla Medium": 0.05,
+        "Vanilla High": 0.05,
+        "Vanilla Ultra": 0.05,
+        "Bethini Poor": 0.05,
+        "Bethini Low": 0.1,
+        "Bethini Medium": 0.2,
+        "Bethini High": 0.5,
+        "Bethini Ultra": 1.0
       }
     },
     {
@@ -13790,17 +14097,37 @@
     {
       "name": "fEnvmapLODFadeEnd",
       "section": "LightingShader",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
-        "default": 0.1000
+        "default": 0.1000,
+        "Vanilla Low": 0.1,
+        "Vanilla Medium": 0.1,
+        "Vanilla High": 0.1,
+        "Vanilla Ultra": 0.1,
+        "Bethini Poor": 0.06,
+        "Bethini Low": 0.15,
+        "Bethini Medium": 0.3,
+        "Bethini High": 0.6,
+        "Bethini Ultra": 1.1
       }
     },
     {
       "name": "fEnvmapLODFadeStart",
       "section": "LightingShader",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
-        "default": 0.0900
+        "default": 0.0900,
+        "Vanilla Low": 0.09,
+        "Vanilla Medium": 0.09,
+        "Vanilla High": 0.09,
+        "Vanilla Ultra": 0.09,
+        "Bethini Poor": 0.05,
+        "Bethini Low": 0.1,
+        "Bethini Medium": 0.2,
+        "Bethini High": 0.5,
+        "Bethini Ultra": 1.0
       }
     },
     {
@@ -13808,7 +14135,16 @@
       "section": "LightingShader",
       "type": "float",
       "value": {
-        "default": 0.0500
+        "default": 0.0500,
+        "Vanilla Low": 0.05,
+        "Vanilla Medium": 0.05,
+        "Vanilla High": 0.05,
+        "Vanilla Ultra": 0.05,
+        "Bethini Poor": 0.05,
+        "Bethini Low": 0.1,
+        "Bethini Medium": 0.2,
+        "Bethini High": 0.5,
+        "Bethini Ultra": 1.0
       }
     },
     {
@@ -13816,7 +14152,16 @@
       "section": "LightingShader",
       "type": "float",
       "value": {
-        "default": 0.0300
+        "default": 0.0300,
+        "Vanilla Low": 0.03,
+        "Vanilla Medium": 0.03,
+        "Vanilla High": 0.03,
+        "Vanilla Ultra": 0.03,
+        "Bethini Poor": 0.03,
+        "Bethini Low": 0.15,
+        "Bethini Medium": 0.3,
+        "Bethini High": 0.6,
+        "Bethini Ultra": 1.1
       }
     },
     {
@@ -13824,7 +14169,16 @@
       "section": "LightingShader",
       "type": "float",
       "value": {
-        "default": 0.0250
+        "default": 0.0250,
+        "Vanilla Low": 0.025,
+        "Vanilla Medium": 0.025,
+        "Vanilla High": 0.025,
+        "Vanilla Ultra": 0.025,
+        "Bethini Poor": 0.025,
+        "Bethini Low": 0.1,
+        "Bethini Medium": 0.2,
+        "Bethini High": 0.5,
+        "Bethini Ultra": 1.0
       }
     },
     {
@@ -13832,7 +14186,16 @@
       "section": "LightingShader",
       "type": "float",
       "value": {
-        "default": 0.1000
+        "default": 0.1000,
+        "Vanilla Low": 0.1,
+        "Vanilla Medium": 0.1,
+        "Vanilla High": 0.1,
+        "Vanilla Ultra": 0.1,
+        "Bethini Poor": 0.06,
+        "Bethini Low": 0.15,
+        "Bethini Medium": 0.3,
+        "Bethini High": 0.6,
+        "Bethini Ultra": 1.1
       }
     },
     {
@@ -13840,7 +14203,16 @@
       "section": "LightingShader",
       "type": "float",
       "value": {
-        "default": 0.0900
+        "default": 0.0900,
+        "Vanilla Low": 0.09,
+        "Vanilla Medium": 0.09,
+        "Vanilla High": 0.09,
+        "Vanilla Ultra": 0.09,
+        "Bethini Poor": 0.05,
+        "Bethini Low": 0.1,
+        "Bethini Medium": 0.2,
+        "Bethini High": 0.5,
+        "Bethini Ultra": 1.0
       }
     },
     {
@@ -14038,46 +14410,65 @@
     {
       "name": "fLODFadeOutMultActors",
       "section": "LOD",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 6.0000,
-        "low": 5.0000,
-        "medium": 7.0000,
-        "high": 9.0000,
-        "ultra": 15.0000
+        "Vanilla Low": 5,
+        "Vanilla Medium": 7,
+        "Vanilla High": 9,
+        "Vanilla Ultra": 15,
+        "Bethini Poor": 2,
+        "Bethini Low": 3,
+        "Bethini Medium": 6,
+        "Bethini High": 12,
+        "Bethini Ultra": 15
       }
     },
     {
       "name": "fLODFadeOutMultItems",
       "section": "LOD",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 2.5000,
-        "low": 1.5000,
-        "medium": 3.0000,
-        "high": 6.0000,
-        "ultra": 10.0000
+        "Vanilla Low": 1.5,
+        "Vanilla Medium": 3,
+        "Vanilla High": 6,
+        "Vanilla Ultra": 10,
+        "Bethini Poor": 1,
+        "Bethini Low": 1.5,
+        "Bethini Medium": 3,
+        "Bethini High": 4.5,
+        "Bethini Ultra": 10
       }
     },
     {
       "name": "fLODFadeOutMultObjects",
       "section": "LOD",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 4.5000,
-        "low": 5.0000,
-        "medium": 7.0000,
-        "high": 9.0000,
-        "ultra": 30.0000
+        "Vanilla Low": 5,
+        "Vanilla Medium": 7,
+        "Vanilla High": 9,
+        "Vanilla Ultra": 30,
+        "Bethini Poor": 2,
+        "Bethini Low": 3,
+        "Bethini Medium": 5,
+        "Bethini High": 15,
+        "Bethini Ultra": 30
       }
     },
     {
       "name": "fLODFadeOutMultSkyCell",
       "section": "LOD",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 1.0000,
@@ -14226,7 +14617,8 @@
     {
       "name": "bCrosshairEnabled",
       "section": "MAIN",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 1
@@ -14267,7 +14659,8 @@
     {
       "name": "bSaveOnPause",
       "section": "MAIN",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 1
@@ -14276,7 +14669,8 @@
     {
       "name": "bSaveOnRest",
       "section": "MAIN",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 1
@@ -14285,7 +14679,8 @@
     {
       "name": "bSaveOnTravel",
       "section": "MAIN",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 1
@@ -14294,7 +14689,8 @@
     {
       "name": "bSaveOnWait",
       "section": "MAIN",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 1
@@ -14407,7 +14803,8 @@
     {
       "name": "fHUDOpacity",
       "section": "MAIN",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 1.0000
@@ -14488,7 +14885,8 @@
     {
       "name": "fSkyCellRefFadeDistance",
       "section": "MAIN",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 150000.0000
@@ -14945,7 +15343,8 @@
     {
       "name": "bNVFlexDrawDebris",
       "section": "NVFlex",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 1
@@ -14954,7 +15353,8 @@
     {
       "name": "bNVFlexEnable",
       "section": "NVFlex",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 0
@@ -14963,7 +15363,8 @@
     {
       "name": "bNVFlexInstanceDebris",
       "section": "NVFlex",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 1
@@ -14972,7 +15373,8 @@
     {
       "name": "fKillRadius0",
       "section": "NVFlex",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 2000.0000
@@ -14981,7 +15383,8 @@
     {
       "name": "fKillRadius1",
       "section": "NVFlex",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 3000.0000
@@ -14990,7 +15393,8 @@
     {
       "name": "fKillRadius2",
       "section": "NVFlex",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 4000.0000
@@ -14999,7 +15403,8 @@
     {
       "name": "iMaxNeighbors0",
       "section": "NVFlex",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": "32"
@@ -15008,7 +15413,8 @@
     {
       "name": "iMaxNeighbors1",
       "section": "NVFlex",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": "48"
@@ -15017,7 +15423,8 @@
     {
       "name": "iMaxNeighbors2",
       "section": "NVFlex",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": "64"
@@ -15026,7 +15433,8 @@
     {
       "name": "iMaxParticles0",
       "section": "NVFlex",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": 6000
@@ -15035,7 +15443,8 @@
     {
       "name": "iMaxParticles1",
       "section": "NVFlex",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": 16000
@@ -15044,7 +15453,8 @@
     {
       "name": "iMaxParticles2",
       "section": "NVFlex",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": 32768
@@ -15053,7 +15463,8 @@
     {
       "name": "iQuality",
       "section": "NVFlex",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": 2
@@ -15062,7 +15473,8 @@
     {
       "name": "bBackgroundAOEnable",
       "section": "NVHBAO",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 1
@@ -15071,7 +15483,8 @@
     {
       "name": "bBlurEnable",
       "section": "NVHBAO",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 1
@@ -15080,7 +15493,8 @@
     {
       "name": "bBlurSharpnessProfileEnable",
       "section": "NVHBAO",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 0
@@ -15089,7 +15503,8 @@
     {
       "name": "bDepthThresholdEnable",
       "section": "NVHBAO",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 0
@@ -15098,7 +15513,8 @@
     {
       "name": "bEnable",
       "section": "NVHBAO",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 0
@@ -15107,7 +15523,8 @@
     {
       "name": "fBackgroundAOViewDepth",
       "section": "NVHBAO",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 750.0000
@@ -15116,7 +15533,8 @@
     {
       "name": "fBias",
       "section": "NVHBAO",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 0.1000
@@ -15125,7 +15543,8 @@
     {
       "name": "fBlurSharpness",
       "section": "NVHBAO",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 16.0000
@@ -15134,7 +15553,8 @@
     {
       "name": "fBlurSharpnessProfileBackgroundViewDepth",
       "section": "NVHBAO",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 1.0000
@@ -15143,7 +15563,8 @@
     {
       "name": "fBlurSharpnessProfileForegroundSharpnessScale",
       "section": "NVHBAO",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 4.0000
@@ -15152,7 +15573,8 @@
     {
       "name": "fBlurSharpnessProfileForegroundViewDepth",
       "section": "NVHBAO",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 0.0000
@@ -15161,7 +15583,8 @@
     {
       "name": "fCoarseAO",
       "section": "NVHBAO",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 1.0000
@@ -15170,7 +15593,8 @@
     {
       "name": "fDepthThresholdMaxViewDepth",
       "section": "NVHBAO",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 500.0000
@@ -15179,7 +15603,8 @@
     {
       "name": "fDepthThresholdSharpness",
       "section": "NVHBAO",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 100.0000
@@ -15188,7 +15613,8 @@
     {
       "name": "fDetailAO",
       "section": "NVHBAO",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 0.6500
@@ -15197,7 +15623,8 @@
     {
       "name": "fPowerExponent",
       "section": "NVHBAO",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 2.5000
@@ -15206,7 +15633,8 @@
     {
       "name": "fRadius",
       "section": "NVHBAO",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 0.6500
@@ -15215,7 +15643,8 @@
     {
       "name": "iBlurRadiusEnum",
       "section": "NVHBAO",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": 1
@@ -15224,7 +15653,8 @@
     {
       "name": "iDepthClampModeEnum",
       "section": "NVHBAO",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": 0
@@ -15243,7 +15673,8 @@
       "section": "Papyrus",
       "type": "boolean",
       "value": {
-        "default": 0
+        "default": 0,
+        "recommended": 0
       }
     },
     {
@@ -15251,7 +15682,8 @@
       "section": "Papyrus",
       "type": "boolean",
       "value": {
-        "default": 0
+        "default": 0,
+        "recommended": 0
       }
     },
     {
@@ -15259,7 +15691,8 @@
       "section": "Papyrus",
       "type": "boolean",
       "value": {
-        "default": 0
+        "default": 0,
+        "recommended": 0
       }
     },
     {
@@ -15267,7 +15700,8 @@
       "section": "Papyrus",
       "type": "boolean",
       "value": {
-        "default": 0
+        "default": 0,
+        "recommended": 0
       }
     },
     {
@@ -15281,6 +15715,7 @@
     {
       "name": "fPostLoadUpdateTimeMS",
       "section": "Papyrus",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 500.0000
@@ -15329,7 +15764,6 @@
     {
       "name": "sTraceStatusOfQuest",
       "section": "Papyrus",
-      "hideIfBlank": true,
       "type": "string",
       "value": {
         "default": ""
@@ -15338,7 +15772,8 @@
     {
       "name": "iMaxDesired",
       "section": "Particles",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "number",
       "value": {
         "default": 750
@@ -16715,7 +17150,8 @@
     {
       "name": "fPipboyEffectColorB",
       "section": "Pipboy",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 0.0900
@@ -16724,7 +17160,8 @@
     {
       "name": "fPipboyEffectColorG",
       "section": "Pipboy",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 1.0000
@@ -16733,7 +17170,8 @@
     {
       "name": "fPipboyEffectColorR",
       "section": "Pipboy",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 0.0800
@@ -17182,7 +17620,8 @@
     {
       "name": "fAutosaveEveryXMins",
       "section": "SaveGame",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 10.0000
@@ -17399,7 +17838,8 @@
     {
       "name": "bShowLODInEditor",
       "section": "TerrainManager",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 0
@@ -17416,53 +17856,77 @@
     {
       "name": "fBlockLevel0Distance",
       "section": "TerrainManager",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 14336.0000,
-        "low": 15000.0000,
-        "medium": 20000.0000,
-        "high": 30000.0000,
-        "ultra": 60000.0000
+        "Vanilla Low": 15000,
+        "Vanilla Medium": 20000,
+        "Vanilla High": 30000,
+        "Vanilla Ultra": 60000,
+        "Bethini Poor": 15000,
+        "Bethini Low": 15000,
+        "Bethini Medium": 20000,
+        "Bethini High": 30000,
+        "Bethini Ultra": 60000
       }
     },
     {
       "name": "fBlockLevel1Distance",
       "section": "TerrainManager",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 27876.0000,
-        "low": 25000.0000,
-        "medium": 32000.0000,
-        "high": 60000.0000,
-        "ultra": 90000.0000
+        "Vanilla Low": 25000,
+        "Vanilla Medium": 32000,
+        "Vanilla High": 60000,
+        "Vanilla Ultra": 90000,
+        "Bethini Poor": 25000,
+        "Bethini Low": 25000,
+        "Bethini Medium": 32000,
+        "Bethini High": 60000,
+        "Bethini Ultra": 90000
       }
     },
     {
       "name": "fBlockLevel2Distance",
       "section": "TerrainManager",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 83232.0000,
-        "low": 75000.0000,
-        "medium": 80000.0000,
-        "high": 110000.0000,
-        "ultra": 110000.0000
+        "Vanilla Low": 75000,
+        "Vanilla Medium": 80000,
+        "Vanilla High": 110000,
+        "Vanilla Ultra": 110000,
+        "Bethini Poor": 75000,
+        "Bethini Low": 75000,
+        "Bethini Medium": 80000,
+        "Bethini High": 110000,
+        "Bethini Ultra": 110000
       }
     },
     {
       "name": "fBlockMaximumDistance",
       "section": "TerrainManager",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 161232.0000,
-        "low": 100000.0000,
-        "medium": 100000.0000,
-        "high": 180000.0000,
-        "ultra": 250000.0000
+        "Vanilla Low": 100000,
+        "Vanilla Medium": 100000,
+        "Vanilla High": 180000,
+        "Vanilla Ultra": 250000,
+        "Bethini Poor": 100000,
+        "Bethini Low": 100000,
+        "Bethini Medium": 100000,
+        "Bethini High": 180000,
+        "Bethini Ultra": 250000
       }
     },
     {
@@ -17500,20 +17964,27 @@
     {
       "name": "fSplitDistanceMult",
       "section": "TerrainManager",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 0.7500,
-        "low": 0.5000,
-        "medium": 1.1000,
-        "high": 1.1000,
-        "ultra": 1.5000
+        "Vanilla Low": 0.5,
+        "Vanilla Medium": 1.1,
+        "Vanilla High": 1.1,
+        "Vanilla Ultra": 1.5,
+        "Bethini Poor": 0.5,
+        "Bethini Low": 0.5,
+        "Bethini Medium": 1.1,
+        "Bethini High": 1.1,
+        "Bethini Ultra": 1.5
       }
     },
     {
       "name": "fTreeLoadDistance",
       "section": "TerrainManager",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 25000.0000,
@@ -17806,7 +18277,8 @@
     {
       "name": "fModMenuEffectColorB",
       "section": "VATS",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 0.4200
@@ -17815,7 +18287,8 @@
     {
       "name": "fModMenuEffectColorG",
       "section": "VATS",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 0.9900
@@ -17824,7 +18297,8 @@
     {
       "name": "fModMenuEffectColorR",
       "section": "VATS",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 0.4900
@@ -17833,7 +18307,8 @@
     {
       "name": "fModMenuEffectHighlightColorB",
       "section": "VATS",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 0.0824
@@ -17842,7 +18317,8 @@
     {
       "name": "fModMenuEffectHighlightColorG",
       "section": "VATS",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 1.0000
@@ -17851,7 +18327,8 @@
     {
       "name": "fModMenuEffectHighlightColorR",
       "section": "VATS",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 0.0706
@@ -17860,7 +18337,8 @@
     {
       "name": "fModMenuEffectHighlightPAColorB",
       "section": "VATS",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 0.4100
@@ -17869,7 +18347,8 @@
     {
       "name": "fModMenuEffectHighlightPAColorG",
       "section": "VATS",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 0.8200
@@ -17878,7 +18357,8 @@
     {
       "name": "fModMenuEffectHighlightPAColorR",
       "section": "VATS",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 1.0000
@@ -17887,7 +18367,8 @@
     {
       "name": "fModMenuEffectPAColorB",
       "section": "VATS",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 0.4100
@@ -17896,7 +18377,8 @@
     {
       "name": "fModMenuEffectPAColorG",
       "section": "VATS",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 0.8200
@@ -17905,7 +18387,8 @@
     {
       "name": "fModMenuEffectPAColorR",
       "section": "VATS",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "float",
       "value": {
         "default": 1.0000
@@ -18506,25 +18989,31 @@
     {
       "name": "bReflectLODLand",
       "section": "Water",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
-        "default": 1
+        "default": 1,
+        "fixedDefault": 0
       }
     },
     {
       "name": "bReflectLODObjects",
       "section": "Water",
       "type": "boolean",
+      "alwaysPrint": true,
       "value": {
-        "default": 1
+        "default": 1,
+        "fixedDefault": 0
       }
     },
     {
       "name": "bReflectLODTrees",
       "section": "Water",
       "type": "boolean",
+      "alwaysPrint": true,
       "value": {
-        "default": 1
+        "default": 1,
+        "fixedDefault": 0
       }
     },
     {
@@ -18570,7 +19059,8 @@
     {
       "name": "bUseWaterDepth",
       "section": "Water",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 1
@@ -18579,7 +19069,8 @@
     {
       "name": "bUseWaterDisplacements",
       "section": "Water",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 1
@@ -18612,7 +19103,8 @@
     {
       "name": "bUseWaterReflections",
       "section": "Water",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 1
@@ -18621,7 +19113,8 @@
     {
       "name": "bUseWaterRefractions",
       "section": "Water",
-      "allowPrefs": true,
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 1
