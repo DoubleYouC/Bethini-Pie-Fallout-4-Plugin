@@ -9279,8 +9279,8 @@
       "type": "number",
       "alwaysPrint": true,
       "value": {
-        "default": "47",
-        "fixedDefault": "36"
+        "default": 47,
+        "fixedDefault": 36
       }
     },
     {
