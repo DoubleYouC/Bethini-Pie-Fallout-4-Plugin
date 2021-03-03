@@ -106,7 +106,7 @@
       "section": "AI",
       "type": "number",
       "value": {
-        "default": "10"
+        "default": 10
       }
     },
     {
@@ -674,7 +674,7 @@
       "section": "Animation",
       "type": "number",
       "value": {
-        "default": "64"
+        "default": 64
       }
     },
     {
@@ -972,7 +972,7 @@
       "section": "Audio",
       "type": "float",
       "value": {
-        "default": "-0.1500"
+        "default": -0.1500
       }
     },
     {
@@ -1020,7 +1020,7 @@
       "section": "Audio",
       "type": "float",
       "value": {
-        "default": "-12.0000"
+        "default": -12.0000
       }
     },
     {
@@ -1060,7 +1060,7 @@
       "section": "Audio",
       "type": "float",
       "value": {
-        "default": "-12.0000"
+        "default": -12.0000
       }
     },
     {
@@ -1068,7 +1068,7 @@
       "section": "Audio",
       "type": "float",
       "value": {
-        "default": "-12.0000"
+        "default": -12.0000
       }
     },
     {
@@ -1084,7 +1084,7 @@
       "section": "Audio",
       "type": "float",
       "value": {
-        "default": "-12.0000"
+        "default": -12.0000
       }
     },
     {
@@ -1100,7 +1100,7 @@
       "section": "Audio",
       "type": "float",
       "value": {
-        "default": "-3.0000"
+        "default": -3.0000
       }
     },
     {
@@ -1124,7 +1124,7 @@
       "section": "Audio",
       "type": "float",
       "value": {
-        "default": "-6.0000"
+        "default": -6.0000
       }
     },
     {
@@ -1132,7 +1132,7 @@
       "section": "Audio",
       "type": "float",
       "value": {
-        "default": "-12.0000"
+        "default": -12.0000
       }
     },
     {
@@ -1140,7 +1140,7 @@
       "section": "Audio",
       "type": "float",
       "value": {
-        "default": "-12.0000"
+        "default": -12.0000
       }
     },
     {
@@ -1156,7 +1156,7 @@
       "section": "Audio",
       "type": "float",
       "value": {
-        "default": "-12.0000"
+        "default": -12.0000
       }
     },
     {
@@ -1164,7 +1164,7 @@
       "section": "Audio",
       "type": "float",
       "value": {
-        "default": "-6.0000"
+        "default": -6.0000
       }
     },
     {
@@ -1204,7 +1204,7 @@
       "section": "Audio",
       "type": "float",
       "value": {
-        "default": "-6.0000"
+        "default": -6.0000
       }
     },
     {
@@ -1372,7 +1372,7 @@
       "section": "Audio",
       "type": "float",
       "value": {
-        "default": "-3.0000"
+        "default": -3.0000
       }
     },
     {
@@ -1380,7 +1380,7 @@
       "section": "Audio",
       "type": "float",
       "value": {
-        "default": "-20.0000"
+        "default": -20.0000
       }
     },
     {
@@ -1434,8 +1434,9 @@
     {
       "name": "hAsyncReadPriorityThreshold",
       "section": "Audio",
+      "type": "number",
       "value": {
-        "default": "64"
+        "default": 64
       }
     },
     {
@@ -1475,7 +1476,7 @@
       "section": "Audio",
       "type": "number",
       "value": {
-        "default": "33"
+        "default": 33
       }
     },
     {
@@ -1837,7 +1838,7 @@
       "section": "BackgroundLoad",
       "type": "number",
       "value": {
-        "default": "50"
+        "default": 50
       }
     },
     {
@@ -1845,7 +1846,7 @@
       "section": "BackgroundLoad",
       "type": "number",
       "value": {
-        "default": "20"
+        "default": 20
       }
     },
     {
@@ -1853,7 +1854,7 @@
       "section": "BackgroundLoad",
       "type": "number",
       "value": {
-        "default": "20"
+        "default": 20
       }
     },
     {
@@ -1957,7 +1958,7 @@
       "section": "Bethesda.net",
       "type": "number",
       "value": {
-        "default": "-1"
+        "default": -1
       }
     },
     {
@@ -1965,7 +1966,7 @@
       "section": "Bethesda.net",
       "type": "number",
       "value": {
-        "default": "-1"
+        "default": -1
       }
     },
     {
@@ -1973,7 +1974,7 @@
       "section": "Bethesda.net",
       "type": "number",
       "value": {
-        "default": "-1"
+        "default": -1
       }
     },
     {
@@ -2525,7 +2526,7 @@
       "section": "Camera",
       "type": "float",
       "value": {
-        "default": "-6.0000"
+        "default": -6.0000
       }
     },
     {
@@ -2909,7 +2910,7 @@
       "section": "Camera",
       "type": "float",
       "value": {
-        "default": "-300.0000"
+        "default": -300.0000
       }
     },
     {
@@ -3117,7 +3118,7 @@
       "section": "Camera",
       "type": "float",
       "value": {
-        "default": "-50.0000"
+        "default": -50.0000
       }
     },
     {
@@ -3125,7 +3126,7 @@
       "section": "Camera",
       "type": "float",
       "value": {
-        "default": "-1.0000"
+        "default": -1.0000
       }
     },
     {
@@ -3261,7 +3262,7 @@
       "section": "CameraPath",
       "type": "number",
       "value": {
-        "default": "30"
+        "default": 30
       }
     },
     {
@@ -3437,7 +3438,7 @@
       "section": "Cloth",
       "type": "number",
       "value": {
-        "default": "10"
+        "default": 10
       }
     },
     {
@@ -3779,7 +3780,7 @@
       "name": "cImpactDecalMaxResults",
       "section": "Combat",
       "value": {
-        "default": "10"
+        "default": 10
       }
     },
     {
@@ -4691,7 +4692,7 @@
       "section": "Controls",
       "type": "float",
       "value": {
-        "default": "-0.3827"
+        "default": -0.3827
       }
     },
     {
@@ -4707,7 +4708,7 @@
       "section": "Controls",
       "type": "float",
       "value": {
-        "default": "-0.7545"
+        "default": -0.7545
       }
     },
     {
@@ -4880,7 +4881,7 @@
       "section": "Controls",
       "type": "float",
       "value": {
-        "default": "-80.0000"
+        "default": -80.0000
       }
     },
     {
@@ -6649,7 +6650,7 @@
       "section": "Display",
       "type": "number",
       "value": {
-        "default": "40"
+        "default": 40
       }
     },
     {
@@ -6657,7 +6658,7 @@
       "section": "Display",
       "type": "number",
       "value": {
-        "default": "20"
+        "default": 20
       }
     },
     {
@@ -6673,7 +6674,7 @@
       "section": "Display",
       "type": "number",
       "value": {
-        "default": "10"
+        "default": 10
       }
     },
     {
@@ -6689,7 +6690,7 @@
       "section": "Display",
       "type": "number",
       "value": {
-        "default": "20"
+        "default": 20
       }
     },
     {
@@ -6808,7 +6809,7 @@
       "section": "Display",
       "type": "number",
       "value": {
-        "default": "32"
+        "default": 32
       }
     },
     {
@@ -6816,7 +6817,7 @@
       "section": "Display",
       "type": "number",
       "value": {
-        "default": "42"
+        "default": 42
       }
     },
     {
@@ -6912,7 +6913,7 @@
       "alwaysPrint": true,
       "type": "number",
       "value": {
-        "default": "40"
+        "default": 40
       }
     },
     {
@@ -7161,7 +7162,7 @@
       "section": "FaceGen",
       "type": "number",
       "value": {
-        "default": "10"
+        "default": 10
       }
     },
     {
@@ -7443,7 +7444,7 @@
       "section": "Gameplay",
       "type": "number",
       "value": {
-        "default": "21"
+        "default": 21
       }
     },
     {
@@ -7451,7 +7452,7 @@
       "section": "Gameplay",
       "type": "number",
       "value": {
-        "default": "10"
+        "default": 10
       }
     },
     {
@@ -8809,7 +8810,7 @@
       "section": "General",
       "type": "number",
       "value": {
-        "default": "32"
+        "default": 32
       }
     },
     {
@@ -8883,7 +8884,7 @@
       "alwaysPrint": true,
       "type": "number",
       "value": {
-        "default": "-1"
+        "default": -1
       }
     },
     {
@@ -9346,7 +9347,7 @@
       "section": "General",
       "type": "number",
       "value": {
-        "default": "30"
+        "default": 30
       }
     },
     {
@@ -10082,7 +10083,7 @@
       "section": "HAVOK",
       "type": "float",
       "value": {
-        "default": "-1.0000"
+        "default": -1.0000
       }
     },
     {
@@ -10234,7 +10235,7 @@
       "section": "HeadTracking",
       "type": "number",
       "value": {
-        "default": "10"
+        "default": 10
       }
     },
     {
@@ -10726,7 +10727,7 @@
       "section": "Interface",
       "type": "float",
       "value": {
-        "default": "-160.0000"
+        "default": -160.0000
       }
     },
     {
@@ -10734,7 +10735,7 @@
       "section": "Interface",
       "type": "float",
       "value": {
-        "default": "-96.0000"
+        "default": -96.0000
       }
     },
     {
@@ -10782,7 +10783,7 @@
       "section": "Interface",
       "type": "float",
       "value": {
-        "default": "-160.0000"
+        "default": -160.0000
       }
     },
     {
@@ -10790,7 +10791,7 @@
       "section": "Interface",
       "type": "float",
       "value": {
-        "default": "-160.0000"
+        "default": -160.0000
       }
     },
     {
@@ -11046,7 +11047,7 @@
       "section": "Interface",
       "type": "float",
       "value": {
-        "default": "-25.0000"
+        "default": -25.0000
       }
     },
     {
@@ -11086,7 +11087,7 @@
       "section": "Interface",
       "type": "float",
       "value": {
-        "default": "-3.0000"
+        "default": -3.0000
       }
     },
     {
@@ -11118,7 +11119,7 @@
       "section": "Interface",
       "type": "float",
       "value": {
-        "default": "-40.0000"
+        "default": -40.0000
       }
     },
     {
@@ -11270,7 +11271,7 @@
       "section": "Interface",
       "type": "float",
       "value": {
-        "default": "-42.5000"
+        "default": -42.5000
       }
     },
     {
@@ -11374,7 +11375,7 @@
       "section": "Interface",
       "type": "float",
       "value": {
-        "default": "-40.0000"
+        "default": -40.0000
       }
     },
     {
@@ -11470,7 +11471,7 @@
       "section": "Interface",
       "type": "float",
       "value": {
-        "default": "-500.0000"
+        "default": -500.0000
       }
     },
     {
@@ -11638,7 +11639,7 @@
       "section": "Interface",
       "type": "float",
       "value": {
-        "default": "-250.0000"
+        "default": -250.0000
       }
     },
     {
@@ -11654,7 +11655,7 @@
       "section": "Interface",
       "type": "float",
       "value": {
-        "default": "-650.0000"
+        "default": -650.0000
       }
     },
     {
@@ -11662,7 +11663,7 @@
       "section": "Interface",
       "type": "float",
       "value": {
-        "default": "-512.0000"
+        "default": -512.0000
       }
     },
     {
@@ -11670,7 +11671,7 @@
       "section": "Interface",
       "type": "float",
       "value": {
-        "default": "-300.0000"
+        "default": -300.0000
       }
     },
     {
@@ -11678,7 +11679,7 @@
       "section": "Interface",
       "type": "float",
       "value": {
-        "default": "-300.0000"
+        "default": -300.0000
       }
     },
     {
@@ -11838,7 +11839,7 @@
       "section": "Interface",
       "type": "float",
       "value": {
-        "default": "-800.0000"
+        "default": -800.0000
       }
     },
     {
@@ -11902,7 +11903,7 @@
       "section": "Interface",
       "type": "float",
       "value": {
-        "default": "-1800.0000"
+        "default": -1800.0000
       }
     },
     {
@@ -11958,7 +11959,7 @@
       "section": "Interface",
       "type": "float",
       "value": {
-        "default": "-1.0000"
+        "default": -1.0000
       }
     },
     {
@@ -12142,7 +12143,7 @@
       "section": "Interface",
       "type": "float",
       "value": {
-        "default": "-25.0000"
+        "default": -25.0000
       }
     },
     {
@@ -12174,7 +12175,7 @@
       "section": "Interface",
       "type": "float",
       "value": {
-        "default": "-10.0000"
+        "default": -10.0000
       }
     },
     {
@@ -12206,7 +12207,7 @@
       "section": "Interface",
       "type": "float",
       "value": {
-        "default": "-0.2000"
+        "default": -0.2000
       }
     },
     {
@@ -12326,7 +12327,7 @@
       "section": "Interface",
       "type": "float",
       "value": {
-        "default": "-30.0000"
+        "default": -30.0000
       }
     },
     {
@@ -12350,7 +12351,7 @@
       "section": "Interface",
       "type": "float",
       "value": {
-        "default": "-60.0000"
+        "default": -60.0000
       }
     },
     {
@@ -12918,7 +12919,7 @@
       "section": "Interface",
       "type": "float",
       "value": {
-        "default": "-80.0000"
+        "default": -80.0000
       }
     },
     {
@@ -12926,7 +12927,7 @@
       "section": "Interface",
       "type": "float",
       "value": {
-        "default": "-20.0000"
+        "default": -20.0000
       }
     },
     {
@@ -13006,7 +13007,7 @@
       "section": "Interface",
       "type": "number",
       "value": {
-        "default": "45"
+        "default": 45
       }
     },
     {
@@ -13014,7 +13015,7 @@
       "section": "Interface",
       "type": "number",
       "value": {
-        "default": "73"
+        "default": 73
       }
     },
     {
@@ -13030,7 +13031,7 @@
       "section": "Interface",
       "type": "number",
       "value": {
-        "default": "57"
+        "default": 57
       }
     },
     {
@@ -13062,7 +13063,7 @@
       "section": "Interface",
       "type": "number",
       "value": {
-        "default": "12"
+        "default": 12
       }
     },
     {
@@ -13078,7 +13079,7 @@
       "section": "Interface",
       "type": "number",
       "value": {
-        "default": "55"
+        "default": 55
       }
     },
     {
@@ -13086,7 +13087,7 @@
       "section": "Interface",
       "type": "number",
       "value": {
-        "default": "86"
+        "default": 86
       }
     },
     {
@@ -13102,7 +13103,7 @@
       "section": "Interface",
       "type": "number",
       "value": {
-        "default": "14"
+        "default": 14
       }
     },
     {
@@ -13110,7 +13111,7 @@
       "section": "Interface",
       "type": "number",
       "value": {
-        "default": "58"
+        "default": 58
       }
     },
     {
@@ -13126,7 +13127,7 @@
       "section": "Interface",
       "type": "number",
       "value": {
-        "default": "22"
+        "default": 22
       }
     },
     {
@@ -13184,7 +13185,7 @@
       "alwaysPrint": true,
       "type": "number",
       "value": {
-        "default": "21"
+        "default": 21
       }
     },
     {
@@ -13204,7 +13205,7 @@
       "alwaysPrint": true,
       "type": "number",
       "value": {
-        "default": "18"
+        "default": 18
       }
     },
     {
@@ -13212,7 +13213,7 @@
       "section": "Interface",
       "type": "number",
       "value": {
-        "default": "55"
+        "default": 55
       }
     },
     {
@@ -13220,7 +13221,7 @@
       "section": "Interface",
       "type": "number",
       "value": {
-        "default": "86"
+        "default": 86
       }
     },
     {
@@ -13236,7 +13237,7 @@
       "section": "Interface",
       "type": "number",
       "value": {
-        "default": "16"
+        "default": 16
       }
     },
     {
@@ -13260,7 +13261,7 @@
       "section": "Interface",
       "type": "number",
       "value": {
-        "default": "10"
+        "default": 10
       }
     },
     {
@@ -13268,7 +13269,7 @@
       "section": "Interface",
       "type": "number",
       "value": {
-        "default": "10"
+        "default": 10
       }
     },
     {
@@ -13412,7 +13413,7 @@
       "section": "Interface",
       "type": "number",
       "value": {
-        "default": "11"
+        "default": 11
       }
     },
     {
@@ -13510,7 +13511,7 @@
       "section": "Interface",
       "type": "number",
       "value": {
-        "default": "21"
+        "default": 21
       }
     },
     {
@@ -13518,7 +13519,7 @@
       "section": "Interface",
       "type": "number",
       "value": {
-        "default": "21"
+        "default": 21
       }
     },
     {
@@ -13526,7 +13527,7 @@
       "section": "Interface",
       "type": "number",
       "value": {
-        "default": "12"
+        "default": 12
       }
     },
     {
@@ -13582,7 +13583,7 @@
       "section": "Interface",
       "type": "number",
       "value": {
-        "default": "15"
+        "default": 15
       }
     },
     {
@@ -13678,7 +13679,7 @@
       "section": "Interface",
       "type": "number",
       "value": {
-        "default": "20"
+        "default": 20
       }
     },
     {
@@ -14921,7 +14922,7 @@
       "section": "MAIN",
       "type": "number",
       "value": {
-        "default": "40"
+        "default": 40
       }
     },
     {
@@ -14937,7 +14938,7 @@
       "section": "MAIN",
       "type": "number",
       "value": {
-        "default": "23"
+        "default": 23
       }
     },
     {
@@ -14953,7 +14954,7 @@
       "section": "MAIN",
       "type": "number",
       "value": {
-        "default": "20"
+        "default": 20
       }
     },
     {
@@ -14985,7 +14986,7 @@
       "section": "MAIN",
       "type": "number",
       "value": {
-        "default": "20"
+        "default": 20
       }
     },
     {
@@ -14993,7 +14994,7 @@
       "section": "MAIN",
       "type": "number",
       "value": {
-        "default": "32"
+        "default": 32
       }
     },
     {
@@ -15009,7 +15010,7 @@
       "section": "MAIN",
       "type": "number",
       "value": {
-        "default": "16"
+        "default": 16
       }
     },
     {
@@ -15129,7 +15130,7 @@
       "section": "MapMenu",
       "type": "number",
       "value": {
-        "default": "16"
+        "default": 16
       }
     },
     {
@@ -15137,7 +15138,7 @@
       "section": "MapMenu",
       "type": "number",
       "value": {
-        "default": "32"
+        "default": 32
       }
     },
     {
@@ -15169,7 +15170,7 @@
       "section": "Menu",
       "type": "number",
       "value": {
-        "default": "40"
+        "default": 40
       }
     },
     {
@@ -15177,7 +15178,7 @@
       "section": "Menu",
       "type": "number",
       "value": {
-        "default": "20"
+        "default": 20
       }
     },
     {
@@ -15407,7 +15408,7 @@
       "alwaysPrint": true,
       "type": "number",
       "value": {
-        "default": "32"
+        "default": 32
       }
     },
     {
@@ -15417,7 +15418,7 @@
       "alwaysPrint": true,
       "type": "number",
       "value": {
-        "default": "48"
+        "default": 48
       }
     },
     {
@@ -15427,7 +15428,7 @@
       "alwaysPrint": true,
       "type": "number",
       "value": {
-        "default": "64"
+        "default": 64
       }
     },
     {
@@ -16936,7 +16937,7 @@
       "section": "Pathfinding",
       "type": "number",
       "value": {
-        "default": "10"
+        "default": 10
       }
     },
     {
@@ -16952,7 +16953,7 @@
       "section": "Pathfinding",
       "type": "number",
       "value": {
-        "default": "10"
+        "default": 10
       }
     },
     {
@@ -16976,7 +16977,7 @@
       "section": "Pathfinding",
       "type": "number",
       "value": {
-        "default": "32"
+        "default": 32
       }
     },
     {
@@ -16984,7 +16985,7 @@
       "section": "Pathfinding",
       "type": "number",
       "value": {
-        "default": "50"
+        "default": 50
       }
     },
     {
@@ -17008,7 +17009,7 @@
       "section": "Pathfinding",
       "type": "number",
       "value": {
-        "default": "60"
+        "default": 60
       }
     },
     {
@@ -17198,7 +17199,7 @@
       "section": "Pipboy",
       "type": "float",
       "value": {
-        "default": "-0.1000"
+        "default": -0.1000
       }
     },
     {
@@ -17454,7 +17455,7 @@
       "section": "Pipboy",
       "type": "number",
       "value": {
-        "default": "75"
+        "default": 75
       }
     },
     {
@@ -17470,7 +17471,7 @@
       "section": "Pipboy",
       "type": "number",
       "value": {
-        "default": "95"
+        "default": 95
       }
     },
     {
@@ -17632,7 +17633,7 @@
       "section": "SaveGame",
       "type": "float",
       "value": {
-        "default": "-1.0000"
+        "default": -1.0000
       }
     },
     {
@@ -17688,7 +17689,7 @@
       "section": "SpeedTree",
       "type": "float",
       "value": {
-        "default": "-0.2500"
+        "default": -0.2500
       }
     },
     {
@@ -17696,7 +17697,7 @@
       "section": "SpeedTree",
       "type": "float",
       "value": {
-        "default": "-0.7500"
+        "default": -0.7500
       }
     },
     {
@@ -18159,7 +18160,7 @@
       "section": "Trees",
       "type": "float",
       "value": {
-        "default": "-0.1000"
+        "default": -0.1000
       }
     },
     {
@@ -18439,7 +18440,7 @@
       "section": "VATS",
       "type": "float",
       "value": {
-        "default": "-0.1000"
+        "default": -0.1000
       }
     },
     {
@@ -18647,7 +18648,7 @@
       "section": "VATS",
       "type": "float",
       "value": {
-        "default": "-100.0000"
+        "default": -100.0000
       }
     },
     {
@@ -18903,7 +18904,7 @@
       "section": "VATS",
       "type": "number",
       "value": {
-        "default": "10"
+        "default": 10
       }
     },
     {
@@ -19245,7 +19246,7 @@
       "section": "Water",
       "type": "number",
       "value": {
-        "default": "12"
+        "default": 12
       }
     },
     {
@@ -19597,7 +19598,7 @@
       "section": "Workshop",
       "type": "float",
       "value": {
-        "default": "-2.0000"
+        "default": -2.0000
       }
     },
     {
@@ -19733,7 +19734,7 @@
       "section": "Workshop",
       "type": "number",
       "value": {
-        "default": "75"
+        "default": 75
       }
     }
   ]
