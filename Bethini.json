@@ -619,7 +619,7 @@
             "width": "12"
           },
           "Godrays": {
-            "choices": [ "None", "Low", "Medium", "High" ],
+            "choices": [ "None", "Low", "Medium", "High", "Ultra" ],
             "settingChoices": {
               "None": [ "0", "0" ],
               "Low": [ "1", "0" ],
@@ -668,6 +668,463 @@
             "targetSections": [ "Imagespace" ],
             "tooltip": "Toggles motion blur.",
             "type": "Checkbutton"
+          },
+          "Wetness": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bEnableWetnessMaterials" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Toggles the wet look effect on objects when it rains.",
+            "type": "Checkbutton"
+          }
+        }
+      }
+    },
+    "General": {
+      "NoLabelFrame": {
+        "NumberOfVerticallyStackedSettings": "1",
+        "Settings": {
+          "Intro Logos": {
+            "Offvalue": [ [ "" ] ],
+            "Onvalue": [ [ "GameIntro_V3_B.bk2" ] ],
+            "settings": [ "sIntroSequence" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "General" ],
+            "tooltip": "Toggles the game intro logos.",
+            "type": "Checkbutton"
+          },
+          "Intro S.P.E.C.I.A.L": {
+            "Offvalue": [
+              [ "0" ],
+              [ "0" ]
+            ],
+            "Onvalue": [
+              [ "0.2" ],
+              [ "5000" ]
+            ],
+            "settings": [ "fChancesToPlayAlternateIntro", "uMainMenuDelayBeforeAllowSkip" ],
+            "targetINIs": [ "Fallout4.ini", "Fallout4.ini" ],
+            "targetSections": [ "General", "General" ],
+            "tooltip": "Toggles the game intro logos.",
+            "type": "Checkbutton"
+          },
+          "Intro Music": {
+            "Offvalue": [ [ "" ] ],
+            "Onvalue": [ [ "\\Data\\Music\\Special\\MUS_MainTheme.xwm" ] ],
+            "settings": [ "sMainMenuMusic" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "General" ],
+            "tooltip": "Toggles the game intro music.",
+            "type": "Checkbutton"
+          },
+          "Tutorials": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bShowTutorials" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Interface" ],
+            "tooltip": "Toggles the in-game tutorial pop-ups.",
+            "type": "Checkbutton"
+          },
+          "Remove Borders": {
+            "Offvalue": [ [ "1" ] ],
+            "Onvalue": [ [ "0" ] ],
+            "settings": [ "bBorderRegionsEnabled" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "General" ],
+            "tooltip": "Toggles off the borders at the edges of the map.",
+            "type": "Checkbutton"
+          },
+          "Sprint Fix": {
+            "Offvalue": [ [ "4096" ] ],
+            "Onvalue": [ [ "0" ] ],
+            "settings": [ "fPlayerDisableSprintingLoadingCellDistance" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Gameplay" ],
+            "tooltip": "If enabled, sprinting will be allowed even when nearby cells are not fully loaded.",
+            "type": "Checkbutton"
+          },
+          "Max Autosaves": {
+            "decimal places": "0",
+            "from": "0",
+            "increment": "1",
+            "settings": [ "iAutoSaveCount" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "SaveGame" ],
+            "to": "100",
+            "tooltip": "Sets the maximum number of autosaves to keep.",
+            "type": "Spinbox",
+            "validate": "whole",
+            "width": "5"
+          }
+        }
+      },
+      "Gameplay": {
+        "NumberOfVerticallyStackedSettings": "6",
+        "Settings": {
+          "Always Run by Default": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bAlwaysRunByDefault" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Controls" ],
+            "tooltip": "Toggles the ability of the character to always run by default. If turned off, you can still run, but walking is the default action.",
+            "type": "Checkbutton"
+          },
+          "NPCs Use Ammo": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bForceNPCsUseAmmo" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Combat" ],
+            "tooltip": "Toggles off unlimited NPC ammo. If enabled, NPCs will no longer have access to unlimited ammo, but shall be forced to only use the ammo they possess.",
+            "type": "Checkbutton"
+          },
+          "Disable Combat Dialogue": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bDisableCombatDialogue" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Combat" ],
+            "tooltip": "Toggles off those cheeky comments that enemies say while in combat.",
+            "type": "Checkbutton"
+          },
+          "Over-Encumbered Reminder": {
+            "entryWidth": "7",
+            "settings": [ "fEncumberedReminderTimer" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "General" ],
+            "tooltip": "Sets the time interval between subsequent \"You are carrying too much to be able to run\" messages in seconds.",
+            "type": "Entry",
+            "validate": "float"
+          }
+        }
+      },
+      "Screenshots": {
+        "NumberOfVerticallyStackedSettings": "5",
+        "Settings": {
+          "Screenshot to File": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bScreenshotToFile" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Toggles the ability to save a screenshot to a file with the PrintScreen key.",
+            "type": "Checkbutton"
+          },
+          "Screenshot to Clipboard": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bScreenshotToClipboard" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Toggles the ability to save a screenshot to the clipboard with the PrintScreen key.",
+            "type": "Checkbutton"
+          },
+          "Screenshots Directory": {
+            "browse": [ "directory", "directory", "directory" ],
+            "choices": [ "Browse...", "Manual..." ],
+            "customWidth": "20",
+            "fileFormat": "directory",
+            "partial": [ "Screenshots Directory", "Filename" ],
+            "settings": [ "sScreenShotBaseName" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Sets the location of game screenshots.",
+            "type": "Dropdown"
+          },
+          "Filename": {
+            "customWidth": "20",
+            "entryWidth": "20",
+            "fileFormat": "file",
+            "partial": [ "Screenshots Directory", "Filename" ],
+            "settings": [ "sScreenShotBaseName" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Sets the base filename of game screenshots.",
+            "type": "Entry"
+          },
+          "Index": {
+            "customWidth": "20",
+            "decimal places": "0",
+            "from": "1",
+            "settings": [ "iScreenShotIndex" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "500",
+            "tooltip": "Sets the screenshot index number.",
+            "type": "Spinbox",
+            "validate": "integer",
+            "width": "5"
+          }
+        }
+      },
+      "Papyrus": {
+        "NumberOfVerticallyStackedSettings": "2",
+        "Settings": {
+          "Post-Load Update Time": {
+            "choices": [ "500", "2000" ],
+            "customWidth": "20",
+            "decimal places": "0",
+            "settings": [ "fPostLoadUpdateTimeMS" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Papyrus" ],
+            "tooltip": "Sets time, in milliseconds, given to scripts to update after loading.",
+            "type": "Combobox",
+            "validate": "whole",
+            "width": "8"
+          },
+          "Background Load Scripting VM": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bBackgroundLoadVMData" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "General" ],
+            "tooltip": "Toggles loading the scripting data in the VM in the background. May improve performance, but there is currently no data. Skyrim and Skyrim Special Edition defaults it to off, while Fallout 4 defaults it to on.",
+            "type": "Checkbutton"
+          },
+          "Logging": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bEnableLogging" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Papyrus" ],
+            "tooltip": "Toggles Papyrus logs being written to disk.",
+            "type": "Checkbutton"
+          },
+          "Debug Info": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bLoadDebugInformation" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Papyrus" ],
+            "tooltip": "Toggles additional debug information. If enabled, line number information will be available in error traces at the expense of higher memory usage.",
+            "type": "Checkbutton"
+          },
+          "Profiling": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bEnableProfiling" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Papyrus" ],
+            "tooltip": "Toggles script profiling, which enables profiling commands and allows profiling information to be logged, at the cost of some script performance.",
+            "type": "Checkbutton"
+          },
+          "Tracing": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bEnableTrace" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Papyrus" ],
+            "tooltip": "Toggles script tracing.",
+            "type": "Checkbutton"
+          }
+        }
+      }
+    },
+    "Interface": {
+      "NoLabelFrame": {
+        "NumberOfVerticallyStackedSettings": "1",
+        "Settings": {
+          "Dialogue Subtitles": {
+            "tooltip": "Toggles subtitles for NPCs who are directly talking to you.",
+            "type": "Checkbutton",
+            "Onvalue": [ [ "1" ] ],
+            "Offvalue": [ [ "0" ] ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Interface" ],
+            "settings": [ "bDialogueSubtitles" ]
+          },
+          "General Subtitles": {
+            "tooltip": "Toggles subtitles for NPCs who are not directly talking to you.",
+            "type": "Checkbutton",
+            "Onvalue": [ [ "1" ] ],
+            "Offvalue": [ [ "0" ] ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Interface" ],
+            "settings": [ "bGeneralSubtitles" ]
+          },
+          "Bethesda Modding Platform": {
+            "tooltip": "Toggles Bethesda's built-in modding platform, including the Creation Club. If disabled, \"Mods\" will be removed from the menus, the \"Creation Club\" will be disabled, and Creation Club news will not show.",
+            "type": "Checkbutton",
+            "Onvalue": [ [ "1" ] ],
+            "Offvalue": [ [ "0" ] ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Bethesda.net" ],
+            "settings": [ "bEnablePlatform" ]
+          },
+          "Autosize Quick Containers": {
+            "tooltip": "Toggles the ability for the quick-loot box to expand or contract with the size of its contents when hovering over containers.",
+            "type": "Checkbutton",
+            "Onvalue": [ [ "1" ] ],
+            "Offvalue": [ [ "0" ] ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Interface" ],
+            "settings": [ "bAutoSizeQuickContainer" ]
+          },
+          "Show Quest Markers": {
+            "tooltip": "Toggles quest markers on the map and the compass.",
+            "type": "Checkbutton",
+            "Onvalue": [ [ "1" ] ],
+            "Offvalue": [ [ "0" ] ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "GamePlay" ],
+            "settings": [ "bShowQuestMarkers" ]
+          },
+          "Show Compass": {
+            "tooltip": "Toggles the compass.",
+            "type": "Checkbutton",
+            "Onvalue": [ [ "1" ] ],
+            "Offvalue": [ [ "0" ] ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Interface" ],
+            "settings": [ "bShowCompass" ]
+          }
+        }
+      },
+      "Colors": {
+        "NumberOfVerticallyStackedSettings": "5",
+        "Settings": {
+          "Subtitles": {
+            "colorValueType": "rgb",
+            "customWidth": "16",
+            "rgbType": "multiple settings",
+            "settings": [ "uSubtitleR", "uSubtitleG", "uSubtitleB" ],
+            "targetINIs": [ "Fallout4.ini", "Fallout4.ini", "Fallout4.ini" ],
+            "targetSections": [ "Interface", "Interface", "Interface" ],
+            "tooltip": "Sets the color of subtitles.",
+            "type": "Color"
+          },
+          "HUD": {
+            "colorValueType": "rgb",
+            "customWidth": "16",
+            "rgbType": "multiple settings",
+            "settings": [ "iHUDColorR", "iHUDColorG", "iHUDColorB" ],
+            "targetINIs": [ "Fallout4Prefs.ini", "Fallout4Prefs.ini", "Fallout4Prefs.ini" ],
+            "targetSections": [ "Interface", "Interface", "Interface" ],
+            "tooltip": "Sets the color of the Heads Up Display.",
+            "type": "Color"
+          },
+          "Damage HUD": {
+            "colorValueType": "rgb",
+            "customWidth": "16",
+            "rgbType": "multiple settings",
+            "settings": [ "iHUDColorWarningR", "iHUDColorWarningG", "iHUDColorWarningB" ],
+            "targetINIs": [ "Fallout4.ini", "Fallout4.ini", "Fallout4.ini" ],
+            "targetSections": [ "Interface", "Interface", "Interface" ],
+            "tooltip": "Sets the color of damage-related HUD elements.",
+            "type": "Color"
+          }
+        }
+      },
+      "Console": {
+        "NumberOfVerticallyStackedSettings": "5",
+        "Settings": {
+          "Screen Percentage": {
+            "customWidth": "16",
+            "decimal places": "0",
+            "from": "0",
+            "settings": [ "iConsoleSizeScreenPercent" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Menu" ],
+            "to": "100",
+            "tooltip": "Sets the percentage of the screen that the in-game console can fill.",
+            "type": "Spinbox",
+            "validate": "whole",
+            "width": "5"
+          },
+          "Text Size": {
+            "customWidth": "16",
+            "decimal places": "0",
+            "from": "0",
+            "settings": [ "iConsoleTextSize" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Menu" ],
+            "to": "100",
+            "tooltip": "Sets the size for text in the in-game console.",
+            "type": "Spinbox",
+            "validate": "whole",
+            "width": "5"
+          },
+          "Text Input Color": {
+            "colorValueType": "rgb",
+            "customWidth": "16",
+            "settings": [ "rConsoleTextColor" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Menu" ],
+            "tooltip": "Sets the color of text typed into the console.",
+            "type": "Color"
+          },
+          "Text Output Color": {
+            "colorValueType": "rgb",
+            "customWidth": "16",
+            "settings": [ "rConsoleHistoryTextColor" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Menu" ],
+            "tooltip": "Sets the color of the text output in the console.",
+            "type": "Color"
+          }
+        }
+      },
+      "Mouse Settings": {
+        "NumberOfVerticallyStackedSettings": "5",
+        "Settings": {
+          "Background Mouse": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bBackgroundMouse" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Controls" ],
+            "tooltip": "Allows the mouse to move using the default system speed. While generally too buggy for actual gameplay, it can be useful in some cases.",
+            "type": "Checkbutton"
+          },
+          "Look Sensitivity": {
+            "customWidth": "15",
+            "digits": "4",
+            "decimal places": "4",
+            "from": "0.0100",
+            "increment": "0.0001",
+            "length": "110",
+            "resolution": "0.0025",
+            "settings": [ "fMouseHeadingSensitivity" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Controls" ],
+            "to": "0.1000",
+            "tooltip": "Sets the look sensitivity (how fast the camera moves in response to the mouse).",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7"
+          },
+          "X Scale": {
+            "customWidth": "26",
+            "entryWidth": "7",
+            "settings": [ "fMouseHeadingXScale" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Controls" ],
+            "tooltip": "Sets the mouse horizontal scale value (how much the camera moves when moving the mouse horizontally).",
+            "type": "Entry",
+            "validate": "float"
+          },
+          "Y Scale": {
+            "customWidth": "26",
+            "entryWidth": "7",
+            "settings": [ "fMouseHeadingYScale" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Controls" ],
+            "tooltip": "Sets the mouse vertical scale value (how much the camera moves when moving the mouse vertically).",
+            "type": "Entry",
+            "validate": "float"
+          },
+          "Mouse Wheel Zoom Speed": {
+            "customWidth": "26",
+            "entryWidth": "7",
+            "settings": [ "fMouseWheelZoomSpeed" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Camera" ],
+            "tooltip": "Sets the transition speed when zooming in and out in third person mode using the mouse wheel. This also affects how fast the transition from first to third person occurs.",
+            "type": "Entry",
+            "validate": "float"
           }
         }
       }
