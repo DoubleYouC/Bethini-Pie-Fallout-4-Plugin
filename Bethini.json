@@ -279,11 +279,11 @@
     },
     "Basic": {
       "Display": {
-        "NumberOfVerticallyStackedSettings": "2",
+        "NumberOfVerticallyStackedSettings": "4",
         "Settings": {
           "Resolution": {
             "choices": [ "FUNCCurrentResolution", "1920x1080", "1440x810", "1280x720", "800x450", "Manual..." ],
-            "customWidth": "12",
+            "customWidth": "16",
             "delimiter": "x",
             "settings": [ "iSize W", "iSize H" ],
             "targetINIs": [ "Fallout4Prefs.ini", "Fallout4Prefs.ini" ],
@@ -293,7 +293,7 @@
           },
           "Antialiasing": {
             "choices": [ "TAA", "FXAA", "Off" ],
-            "customWidth": "12",
+            "customWidth": "16",
             "performance": [ "2", "1", "0" ],
             "settingChoices": {
               "TAA": [ "TAA" ],
@@ -405,144 +405,6 @@
           }
         }
       },
-      "Decals": {
-        "NumberOfVerticallyStackedSettings": "8",
-        "Settings": {
-          "Decals": {
-            "Offvalue": [ [ "0" ] ],
-            "Onvalue": [ [ "1" ] ],
-            "settings": [ "bDecals" ],
-            "targetINIs": [ "Fallout4.ini" ],
-            "targetSections": [ "Decals" ],
-            "tooltip": "Toggles decals (mostly blood effects).",
-            "type": "Checkbutton"
-          },
-          "Disable Gore": {
-            "Offvalue": [ [ "0" ] ],
-            "Onvalue": [ [ "1" ] ],
-            "settings": [ "bDisableAllGore" ],
-            "targetINIs": [ "Fallout4.ini" ],
-            "targetSections": [ "General" ],
-            "tooltip": "Toggles gory effects, such as blood.",
-            "type": "Checkbutton"
-          },
-          "Max Decals Per Frame": {
-            "customWidth": "30",
-            "decimal places": "0",
-            "digits": "3",
-            "from": "0",
-            "increment": "1",
-            "length": "100",
-            "resolution": "1",
-            "settings": [ "iMaxDecalsPerFrame" ],
-            "targetINIs": [ "Fallout4Prefs.ini" ],
-            "targetSections": [ "Display" ],
-            "to": "250",
-            "tooltip": "Sets the maximum number of decals that can be shown per frame.",
-            "type": "Slider",
-            "validate": "integer",
-            "width": "7",
-            "dependentSettings": {
-              "Decals": {
-                "operator": "equal",
-                "value": [ [ "1" ] ]
-              }
-            }
-          },
-          "Max Skinned Decals": {
-            "customWidth": "30",
-            "decimal places": "0",
-            "digits": "3",
-            "from": "0",
-            "increment": "1",
-            "length": "100",
-            "resolution": "1",
-            "settings": [ "uMaxSkinDecals" ],
-            "targetINIs": [ "Fallout4.ini" ],
-            "targetSections": [ "Decals" ],
-            "to": "100",
-            "tooltip": "Sets the maximum number of skinned decals.",
-            "type": "Slider",
-            "validate": "integer",
-            "width": "7",
-            "dependentSettings": {
-              "Decals": {
-                "operator": "equal",
-                "value": [ [ "1" ] ]
-              }
-            }
-          },
-          "Max Skinned Decals Per Frame": {
-            "customWidth": "30",
-            "decimal places": "0",
-            "digits": "3",
-            "from": "0",
-            "increment": "1",
-            "length": "100",
-            "resolution": "1",
-            "settings": [ "iMaxSkinDecalsPerFrame" ],
-            "targetINIs": [ "Fallout4Prefs.ini" ],
-            "targetSections": [ "Display" ],
-            "to": "100",
-            "tooltip": "Sets the maximum number of skinned decals that can be shown per frame.",
-            "type": "Slider",
-            "validate": "integer",
-            "width": "7",
-            "dependentSettings": {
-              "Decals": {
-                "operator": "equal",
-                "value": [ [ "1" ] ]
-              }
-            }
-          },
-          "Max Skinned Decals Per Actor": {
-            "customWidth": "30",
-            "decimal places": "0",
-            "digits": "2",
-            "from": "0",
-            "increment": "1",
-            "length": "100",
-            "resolution": "1",
-            "settings": [ "uMaxSkinDecalPerActor" ],
-            "targetINIs": [ "Fallout4.ini" ],
-            "targetSections": [ "Decals" ],
-            "to": "60",
-            "tooltip": "Sets the maximum number of skinned decals per actor.",
-            "type": "Slider",
-            "validate": "integer",
-            "width": "7",
-            "dependentSettings": {
-              "Decals": {
-                "operator": "equal",
-                "value": [ [ "1" ] ]
-              }
-            }
-          },
-          "Decal Lifetime": {
-            "customWidth": "30",
-            "decimal places": "0",
-            "digits": "3",
-            "from": "0",
-            "increment": "1",
-            "length": "100",
-            "resolution": "1",
-            "settings": [ "fDecalLifetime" ],
-            "targetINIs": [ "Fallout4.ini" ],
-            "targetSections": [ "Display" ],
-            "to": "300",
-            "tooltip": "Sets the time in seconds that some decals will stay visible.",
-            "type": "Slider",
-            "validate": "integer",
-            "width": "7",
-            "dependentSettings": {
-              "Decals": {
-                "operator": "equal",
-                "value": [ [ "1" ] ]
-              }
-            }
-          }
-        }
-      },
       "Presets": {
         "NumberOfVerticallyStackedSettings": "2",
         "Settings": {
@@ -601,82 +463,6 @@
             "preset id": "Ultra",
             "tooltip": "Sets the Ultra preset.",
             "type": "preset"
-          }
-        }
-      },
-      "Effects": {
-        "NumberOfVerticallyStackedSettings": "4",
-        "Settings": {
-          "Particles": {
-            "choices": [ "250", "750", "1500", "3000", "4500", "6000", "8000", "10000" ],
-            "decimal places": "0",
-            "settings": [ "iMaxDesired" ],
-            "targetINIs": [ "Fallout4Prefs.ini" ],
-            "targetSections": [ "Particles" ],
-            "tooltip": "Sets the amount of particle effects.",
-            "type": "Combobox",
-            "validate": "whole",
-            "width": "12"
-          },
-          "Godrays": {
-            "choices": [ "None", "Low", "Medium", "High", "Ultra" ],
-            "settingChoices": {
-              "None": [ "0", "0" ],
-              "Low": [ "1", "0" ],
-              "Medium": [ "1", "1" ],
-              "High": [ "1", "2" ],
-              "Ultra": [ "1", "3" ]
-            },
-            "settings": [ "bVolumetricLightingEnable", "iVolumetricLightingQuality" ],
-            "targetINIs": [ "Fallout4Prefs.ini", "Fallout4Prefs.ini" ],
-            "targetSections": [ "Display", "Display" ],
-            "tooltip": "Sets Godrays (volumetric lighting) quality.",
-            "type": "Dropdown"
-          },
-          "Depth of Field": {
-            "Offvalue": [ [ "0" ] ],
-            "Onvalue": [ [ "1" ] ],
-            "settings": [ "bDoDepthOfField" ],
-            "targetINIs": [ "Fallout4Prefs.ini" ],
-            "targetSections": [ "Imagespace" ],
-            "tooltip": "Toggles depth of field (DOF), a kind of blurring to imitate the human eye's perception. This is most noticeable under water, reducing visibility to realistic levels (it looks clear otherwise).",
-            "type": "Checkbutton"
-          },
-          "Bokeh": {
-            "Offvalue": [ [ "0" ] ],
-            "Onvalue": [ [ "1" ] ],
-            "settings": [ "bScreenSpaceBokeh" ],
-            "targetINIs": [ "Fallout4Prefs.ini" ],
-            "targetSections": [ "Imagespace" ],
-            "tooltip": "Toggles bokeh depth of field (DOF), which blurs the background in a more aesthetically pleasing manner than standard DOF.",
-            "type": "Checkbutton"
-          },
-          "Lens Flare": {
-            "Offvalue": [ [ "0" ] ],
-            "Onvalue": [ [ "1" ] ],
-            "settings": [ "bLensFlare" ],
-            "targetINIs": [ "Fallout4Prefs.ini" ],
-            "targetSections": [ "Imagespace" ],
-            "tooltip": "Toggles lens flare.",
-            "type": "Checkbutton"
-          },
-          "Motion Blur": {
-            "Offvalue": [ [ "0" ] ],
-            "Onvalue": [ [ "1" ] ],
-            "settings": [ "bMBEnable" ],
-            "targetINIs": [ "Fallout4Prefs.ini" ],
-            "targetSections": [ "Imagespace" ],
-            "tooltip": "Toggles motion blur.",
-            "type": "Checkbutton"
-          },
-          "Wetness": {
-            "Offvalue": [ [ "0" ] ],
-            "Onvalue": [ [ "1" ] ],
-            "settings": [ "bEnableWetnessMaterials" ],
-            "targetINIs": [ "Fallout4Prefs.ini" ],
-            "targetSections": [ "Display" ],
-            "tooltip": "Toggles the wet look effect on objects when it rains.",
-            "type": "Checkbutton"
           }
         }
       }
@@ -1185,6 +971,755 @@
             "tooltip": "Sets the transition speed when zooming in and out in third person mode using the mouse wheel. This also affects how fast the transition from first to third person occurs.",
             "type": "Entry",
             "validate": "float"
+          }
+        }
+      }
+    },
+    "Visuals": {
+      "Effects": {
+        "NumberOfVerticallyStackedSettings": "2",
+        "Settings": {
+          "Particles": {
+            "choices": [ "250", "750", "1500", "3000", "4500", "6000", "8000", "10000" ],
+            "decimal places": "0",
+            "settings": [ "iMaxDesired" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Particles" ],
+            "tooltip": "Sets the amount of particle effects.",
+            "type": "Combobox",
+            "validate": "whole",
+            "width": "12"
+          },
+          "Godrays": {
+            "choices": [ "None", "Low", "Medium", "High", "Ultra" ],
+            "settingChoices": {
+              "None": [ "0", "0" ],
+              "Low": [ "1", "0" ],
+              "Medium": [ "1", "1" ],
+              "High": [ "1", "2" ],
+              "Ultra": [ "1", "3" ]
+            },
+            "settings": [ "bVolumetricLightingEnable", "iVolumetricLightingQuality" ],
+            "targetINIs": [ "Fallout4Prefs.ini", "Fallout4Prefs.ini" ],
+            "targetSections": [ "Display", "Display" ],
+            "tooltip": "Sets Godrays (volumetric lighting) quality.",
+            "type": "Dropdown"
+          },
+          "Depth of Field": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bDoDepthOfField" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Imagespace" ],
+            "tooltip": "Toggles depth of field (DOF), a kind of blurring to imitate the human eye's perception. This is most noticeable under water, reducing visibility to realistic levels (it looks clear otherwise).",
+            "type": "Checkbutton"
+          },
+          "Bokeh": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bScreenSpaceBokeh" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Imagespace" ],
+            "tooltip": "Toggles bokeh depth of field (DOF), which blurs the background in a more aesthetically pleasing manner than standard DOF.",
+            "type": "Checkbutton"
+          },
+          "Lens Flare": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bLensFlare" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Imagespace" ],
+            "tooltip": "Toggles lens flare.",
+            "type": "Checkbutton"
+          },
+          "Motion Blur": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bMBEnable" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Imagespace" ],
+            "tooltip": "Toggles motion blur.",
+            "type": "Checkbutton"
+          },
+          "Wetness": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bEnableWetnessMaterials" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Toggles the wet look effect on objects when it rains.",
+            "type": "Checkbutton"
+          }
+        }
+      },
+      "Decals": {
+        "NumberOfVerticallyStackedSettings": "8",
+        "Settings": {
+          "Decals": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bDecals" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Decals" ],
+            "tooltip": "Toggles decals (mostly blood effects).",
+            "type": "Checkbutton"
+          },
+          "Disable Gore": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bDisableAllGore" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "General" ],
+            "tooltip": "Toggles gory effects, such as blood.",
+            "type": "Checkbutton"
+          },
+          "Max Decals Per Frame": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "3",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "iMaxDecalsPerFrame" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "250",
+            "tooltip": "Sets the maximum number of decals that can be shown per frame.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7",
+            "dependentSettings": {
+              "Decals": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
+          "Max Skinned Decals": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "3",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "uMaxSkinDecals" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Decals" ],
+            "to": "100",
+            "tooltip": "Sets the maximum number of skinned decals.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7",
+            "dependentSettings": {
+              "Decals": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
+          "Max Skinned Decals Per Frame": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "3",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "iMaxSkinDecalsPerFrame" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "100",
+            "tooltip": "Sets the maximum number of skinned decals that can be shown per frame.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7",
+            "dependentSettings": {
+              "Decals": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
+          "Max Skinned Decals Per Actor": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "2",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "uMaxSkinDecalPerActor" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Decals" ],
+            "to": "60",
+            "tooltip": "Sets the maximum number of skinned decals per actor.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7",
+            "dependentSettings": {
+              "Decals": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
+          "Decal Lifetime": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "3",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "fDecalLifetime" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "300",
+            "tooltip": "Sets the time in seconds that some decals will stay visible.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7",
+            "dependentSettings": {
+              "Decals": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          }
+        }
+      },
+      "Grass": {
+        "NumberOfVerticallyStackedSettings": "3",
+        "Settings": {
+          "Disable Grass": {
+            "Offvalue": [
+              [ "1" ],
+              [ "0", "1" ],
+              [ "1" ]
+            ],
+            "Onvalue": [
+              [ "0" ],
+              [ "0" ],
+              [ "0" ]
+            ],
+            "settings": [ "bAllowCreateGrass", "bAllowLoadGrass", "bDrawShaderGrass" ],
+            "targetINIs": [ "Fallout4.ini", "Fallout4.ini", "Fallout4.ini" ],
+            "targetSections": [ "Grass", "Grass", "Grass" ],
+            "tooltip": "Toggles off grass.",
+            "type": "Checkbutton"
+          },
+          "Density": {
+            "customWidth": "10",
+            "decimal places": "0",
+            "digits": "3",
+            "from": "120",
+            "increment": "1",
+            "length": "100",
+            "resolution": "5",
+            "reversed": "1",
+            "settings": [ "iMinGrassSize" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Grass" ],
+            "to": "1",
+            "tooltip": "Sets the grass density.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7"
+          },
+          "Diversity": {
+            "customWidth": "10",
+            "decimal places": "0",
+            "digits": "2",
+            "from": "1",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "iMaxGrassTypesPerTexure" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Grass" ],
+            "to": "15",
+            "tooltip": "Sets the grass diversity.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7"
+          },
+          "Minimum Wind": {
+            "customWidth": "15",
+            "decimal places": "0",
+            "digits": "3",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "5",
+            "settings": [ "fGrassWindMagnitudeMin" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Grass" ],
+            "to": "100",
+            "tooltip": "Sets the minimum wind magnitude blowing grass.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7"
+          },
+          "Maximum Wind": {
+            "customWidth": "15",
+            "decimal places": "0",
+            "digits": "3",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "5",
+            "settings": [ "fGrassWindMagnitudeMax" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Grass" ],
+            "to": "300",
+            "tooltip": "Sets the maximum wind magnitude blowing grass.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7"
+          }
+        }
+      },
+      "Shadows": {
+        "NumberOfVerticallyStackedSettings": "3",
+        "Settings": {
+          "Sun-Shadow Update Time": {
+            "customWidth": "27",
+            "entryWidth": "5",
+            "settings": [ "fSunShadowUpdateTime" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Sets the speed of sun-shadow transitions in seconds.",
+            "type": "Entry",
+            "validate": "float"
+          },
+          "Sun-Shadow Update Threshold": {
+            "customWidth": "27",
+            "entryWidth": "5",
+            "settings": [ "fSunUpdateThreshold" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Sets the time between sun-shadow transitions.",
+            "type": "Entry",
+            "validate": "float"
+          },
+          "Ambient Occlusion": {
+            "choices": [ "None", "SSAO", "HBAO+" ],
+            "customWidth": "27",
+            "settingChoices": {
+              "None": [ "0", "0" ],
+              "SSAO": [ "1", "0" ],
+              "HBAO+": [ "1", "1" ]
+            },
+            "settings": [ "bSAOEnable", "bEnable" ],
+            "targetINIs": [ "Fallout4Prefs.ini", "Fallout4Prefs.ini" ],
+            "targetSections": [ "Display", "NVHBAO" ],
+            "tooltip": "Sets the ambient occlusion method.",
+            "type": "Dropdown"
+          },
+          "Shadow Resolution": {
+            "choices": [ "256", "512", "1024", "2048", "4096", "8192", "16384" ],
+            "customWidth": "20",
+            "decimal places": "0",
+            "settings": [ "iShadowMapResolution" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Sets the resolution of shadows.",
+            "type": "Combobox",
+            "validate": "integer",
+            "width": "8"
+          },
+          "Shadow Filtering": {
+            "choices": [ "0", "1", "2", "3" ],
+            "customWidth": "20",
+            "decimal places": "0",
+            "settings": [ "uiOrthoShadowFilter" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Sets the level of filtering (a kind of blurring of the edges) to shadows.",
+            "type": "Combobox",
+            "validate": "integer",
+            "width": "8"
+          },
+          "Exterior Draw Distance": {
+            "choices": [ "2000", "2800", "4000", "6000", "8000", "10000", "14000", "18000", "20000" ],
+            "customWidth": "20",
+            "decimal places": "0",
+            "settings": [ "fDirShadowDistance" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Sets the exterior shadow distance.",
+            "type": "Combobox",
+            "validate": "whole",
+            "width": "8"
+          }
+        }
+      }
+    },
+    "View Distance": {
+      "Near Details": {
+        "NumberOfVerticallyStackedSettings": "6",
+        "Settings": {
+          "Environment Map Fade Start": {
+            "customWidth": "25",
+            "decimal places": "3",
+            "digits": "4",
+            "from": "0",
+            "increment": "0.001",
+            "length": "100",
+            "resolution": "0.005",
+            "settings": [ "fEnvmapLODFadeStart" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "LightingShader" ],
+            "to": "1",
+            "tooltip": "Sets the distance where the environment map starts to fade.",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7"
+          },
+          "Environment Map Fade End": {
+            "customWidth": "25",
+            "decimal places": "3",
+            "digits": "4",
+            "from": "0",
+            "increment": "0.001",
+            "length": "100",
+            "resolution": "0.005",
+            "settings": [ "fEnvmapLODFadeEnd" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "LightingShader" ],
+            "to": "1.1",
+            "tooltip": "Sets the environment map fade end distance.",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7"
+          },
+          "Refraction Fade Start": {
+            "customWidth": "25",
+            "decimal places": "3",
+            "digits": "4",
+            "from": "0",
+            "increment": "0.001",
+            "length": "100",
+            "resolution": "0.005",
+            "settings": [ "fRefractionLODFadeStart" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "LightingShader" ],
+            "to": "1",
+            "tooltip": "Sets the distance where refraction starts to fade.",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7"
+          },
+          "Refraction Fade End": {
+            "customWidth": "25",
+            "decimal places": "3",
+            "digits": "4",
+            "from": "0",
+            "increment": "0.001",
+            "length": "100",
+            "resolution": "0.005",
+            "settings": [ "fRefractionLODFadeEnd" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "LightingShader" ],
+            "to": "1.1",
+            "tooltip": "Sets the refraction fade end distance.",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7"
+          },
+          "Specular Fade Start": {
+            "customWidth": "25",
+            "decimal places": "3",
+            "digits": "4",
+            "from": "0",
+            "increment": "0.001",
+            "length": "100",
+            "resolution": "0.005",
+            "settings": [ "fSpecularLODFadeStart" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "LightingShader" ],
+            "to": "1",
+            "tooltip": "Sets the distance where specularity starts to fade.",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7"
+          },
+          "Specular Fade End": {
+            "customWidth": "25",
+            "decimal places": "3",
+            "digits": "4",
+            "from": "0",
+            "increment": "0.001",
+            "length": "100",
+            "resolution": "0.005",
+            "settings": [ "fSpecularLODFadeEnd" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "LightingShader" ],
+            "to": "1.1",
+            "tooltip": "Sets the specular fade end distance.",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7"
+          },
+          "Decal Fade Start": {
+            "customWidth": "22",
+            "decimal places": "3",
+            "digits": "4",
+            "from": "0",
+            "increment": "0.001",
+            "length": "100",
+            "resolution": "0.005",
+            "settings": [ "fDecalLODFadeStart" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "LightingShader" ],
+            "to": "1",
+            "tooltip": "Sets the distance where decals start to fade.",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7"
+          },
+          "Decal Fade End": {
+            "customWidth": "22",
+            "decimal places": "3",
+            "digits": "4",
+            "from": "0",
+            "increment": "0.001",
+            "length": "100",
+            "resolution": "0.005",
+            "settings": [ "fDecalLODFadeEnd" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "LightingShader" ],
+            "to": "1.1",
+            "tooltip": "Sets the decal fade end distance.",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7"
+          },
+          "Grass Fade Start": {
+            "customWidth": "22",
+            "decimal places": "0",
+            "digits": "4",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "512",
+            "settings": [ "fGrassStartFadeDistance" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Grass" ],
+            "to": "6144",
+            "tooltip": "Sets the distance where grass starts to fade.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7"
+          },
+          "Grass Fade Range": {
+            "customWidth": "22",
+            "decimal places": "0",
+            "digits": "5",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "512",
+            "settings": [ "fGrassFadeRange" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Grass" ],
+            "to": "14336",
+            "tooltip": "Sets the grass fade range distance.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7"
+          },
+          "Level 1 Object Details": {
+            "customWidth": "22",
+            "decimal places": "0",
+            "digits": "5",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "512",
+            "settings": [ "fMeshLODLevel1FadeDist" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "20480",
+            "tooltip": "Sets the level 1 object detail fade distance.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7"
+          },
+          "Level 2 Object Details": {
+            "customWidth": "22",
+            "decimal places": "0",
+            "digits": "5",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "512",
+            "settings": [ "fMeshLODLevel2FadeDist" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "20480",
+            "tooltip": "Sets the level 2 object detail fade distance.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7"
+          },
+          "Actor Fade": {
+            "customWidth": "15",
+            "decimal places": "1",
+            "digits": "3",
+            "from": "0.0",
+            "increment": "0.1",
+            "length": "100",
+            "resolution": "0.5",
+            "settings": [ "fLODFadeOutMultActors" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "LOD" ],
+            "to": "30.0",
+            "tooltip": "Sets the actor fade distance",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7"
+          },
+          "Item Fade": {
+            "customWidth": "15",
+            "decimal places": "1",
+            "digits": "3",
+            "from": "0.0",
+            "increment": "0.1",
+            "length": "100",
+            "resolution": "0.5",
+            "settings": [ "fLODFadeOutMultItems" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "LOD" ],
+            "to": "30.0",
+            "tooltip": "Sets the item fade distance",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7"
+          },
+          "Object Fade": {
+            "customWidth": "15",
+            "decimal places": "1",
+            "digits": "3",
+            "from": "0.0",
+            "increment": "0.1",
+            "length": "100",
+            "resolution": "0.5",
+            "settings": [ "fLODFadeOutMultObjects" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "LOD" ],
+            "to": "30.0",
+            "tooltip": "Sets the object fade distance",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7"
+          },
+          "uGridsToLoad": {
+            "customWidth": "15",
+            "decimal places": "0",
+            "from": "5",
+            "increment": "2",
+            "settings": [ "uGridsToLoad" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "General" ],
+            "to": "21",
+            "tooltip": "Sets how many grids will be actively rendered and processed around the Player Character (PC).",
+            "type": "Spinbox",
+            "validate": "whole",
+            "width": "5"
+          }
+        }
+      },
+      "Distant Details": {
+        "NumberOfVerticallyStackedSettings": "5",
+        "Settings": {
+          "Terrain Multiplier": {
+            "customWidth": "20",
+            "decimal places": "3",
+            "digits": "4",
+            "from": "0",
+            "increment": "0.005",
+            "length": "100",
+            "resolution": "0.05",
+            "settings": [ "fSplitDistanceMult" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "TerrainManager" ],
+            "to": "4",
+            "tooltip": "Sets the terrain multiplier. This value gets multiplied by the block distances to determine the terrain LOD distance.",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7"
+          },
+          "Level 4 Block Distance": {
+            "customWidth": "20",
+            "decimal places": "0",
+            "digits": "6",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1024",
+            "settings": [ "fBlockLevel0Distance" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "TerrainManager" ],
+            "to": "106496",
+            "tooltip": "Sets the level 4 block distance. This is the distance that level 4 object LOD is shown. Additionally, level 4 terrain LOD is shown at this distance, but multiplied by the Terrain Multiplier (fSplitDistanceMult).",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7"
+          },
+          "Level 8 Block Distance": {
+            "customWidth": "20",
+            "decimal places": "0",
+            "digits": "6",
+            "from": "0",
+            "increment": "1",
+            "length": "254",
+            "resolution": "2048",
+            "settings": [ "fBlockLevel1Distance" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "TerrainManager" ],
+            "to": "348160",
+            "tooltip": "Sets the level 8 block distance. This is the distance that level 8 object LOD is shown. Additionally, level 8 terrain LOD is shown at this distance, but multiplied by the Terrain Multiplier (fSplitDistanceMult).",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7"
+
+          },
+          "Level 16 Block Distance": {
+            "customWidth": "20",
+            "decimal places": "0",
+            "digits": "6",
+            "from": "0",
+            "increment": "1",
+            "length": "284",
+            "resolution": "4096",
+            "settings": [ "fBlockLevel2Distance" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "TerrainManager" ],
+            "to": "393216",
+            "tooltip": "Sets the level 16 block distance. This is the distance that level 16 object LOD is shown. Additionally, level 16 terrain LOD is shown at this distance, but multiplied by the Terrain Multiplier (fSplitDistanceMult).",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7"
+          },
+          "Level 32 Block Distance": {
+            "customWidth": "20",
+            "decimal places": "0",
+            "digits": "6",
+            "from": "0",
+            "increment": "1",
+            "length": "284",
+            "resolution": "4096",
+            "settings": [ "fBlockMaximumDistance" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "TerrainManager" ],
+            "to": "393216",
+            "tooltip": "Sets the level 16 block distance. This is the distance that level 32 object LOD is shown. Additionally, level 32 terrain LOD is shown at this distance, but multiplied by the Terrain Multiplier (fSplitDistanceMult).",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7"
           }
         }
       }
