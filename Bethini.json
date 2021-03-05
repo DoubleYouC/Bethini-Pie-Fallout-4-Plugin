@@ -984,11 +984,11 @@
         }
       },
       "Colors": {
-        "NumberOfVerticallyStackedSettings": "5",
+        "NumberOfVerticallyStackedSettings": "9",
         "Settings": {
           "Subtitles": {
             "colorValueType": "rgb",
-            "customWidth": "16",
+            "customWidth": "25",
             "rgbType": "multiple settings",
             "settings": [ "uSubtitleR", "uSubtitleG", "uSubtitleB" ],
             "targetINIs": [ "Fallout4.ini", "Fallout4.ini", "Fallout4.ini" ],
@@ -998,7 +998,7 @@
           },
           "HUD": {
             "colorValueType": "rgb",
-            "customWidth": "16",
+            "customWidth": "25",
             "rgbType": "multiple settings",
             "settings": [ "iHUDColorR", "iHUDColorG", "iHUDColorB" ],
             "targetINIs": [ "Fallout4Prefs.ini", "Fallout4Prefs.ini", "Fallout4Prefs.ini" ],
@@ -1008,12 +1008,72 @@
           },
           "Damage HUD": {
             "colorValueType": "rgb",
-            "customWidth": "16",
+            "customWidth": "25",
             "rgbType": "multiple settings",
             "settings": [ "iHUDColorWarningR", "iHUDColorWarningG", "iHUDColorWarningB" ],
             "targetINIs": [ "Fallout4.ini", "Fallout4.ini", "Fallout4.ini" ],
             "targetSections": [ "Interface", "Interface", "Interface" ],
             "tooltip": "Sets the color of damage-related HUD elements.",
+            "type": "Color"
+          },
+          "Pipboy": {
+            "colorValueType": "rgb 1",
+            "customWidth": "25",
+            "rgbType": "multiple settings",
+            "settings": [ "fPipboyEffectColorR", "fPipboyEffectColorG", "fPipboyEffectColorB" ],
+            "targetINIs": [ "Fallout4Prefs.ini", "Fallout4Prefs.ini", "Fallout4Prefs.ini" ],
+            "targetSections": [ "Pipboy", "Pipboy", "Pipboy" ],
+            "tooltip": "Sets the Pipboy effects color.",
+            "type": "Color"
+          },
+          "Power Armor Pipboy": {
+            "colorValueType": "rgb 1",
+            "customWidth": "25",
+            "rgbType": "multiple settings",
+            "settings": [ "fPAEffectColorR", "fPAEffectColorG", "fPAEffectColorB" ],
+            "targetINIs": [ "Fallout4.ini", "Fallout4.ini", "Fallout4.ini" ],
+            "targetSections": [ "Pipboy", "Pipboy", "Pipboy" ],
+            "tooltip": "Sets the color of Pipboy effects while wearing Power Armor.",
+            "type": "Color"
+          },
+          "Item Highlight": {
+            "colorValueType": "rgb 1",
+            "customWidth": "25",
+            "rgbType": "multiple settings",
+            "settings": [ "fModMenuEffectHighlightColorR", "fModMenuEffectHighlightColorG", "fModMenuEffectHighlightColorB" ],
+            "targetINIs": [ "Fallout4Prefs.ini", "Fallout4Prefs.ini", "Fallout4Prefs.ini" ],
+            "targetSections": [ "VATS", "VATS", "VATS" ],
+            "tooltip": "Sets the highlight color of items in menus.",
+            "type": "Color"
+          },
+          "Power Armor Item Highlight": {
+            "colorValueType": "rgb 1",
+            "customWidth": "25",
+            "rgbType": "multiple settings",
+            "settings": [ "fModMenuEffectHighlightPAColorR", "fModMenuEffectHighlightPAColorG", "fModMenuEffectHighlightPAColorB" ],
+            "targetINIs": [ "Fallout4Prefs.ini", "Fallout4Prefs.ini", "Fallout4Prefs.ini" ],
+            "targetSections": [ "VATS", "VATS", "VATS" ],
+            "tooltip": "Sets the highlight color of items in menus while wearing Power Armor.",
+            "type": "Color"
+          },
+          "VATS Target Light": {
+            "colorValueType": "rgb 1",
+            "customWidth": "25",
+            "rgbType": "multiple settings",
+            "settings": [ "fVatsLightColorR", "fVatsLightColorG", "fVatsLightColorB" ],
+            "targetINIs": [ "Fallout4.ini", "Fallout4.ini", "Fallout4.ini" ],
+            "targetSections": [ "VATS", "VATS", "VATS" ],
+            "tooltip": "Sets the VATS light color of highlighted targets.",
+            "type": "Color"
+          },
+          "Wire Connection Highlight": {
+            "colorValueType": "rgb 1",
+            "customWidth": "25",
+            "rgbType": "multiple settings",
+            "settings": [ "fWireConnectEffectColorR", "fWireConnectEffectColorG", "fWireConnectEffectColorB" ],
+            "targetINIs": [ "Fallout4.ini", "Fallout4.ini", "Fallout4.ini" ],
+            "targetSections": [ "Workshop", "Workshop", "Workshop" ],
+            "tooltip": "Sets the color of electrical objects that can be connected to wires when you try to attach wires in the workshop.",
             "type": "Color"
           }
         }
