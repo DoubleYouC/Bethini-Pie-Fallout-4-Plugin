@@ -9663,7 +9663,17 @@
       "alwaysPrint": true,
       "type": "float",
       "value": {
-        "default": 1000.0000
+        "default": 1000.0000,
+        "recommended": 0.0,
+        "Vanilla Low": 1000.0,
+        "Vanilla Medium": 1000.0,
+        "Vanilla High": 1000.0,
+        "Vanilla Ultra": 1000.0,
+        "Bethini Poor": 0.0,
+        "Bethini Low": 0.0,
+        "Bethini Medium": 0.0,
+        "Bethini High": 0.0,
+        "Bethini Ultra": 0.0
       }
     },
     {
