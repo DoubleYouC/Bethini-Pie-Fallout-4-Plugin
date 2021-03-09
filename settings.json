@@ -6203,11 +6203,11 @@
         "Vanilla Medium": 3000,
         "Vanilla High": 14000,
         "Vanilla Ultra": 20000,
-        "Bethini Poor": 2800,
-        "Bethini Low": 2800,
-        "Bethini Medium": 5000,
-        "Bethini High": 14000,
-        "Bethini Ultra": 18000
+        "Bethini Poor": 2896,
+        "Bethini Low": 2896,
+        "Bethini Medium": 5792,
+        "Bethini High": 14480,
+        "Bethini Ultra": 20272
       }
     },
     {
@@ -6368,11 +6368,11 @@
         "Vanilla Medium": 6000,
         "Vanilla High": 8000,
         "Vanilla Ultra": 999999,
-        "Bethini Poor": 2048,
-        "Bethini Low": 4096,
-        "Bethini Medium": 6144,
-        "Bethini High": 10240,
-        "Bethini Ultra": 20480
+        "Bethini Poor": 2172,
+        "Bethini Low": 3620,
+        "Bethini Medium": 5792,
+        "Bethini High": 10136,
+        "Bethini Ultra": 20272
       }
     },
     {
@@ -6397,11 +6397,11 @@
         "Vanilla Medium": 3000,
         "Vanilla High": 4000,
         "Vanilla Ultra": 999999,
-        "Bethini Poor": 1024,
-        "Bethini Low": 2048,
-        "Bethini Medium": 3072,
-        "Bethini High": 7168,
-        "Bethini Ultra": 16384
+        "Bethini Poor": 1086,
+        "Bethini Low": 2172,
+        "Bethini Medium": 3258,
+        "Bethini High": 7240,
+        "Bethini Ultra": 15928
       }
     },
     {
@@ -9640,10 +9640,10 @@
         "Vanilla High": 1000.0,
         "Vanilla Ultra": 1000.0,
         "Bethini Poor": 0.0,
-        "Bethini Low": 1024.0,
-        "Bethini Medium": 3072.0,
-        "Bethini High": 6144.0,
-        "Bethini Ultra": 12288.0
+        "Bethini Low": 1766.0,
+        "Bethini Medium": 3532.0,
+        "Bethini High": 6181.0,
+        "Bethini Ultra": 14128.0
       }
     },
     {
@@ -15378,7 +15378,16 @@
       "alwaysPrint": true,
       "type": "boolean",
       "value": {
-        "default": 0
+        "default": 0,
+        "Vanilla Low": 0,
+        "Vanilla Medium": 0,
+        "Vanilla High": 0,
+        "Vanilla Ultra": 0,
+        "Bethini Poor": 0,
+        "Bethini Low": 0,
+        "Bethini Medium": 0,
+        "Bethini High": 1,
+        "Bethini Ultra": 1
       }
     },
     {
@@ -15538,7 +15547,16 @@
       "alwaysPrint": true,
       "type": "boolean",
       "value": {
-        "default": 0
+        "default": 0,
+        "Vanilla Low": 0,
+        "Vanilla Medium": 0,
+        "Vanilla High": 0,
+        "Vanilla Ultra": 0,
+        "Bethini Poor": 0,
+        "Bethini Low": 0,
+        "Bethini Medium": 0,
+        "Bethini High": 1,
+        "Bethini Ultra": 1
       }
     },
     {
@@ -17895,11 +17913,11 @@
         "Vanilla Medium": 20000,
         "Vanilla High": 30000,
         "Vanilla Ultra": 60000,
-        "Bethini Poor": 15000,
-        "Bethini Low": 15000,
-        "Bethini Medium": 20000,
-        "Bethini High": 30000,
-        "Bethini Ultra": 60000
+        "Bethini Poor": 10860,
+        "Bethini Low": 15204,
+        "Bethini Medium": 21720,
+        "Bethini High": 32580,
+        "Bethini Ultra": 95568
       }
     },
     {
@@ -17914,11 +17932,11 @@
         "Vanilla Medium": 32000,
         "Vanilla High": 60000,
         "Vanilla Ultra": 90000,
-        "Bethini Poor": 25000,
-        "Bethini Low": 25000,
-        "Bethini Medium": 32000,
-        "Bethini High": 60000,
-        "Bethini Ultra": 90000
+        "Bethini Poor": 21720,
+        "Bethini Low": 28236,
+        "Bethini Medium": 32580,
+        "Bethini High": 65160,
+        "Bethini Ultra": 152040
       }
     },
     {
@@ -17933,11 +17951,11 @@
         "Vanilla Medium": 80000,
         "Vanilla High": 110000,
         "Vanilla Ultra": 110000,
-        "Bethini Poor": 75000,
-        "Bethini Low": 75000,
-        "Bethini Medium": 80000,
-        "Bethini High": 110000,
-        "Bethini Ultra": 110000
+        "Bethini Poor": 45250,
+        "Bethini Low": 72400,
+        "Bethini Medium": 81450,
+        "Bethini High": 95025,
+        "Bethini Ultra": 253400
       }
     },
     {
@@ -17952,11 +17970,11 @@
         "Vanilla Medium": 100000,
         "Vanilla High": 180000,
         "Vanilla Ultra": 250000,
-        "Bethini Poor": 100000,
-        "Bethini Low": 100000,
-        "Bethini Medium": 100000,
-        "Bethini High": 180000,
-        "Bethini Ultra": 250000
+        "Bethini Poor": 72400,
+        "Bethini Low": 90500,
+        "Bethini Medium": 95025,
+        "Bethini High": 190050,
+        "Bethini Ultra": 362000
       }
     },
     {
@@ -18018,10 +18036,15 @@
       "type": "float",
       "value": {
         "default": 25000.0000,
-        "low": 25000.0000,
-        "medium": 75000.0000,
-        "high": 75000.0000,
-        "ultra": 75000.0000
+        "Vanilla Low": 25000.0000,
+        "Vanilla Medium": 75000.0000,
+        "Vanilla High": 75000.0000,
+        "Vanilla Ultra": 75000.0000,
+        "Bethini Poor": 10860,
+        "Bethini Low": 21720,
+        "Bethini Medium": 41268,
+        "Bethini High": 65160,
+        "Bethini Ultra": 76020
       }
     },
     {
