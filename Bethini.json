@@ -155,7 +155,7 @@
           },
           "Restore Backup": {
             "choices": "FUNCBackups",
-            "customFunction": "restore_backup",
+            "custom_function": "restore_backup",
             "customWidth": "18",
             "tooltip": "Select the backup you wish to restore.",
             "type": "Dropdown"
