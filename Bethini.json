@@ -108,8 +108,6 @@
     "FUNCCurrentResolutionFormat": "getCurrentResolution",
     "FUNCGamePath": "{}",
     "FUNCGamePathFormat": "getBethesdaGameFolder",
-    "FUNCgetMODirectory": "{}",
-    "FUNCgetMODirectoryFormat": "getMODirectory",
     "FUNCINIPath": "{}",
     "FUNCINIPathFormat": "getINILocations",
     "FUNCThemes": "{}",
@@ -129,17 +127,6 @@
             "targetINIs": [ "Bethini.ini" ],
             "targetSections": [ "Directories" ],
             "tooltip": "Specifies the path to the game directory.",
-            "type": "Dropdown"
-          },
-          "ModOrganizer.ini": {
-            "browse": [ "directory", "ModOrganizer.ini", "file" ],
-            "choices": "FUNCgetMODirectory",
-            "customWidth": "18",
-            "forceSelect": "1",
-            "settings": [ "sFallout 4ModOrganizerINIPath" ],
-            "targetINIs": [ "Bethini.ini" ],
-            "targetSections": [ "Directories" ],
-            "tooltip": "Specifies the location to the ModOrganizer.ini file (required to find the location of MO profiles).",
             "type": "Dropdown"
           },
           "INI Path": {
