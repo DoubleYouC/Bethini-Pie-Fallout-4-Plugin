@@ -1,10 +1,8 @@
 {
   "valueTypes": [ "default", "fixedDefault", "Vanilla Low", "Vanilla Medium", "Vanilla High", "Vanilla Ultra", "Bethini Poor", "Bethini Low", "Bethini Medium", "Bethini High", "Bethini Ultra" ],
   "presetsIgnoreTheseSettings": [
-    "bInvalidateOlderFiles",
     "sResourceArchiveList",
     "sResourceArchiveList2",
-    "sResourceDataDirsFinal",
     "sInvalidationFile",
     "sLocalMasterPath",
     "sLocalSavePath",
@@ -363,15 +361,14 @@
     "Basic": {
       "Display": {
         "Pack": {
-          "Side": "Left",
           "Fill": "None",
           "Expand": 0
         },
-        "NumberOfVerticallyStackedSettings": "11",
+        "NumberOfVerticallyStackedSettings": "4",
         "Settings": {
           "Resolution": {
             "choices": [ "FUNCCurrentResolution", "1920x1080", "1440x810", "1280x720", "800x450", "Manual..." ],
-            "customWidth": "16",
+            "customWidth": "18",
             "delimiter": "x",
             "settings": [ "iSize W", "iSize H" ],
             "targetINIs": [ "Fallout4Prefs.ini", "Fallout4Prefs.ini" ],
@@ -379,9 +376,23 @@
             "tooltip": "Changes the resolution.",
             "type": "Dropdown"
           },
+          "Display Mode": {
+            "choices": [ "Fullscreen", "Borderless Windowed", "Windowed" ],
+            "customWidth": "18",
+            "settingChoices": {
+              "Fullscreen": [ "1", "0" ],
+              "Borderless Windowed": [ "0", "1" ],
+              "Windowed": [ "0", "0" ]
+            },
+            "settings": [ "bFull Screen", "bBorderless" ],
+            "targetINIs": [ "Fallout4Prefs.ini", "Fallout4Prefs.ini" ],
+            "targetSections": [ "Display", "Display" ],
+            "tooltip": "Sets the display mode.",
+            "type": "Dropdown"
+          },
           "Antialiasing": {
             "choices": [ "TAA", "FXAA", "Off" ],
-            "customWidth": "16",
+            "customWidth": "18",
             "performance": [ "2", "1", "0" ],
             "settingChoices": {
               "TAA": [ "TAA" ],
@@ -396,7 +407,7 @@
           },
           "Anisotropic Filtering": {
             "choices": [ "None", "2x", "4x", "8x", "16x" ],
-            "customWidth": "16",
+            "customWidth": "18",
             "settingChoices": {
               "None": [ "0" ],
               "2x": [ "2" ],
@@ -409,35 +420,6 @@
             "targetSections": [ "Display" ],
             "tooltip": "Sets the level of anisotropic filtering (AF), improving the texture quality of distant objects.",
             "type": "Dropdown"
-          },
-          "Field of View": {
-            "choices": [ "55.41", "64.44", "70", "86.07" ],
-            "customWidth": "16",
-            "settings": [ "fDefaultWorldFOV" ],
-            "targetINIs": [ "Fallout4.ini" ],
-            "targetSections": [ "Display" ],
-            "tooltip": "Changes the default field of view (FOV). This will only take effect on new saves.",
-            "type": "Combobox",
-            "validate": "float",
-            "width": "12"
-          },
-          "Windowed Mode": {
-            "Offvalue": [ [ "1" ] ],
-            "Onvalue": [ [ "0" ] ],
-            "settings": [ "bFull Screen" ],
-            "targetINIs": [ "Fallout4Prefs.ini" ],
-            "targetSections": [ "Display" ],
-            "tooltip": "Toggles windowed/fullscreen mode.",
-            "type": "Checkbutton"
-          },
-          "Borderless": {
-            "Offvalue": [ [ "0" ] ],
-            "Onvalue": [ [ "1" ] ],
-            "settings": [ "bBorderless" ],
-            "targetINIs": [ "Fallout4Prefs.ini" ],
-            "targetSections": [ "Display" ],
-            "tooltip": "Toggles the window border.",
-            "type": "Checkbutton"
           },
           "Always Active": {
             "Offvalue": [ [ "0" ] ],
@@ -468,42 +450,26 @@
           },
           "VSync": {
             "Offvalue": [ [ "0" ] ],
-            "Onvalue": [ [ "1", "2" ] ],
+            "Onvalue": [ [ "1" ] ],
             "settings": [ "iPresentInterval" ],
             "targetINIs": [ "Fallout4Prefs.ini" ],
             "targetSections": [ "Display" ],
             "tooltip": "Toggles vertical synchronization (VSync), which removes screen tearing.",
-            "type": "Checkbutton"
-          },
-          "Half Hertz": {
-            "dependentSettings": {
-              "VSync": {
-                "setToOff": "1",
-                "operator": "equal",
-                "value": [ [ "1", "2" ] ]
-              }
-            },
-            "Offvalue": [ [ "1", "0" ] ],
-            "Onvalue": [ [ "2" ] ],
-            "settings": [ "iPresentInterval" ],
-            "targetINIs": [ "Fallout4Prefs.ini" ],
-            "targetSections": [ "Display" ],
-            "tooltip": "Toggles vertical synchronization (VSync), which removes screen tearing, at half your screen's refresh rate.",
             "type": "Checkbutton"
           }
         }
       },
       "Presets": {
         "Pack": {
-          "Side": "Left",
           "Fill": "None",
           "Expand": 0
         },
-        "NumberOfVerticallyStackedSettings": "10",
+        "NumberOfVerticallyStackedSettings": "2",
         "Settings": {
           "Reset to Default": {
             "preset id": "Default",
             "tooltip": "Resets your INI files to their default values.\n\nNote that not all settings will be set to their default values, as you probably don't want us to touch your screen resolution and mouse look sensitivity... that sorta thing ;)",
+            "tooltip_wrap_length": 250,
             "type": "preset"
           },
           "Apply Recommended Tweaks": {
@@ -511,16 +477,12 @@
             "tooltip": "This sets certain recommended tweaks for all users.",
             "type": "preset"
           },
+          "": "",
           "EmptyLabel1": "",
           "Bethini Presets": {
             "type": "radioPreset",
             "tooltip": "Changes the preset buttons to use Bethini Presets.\n\nHint: These presets are better ;)",
             "value": "Bethini"
-          },
-          "Vanilla Presets": {
-            "type": "radioPreset",
-            "tooltip": "Changes the preset buttons to use the vanilla presets.",
-            "value": "Vanilla"
           },
           "Poor": {
             "preset id": "Poor",
@@ -533,25 +495,57 @@
               }
             }
           },
+          "Vanilla Presets": {
+            "type": "radioPreset",
+            "tooltip": "Changes the preset buttons to use the vanilla presets.",
+            "value": "Vanilla"
+          },
           "Low": {
             "preset id": "Low",
             "tooltip": "Sets the Low preset.",
             "type": "preset"
           },
+          "EmptyLabel6": "",
           "Medium": {
             "preset id": "Medium",
             "tooltip": "Sets the Medium preset.",
             "type": "preset"
           },
+          "EmptyLabel9": "",
           "High": {
             "preset id": "High",
             "tooltip": "Sets the High preset.",
             "type": "preset"
           },
+          "EmptyLabel11": "",
           "Ultra": {
             "preset id": "Ultra",
             "tooltip": "Sets the Ultra preset.",
             "type": "preset"
+          }
+        }
+      },
+      "NoLabelFrame": {
+        "Pack": {
+          "Fill": "X",
+          "Expand": 0
+        },
+        "NumberOfVerticallyStackedSettings": "1",
+        "Settings": {
+          "Load Loose Files": {
+            "Offvalue": [
+              [ "0" ],
+              [ "STRINGS\\" ]
+            ],
+            "Onvalue": [
+              [ "1" ],
+              [ "" ]
+            ],
+            "settings": [ "bInvalidateOlderFiles", "sResourceDataDirsFinal" ],
+            "targetINIs": [ "Fallout4.ini", "Fallout4.ini" ],
+            "targetSections": [ "Archive", "Archive" ],
+            "tooltip": "Toggles the ability of the game to load unarchived data files.",
+            "type": "Checkbutton"
           }
         }
       }
@@ -597,15 +591,6 @@
             "tooltip": "Toggles the game intro music.",
             "type": "Checkbutton"
           },
-          "Tutorials": {
-            "Offvalue": [ [ "0" ] ],
-            "Onvalue": [ [ "1" ] ],
-            "settings": [ "bShowTutorials" ],
-            "targetINIs": [ "Fallout4.ini" ],
-            "targetSections": [ "Interface" ],
-            "tooltip": "Toggles the in-game tutorial pop-ups.",
-            "type": "Checkbutton"
-          },
           "Remove Borders": {
             "Offvalue": [ [ "1" ] ],
             "Onvalue": [ [ "0" ] ],
@@ -623,10 +608,92 @@
             "targetSections": [ "Gameplay" ],
             "tooltip": "If enabled, sprinting will be allowed even when nearby cells are not fully loaded.",
             "type": "Checkbutton"
+          }
+        }
+      },
+      "Saved Games": {
+        "Pack": {
+          "Side": "Left",
+          "Fill": "None",
+          "Expand": 0
+        },
+        "NumberOfVerticallyStackedSettings": "7",
+        "Settings": {
+          "Fade In On Load": {
+            "Offvalue": [ [ "-0.0001" ] ],
+            "Onvalue": [ [ "-1" ] ],
+            "settings": [ "fSaveGameFadeInDuration" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "SaveGame" ],
+            "tooltip": "Toggles the fade in effect on loading a saved game.",
+            "type": "Checkbutton"
+          },
+          "Autosaves": {
+            "Offvalue": [ [ "1" ] ],
+            "Onvalue": [ [ "0" ] ],
+            "settings": [ "bDisableAutoSave" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "SaveGame" ],
+            "tooltip": "Toggles autosaves.",
+            "type": "Checkbutton"
+          },
+          "Save on Pip-boy": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bSaveOnPause" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "MAIN" ],
+            "tooltip": "Toggles autosaves made upon closing the Pip-boy.",
+            "type": "Checkbutton"
+          },
+          "Save on Workshop": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bWorkshopAutoSaveOnExit" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Workshop" ],
+            "tooltip": "Toggles autosaves made upon closing the workshop.",
+            "type": "Checkbutton"
+          },
+          "Save on Travel": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bSaveOnTravel" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "MAIN" ],
+            "tooltip": "Toggles autosaves made after traveling to different locations.",
+            "type": "Checkbutton"
+          },
+          "Save on Rest": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bSaveOnRest" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "MAIN" ],
+            "tooltip": "Toggles autosaves made after sleeping.",
+            "type": "Checkbutton"
+          },
+          "Save on Wait": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bSaveOnWait" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "MAIN" ],
+            "tooltip": "Toggles autosaves made after waiting.",
+            "type": "Checkbutton"
+          },
+          "Missing Content Warning": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bDisplayMissingContentDialogue" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "SaveGame" ],
+            "tooltip": "Toggles the missing content warning when loading a saved game missing a previously enabled plugin.",
+            "type": "Checkbutton"
           },
           "Max Autosaves": {
             "decimal places": "0",
-            "from": "0",
+            "from": "1",
             "increment": "1",
             "settings": [ "iAutoSaveCount" ],
             "targetINIs": [ "Fallout4.ini" ],
@@ -636,6 +703,46 @@
             "type": "Spinbox",
             "validate": "whole",
             "width": "5"
+          },
+          "Save on Pip-boy Timer": {
+            "decimal places": "0",
+            "from": "1",
+            "increment": "1",
+            "settings": [ "fAutosaveEveryXMins" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "SaveGame" ],
+            "to": "100",
+            "tooltip": "Sets the timer to make a new autosave upon closing the Pip-boy.",
+            "type": "Spinbox",
+            "validate": "float",
+            "width": "5"
+          },
+          "Save on Quit to Main Menu": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bSaveGameOnQuitToMainMenu" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "General" ],
+            "tooltip": "Toggles autosaves made when quitting to the main menu. This does NOT disable exit saves made when quitting to desktop.",
+            "type": "Checkbutton"
+          },
+          "Scripted Autosaves": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bAllowScriptedAutosave" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "SaveGame" ],
+            "tooltip": "Toggles scripted autosaves.",
+            "type": "Checkbutton"
+          },
+          "Scripted Force Saves": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bAllowScriptedForceSave" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "SaveGame" ],
+            "tooltip": "Toggles scripted force saves.",
+            "type": "Checkbutton"
           }
         }
       },
@@ -647,6 +754,22 @@
         },
         "NumberOfVerticallyStackedSettings": "6",
         "Settings": {
+          "Difficulty": {
+            "choices": [ "Very Easy", "Easy", "Normal", "Hard", "Very Hard", "Survival" ],
+            "settingChoices": {
+              "Very Easy": [ "0" ],
+              "Easy": [ "1" ],
+              "Normal": [ "2" ],
+              "Hard": [ "3" ],
+              "Very Hard": [ "4" ],
+              "Survival": [ "5" ]
+            },
+            "settings": [ "iDifficulty" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "GamePlay" ],
+            "tooltip": "Sets the difficulty level.",
+            "type": "Dropdown"
+          },
           "Always Run by Default": {
             "Offvalue": [ [ "0" ] ],
             "Onvalue": [ [ "1" ] ],
@@ -654,15 +777,6 @@
             "targetINIs": [ "Fallout4Prefs.ini" ],
             "targetSections": [ "Controls" ],
             "tooltip": "Toggles the ability of the character to always run by default. If turned off, you can still run, but walking is the default action.",
-            "type": "Checkbutton"
-          },
-          "NPCs Use Ammo": {
-            "Offvalue": [ [ "0" ] ],
-            "Onvalue": [ [ "1" ] ],
-            "settings": [ "bForceNPCsUseAmmo" ],
-            "targetINIs": [ "Fallout4.ini" ],
-            "targetSections": [ "Combat" ],
-            "tooltip": "Toggles off unlimited NPC ammo. If enabled, NPCs will no longer have access to unlimited ammo, but shall be forced to only use the ammo they possess.",
             "type": "Checkbutton"
           },
           "Disable Combat Dialogue": {
@@ -674,8 +788,25 @@
             "tooltip": "Toggles off those cheeky comments that enemies say while in combat.",
             "type": "Checkbutton"
           },
+          "NPCs Use Ammo": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bForceNPCsUseAmmo" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Combat" ],
+            "tooltip": "Toggles off unlimited NPC ammo. If enabled, NPCs will no longer have access to unlimited ammo, but shall be forced to only use the ammo they possess.",
+            "type": "Checkbutton"
+          },
+          "Tutorials": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bShowTutorials" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Interface" ],
+            "tooltip": "Toggles the in-game tutorial pop-ups.",
+            "type": "Checkbutton"
+          },
           "Over-Encumbered Reminder": {
-            "entryWidth": "7",
             "settings": [ "fEncumberedReminderTimer" ],
             "targetINIs": [ "Fallout4.ini" ],
             "targetSections": [ "General" ],
@@ -751,10 +882,10 @@
       "Papyrus": {
         "Pack": {
           "Side": "Left",
-          "Fill": "Y",
+          "Fill": "None",
           "Expand": 0
         },
-        "NumberOfVerticallyStackedSettings": "2",
+        "NumberOfVerticallyStackedSettings": "3",
         "Settings": {
           "Post-Load Update Time": {
             "choices": [ "500", "2000" ],
@@ -777,6 +908,18 @@
             "tooltip": "Toggles loading the scripting data in the VM in the background. May improve performance, but there is currently no data. Skyrim and Skyrim Special Edition defaults it to off, while Fallout 4 defaults it to on.",
             "type": "Checkbutton"
           },
+          "Max Allocated Memory": {
+            "choices": [ "153600", "300000", "500000" ],
+            "customWidth": "20",
+            "decimal places": "0",
+            "settings": [ "iMaxAllocatedMemoryBytes" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Papyrus" ],
+            "tooltip": "Sets the maximum memory that Papyrus can hold at a time.",
+            "type": "Combobox",
+            "validate": "whole",
+            "width": "8"
+          },
           "Logging": {
             "Offvalue": [ [ "0" ] ],
             "Onvalue": [ [ "1" ] ],
@@ -795,6 +938,7 @@
             "tooltip": "Toggles additional debug information. If enabled, line number information will be available in error traces at the expense of higher memory usage.",
             "type": "Checkbutton"
           },
+          "": "",
           "Profiling": {
             "Offvalue": [ [ "0" ] ],
             "Onvalue": [ [ "1" ] ],
@@ -818,7 +962,7 @@
     },
     "Interface": {
       "NoLabelFrame": {
-        "NumberOfVerticallyStackedSettings": "1",
+        "NumberOfVerticallyStackedSettings": "2",
         "Settings": {
           "Dialogue Subtitles": {
             "tooltip": "Toggles subtitles for NPCs who are directly talking to you.",
@@ -865,6 +1009,15 @@
             "targetSections": [ "GamePlay" ],
             "settings": [ "bShowQuestMarkers" ]
           },
+          "Show Floating Quest Markers": {
+            "tooltip": "Toggles floating quest markers on items and characters.",
+            "type": "Checkbutton",
+            "Onvalue": [ [ "1" ] ],
+            "Offvalue": [ [ "0" ] ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "GamePlay" ],
+            "settings": [ "bShowFloatingQuestMarkers" ]
+          },
           "Show Compass": {
             "tooltip": "Toggles the compass.",
             "type": "Checkbutton",
@@ -881,7 +1034,7 @@
           "Side": "Left",
           "Fill": "Y"
         },
-        "NumberOfVerticallyStackedSettings": "9",
+        "NumberOfVerticallyStackedSettings": "10",
         "Settings": {
           "Subtitles": {
             "colorValueType": "rgb",
@@ -975,8 +1128,35 @@
           }
         }
       },
+      "Pipboy": {
+        "Pack": {
+          "Fill": "Y"
+        },
+        "NumberOfVerticallyStackedSettings": "5",
+        "Settings": {
+          "Pipboy Flashlight Color Fix": {
+            "tooltip": "Disconnects the Pip-boy flashlight color from the Pip-boy color, so that the flashlight remains white.",
+            "type": "Checkbutton",
+            "Onvalue": [ [ "0" ] ],
+            "Offvalue": [ [ "1" ] ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Pipboy" ],
+            "settings": [ "bPipboyEffectColorOnLight" ]
+          },
+          "Pip-boy Resolution": {
+            "choices": [ "876x700", "1752x1400", "Manual..." ],
+            "delimiter": "x",
+            "settings": [ "uPipboyTargetWidth", "uPipboyTargetHeight" ],
+            "targetINIs": [ "Fallout4Prefs.ini", "Fallout4Prefs.ini" ],
+            "targetSections": [ "Display", "Display" ],
+            "tooltip": "Changes the Pip-boy resolution.",
+            "type": "Dropdown"
+          }
+        }
+      },
       "Console": {
         "Pack": {
+          "Side": "Left",
           "Fill": "Y"
         },
         "NumberOfVerticallyStackedSettings": "5",
@@ -1096,7 +1276,7 @@
     "Visuals": {
       "Effects": {
         "Pack": {
-          "Fill": "Y"
+          "Fill": "None"
         },
         "NumberOfVerticallyStackedSettings": "2",
         "Settings": {
@@ -1160,6 +1340,15 @@
             "targetINIs": [ "Fallout4Prefs.ini" ],
             "targetSections": [ "Imagespace" ],
             "tooltip": "Toggles motion blur.",
+            "type": "Checkbutton"
+          },
+          "NVFlex": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bNVFlexEnable" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "NVFlex" ],
+            "tooltip": "Toggles NVidia Flex debris effects. It can cause crashes on some graphics cards if the \"Weapon Debris Crash Fix\" mod is not installed.",
             "type": "Checkbutton"
           },
           "Wetness": {
@@ -1311,6 +1500,29 @@
                 "value": [ [ "1" ] ]
               }
             }
+          },
+          "Decal Distance": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "3",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "128",
+            "settings": [ "fDecalLOD0" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "16384",
+            "tooltip": "Sets the distance that some decals will show, such as bullet impacts.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7",
+            "dependentSettings": {
+              "Decals": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
           }
         }
       },
@@ -1409,7 +1621,7 @@
         "Pack": {
           "Side": "Left"
         },
-        "NumberOfVerticallyStackedSettings": "3",
+        "NumberOfVerticallyStackedSettings": "5",
         "Settings": {
           "Sun-Shadow Update Time": {
             "customWidth": "27",
@@ -1447,7 +1659,7 @@
           },
           "Shadow Resolution": {
             "choices": [ "256", "512", "1024", "2048", "4096", "8192", "16384" ],
-            "customWidth": "20",
+            "customWidth": "27",
             "decimal places": "0",
             "settings": [ "iShadowMapResolution" ],
             "targetINIs": [ "Fallout4Prefs.ini" ],
@@ -1459,7 +1671,7 @@
           },
           "Shadow Filtering": {
             "choices": [ "0", "1", "2", "3" ],
-            "customWidth": "20",
+            "customWidth": "27",
             "decimal places": "0",
             "settings": [ "uiOrthoShadowFilter" ],
             "targetINIs": [ "Fallout4Prefs.ini" ],
@@ -1469,16 +1681,67 @@
             "validate": "integer",
             "width": "8"
           },
-          "Exterior Draw Distance": {
-            "choices": [ "2000", "2800", "4000", "6000", "8000", "10000", "14000", "18000", "20000" ],
+          "Shadow Splits": {
+            "choices": [ "2", "3" ],
             "customWidth": "20",
             "decimal places": "0",
+            "settings": [ "iDirShadowSplits" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Sets the number of shadow splits.",
+            "type": "Combobox",
+            "validate": "integer",
+            "width": "8"
+          },
+          "Shadow Split Blending": {
+            "customWidth": "20",
+            "decimal places": "0",
+            "digits": "3",
+            "from": "0",
+            "increment": "8",
+            "length": "100",
+            "resolution": "8",
+            "settings": [ "fBlendSplitDirShadow" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "512",
+            "tooltip": "Sets the amount of blending between shadow splits.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "8"
+          },
+          "Shadow Distance": {
+            "customWidth": "20",
+            "decimal places": "0",
+            "digits": "3",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "128",
             "settings": [ "fDirShadowDistance" ],
             "targetINIs": [ "Fallout4Prefs.ini" ],
             "targetSections": [ "Display" ],
-            "tooltip": "Sets the exterior shadow distance.",
-            "type": "Combobox",
-            "validate": "whole",
+            "to": "16384",
+            "tooltip": "Sets the shadow distance.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "8"
+          },
+          "Focus Shadows": {
+            "customWidth": "20",
+            "decimal places": "0",
+            "digits": "1",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "iMaxFocusShadows" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "8",
+            "tooltip": "Sets the maximum number of objects to use very highly detailed shadows based on where you are looking. Too many will absolutely tank your performance.",
+            "type": "Slider",
+            "validate": "integer",
             "width": "8"
           }
         }
@@ -1631,7 +1894,7 @@
             "from": "0",
             "increment": "1",
             "length": "100",
-            "resolution": "192",
+            "resolution": "128",
             "settings": [ "fGrassStartFadeDistance" ],
             "targetINIs": [ "Fallout4Prefs.ini" ],
             "targetSections": [ "Grass" ],
@@ -1648,7 +1911,7 @@
             "from": "0",
             "increment": "1",
             "length": "100",
-            "resolution": "883",
+            "resolution": "1",
             "settings": [ "fGrassFadeRange" ],
             "targetINIs": [ "Fallout4.ini" ],
             "targetSections": [ "Grass" ],
@@ -1665,15 +1928,21 @@
             "from": "0",
             "increment": "1",
             "length": "100",
-            "resolution": "181",
+            "resolution": "128",
             "settings": [ "fMeshLODLevel1FadeDist" ],
             "targetINIs": [ "Fallout4Prefs.ini" ],
             "targetSections": [ "Display" ],
-            "to": "20272",
+            "to": "18432",
             "tooltip": "Sets the level 1 object detail fade distance.",
             "type": "Slider",
             "validate": "integer",
-            "width": "7"
+            "width": "7",
+            "dependentSettings": {
+              "Full Object Details": {
+                "operator": "equal",
+                "value": [ [ "0" ] ]
+              }
+            }
           },
           "Level 2 Object Details": {
             "customWidth": "22",
@@ -1682,15 +1951,21 @@
             "from": "0",
             "increment": "1",
             "length": "100",
-            "resolution": "181",
+            "resolution": "128",
             "settings": [ "fMeshLODLevel2FadeDist" ],
             "targetINIs": [ "Fallout4Prefs.ini" ],
             "targetSections": [ "Display" ],
-            "to": "20272",
+            "to": "18432",
             "tooltip": "Sets the level 2 object detail fade distance.",
             "type": "Slider",
             "validate": "integer",
-            "width": "7"
+            "width": "7",
+            "dependentSettings": {
+              "Full Object Details": {
+                "operator": "equal",
+                "value": [ [ "0" ] ]
+              }
+            }
           },
           "Actor Fade": {
             "customWidth": "15",
@@ -1756,6 +2031,15 @@
             "type": "Spinbox",
             "validate": "whole",
             "width": "5"
+          },
+          "Full Object Details": {
+            "tooltip": "Object details will always show full details instead of fading into view via object detail fade settings.",
+            "type": "Checkbutton",
+            "Onvalue": [ [ "1" ] ],
+            "Offvalue": [ [ "0" ] ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "LOD" ],
+            "settings": [ "bMeshLODRenderAllLevels" ]
           }
         }
       },
@@ -1790,11 +2074,11 @@
             "from": "0",
             "increment": "1",
             "length": "100",
-            "resolution": "1086",
+            "resolution": "1024",
             "settings": [ "fBlockLevel0Distance" ],
             "targetINIs": [ "Fallout4Prefs.ini" ],
             "targetSections": [ "TerrainManager" ],
-            "to": "108600",
+            "to": "102400",
             "tooltip": "Sets the level 4 block distance. This is the distance that level 4 object LOD is shown. Additionally, level 4 terrain LOD is shown at this distance, but multiplied by the Terrain Multiplier (fSplitDistanceMult).",
             "type": "Slider",
             "validate": "integer",
@@ -1807,11 +2091,11 @@
             "from": "0",
             "increment": "1",
             "length": "237",
-            "resolution": "2172",
+            "resolution": "2048",
             "settings": [ "fBlockLevel1Distance" ],
             "targetINIs": [ "Fallout4Prefs.ini" ],
             "targetSections": [ "TerrainManager" ],
-            "to": "325800",
+            "to": "327680",
             "tooltip": "Sets the level 8 block distance. This is the distance that level 8 object LOD is shown. Additionally, level 8 terrain LOD is shown at this distance, but multiplied by the Terrain Multiplier (fSplitDistanceMult).",
             "type": "Slider",
             "validate": "integer",
@@ -1825,11 +2109,11 @@
             "from": "0",
             "increment": "1",
             "length": "284",
-            "resolution": "4525",
+            "resolution": "2048",
             "settings": [ "fBlockLevel2Distance" ],
             "targetINIs": [ "Fallout4Prefs.ini" ],
             "targetSections": [ "TerrainManager" ],
-            "to": "398200",
+            "to": "389120",
             "tooltip": "Sets the level 16 block distance. This is the distance that level 16 object LOD is shown. Additionally, level 16 terrain LOD is shown at this distance, but multiplied by the Terrain Multiplier (fSplitDistanceMult).",
             "type": "Slider",
             "validate": "integer",
@@ -1842,11 +2126,11 @@
             "from": "0",
             "increment": "1",
             "length": "284",
-            "resolution": "4525",
+            "resolution": "2048",
             "settings": [ "fBlockMaximumDistance" ],
             "targetINIs": [ "Fallout4Prefs.ini" ],
             "targetSections": [ "TerrainManager" ],
-            "to": "398200",
+            "to": "389120",
             "tooltip": "Sets the level 16 block distance. This is the distance that level 32 object LOD is shown. Additionally, level 32 terrain LOD is shown at this distance, but multiplied by the Terrain Multiplier (fSplitDistanceMult).",
             "type": "Slider",
             "validate": "integer",
