@@ -1581,6 +1581,7 @@
             "validate": "integer",
             "width": "7"
           },
+          "": "",
           "Minimum Wind": {
             "customWidth": "15",
             "decimal places": "0",
@@ -1968,7 +1969,7 @@
             }
           },
           "Actor Fade": {
-            "customWidth": "15",
+            "customWidth": "22",
             "decimal places": "1",
             "digits": "3",
             "from": "0.0",
@@ -1985,7 +1986,7 @@
             "width": "7"
           },
           "Item Fade": {
-            "customWidth": "15",
+            "customWidth": "22",
             "decimal places": "1",
             "digits": "3",
             "from": "0.0",
@@ -2002,7 +2003,7 @@
             "width": "7"
           },
           "Object Fade": {
-            "customWidth": "15",
+            "customWidth": "22",
             "decimal places": "1",
             "digits": "3",
             "from": "0.0",
@@ -2018,8 +2019,25 @@
             "validate": "float",
             "width": "7"
           },
+          "Flickering Light Distance": {
+            "customWidth": "22",
+            "decimal places": "1",
+            "digits": "4",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "4",
+            "settings": [ "fFlickeringLightDistance" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "General" ],
+            "to": "16384",
+            "tooltip": "Sets the flickering light fade distance",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7"
+          },
           "uGridsToLoad": {
-            "customWidth": "15",
+            "customWidth": "22",
             "decimal places": "0",
             "from": "5",
             "increment": "2",
@@ -2035,6 +2053,7 @@
           "Full Object Details": {
             "tooltip": "Object details will always show full details instead of fading into view via object detail fade settings.",
             "type": "Checkbutton",
+            "customWidth": "22",
             "Onvalue": [ [ "1" ] ],
             "Offvalue": [ [ "0" ] ],
             "targetINIs": [ "Fallout4.ini" ],
