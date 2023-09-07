@@ -17991,8 +17991,8 @@
         "Vanilla Ultra": 110000,
         "Bethini Poor": 65536,
         "Bethini Low": 65536,
-        "Bethini Medium": 163840,
-        "Bethini High": 163840,
+        "Bethini Medium": 131072,
+        "Bethini High": 131072,
         "Bethini Ultra": 163840
       }
     },
