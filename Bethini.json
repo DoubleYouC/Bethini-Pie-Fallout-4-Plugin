@@ -935,7 +935,7 @@
         "Settings": {
           "Post-Load Update Time": {
             "choices": [ "500", "2000" ],
-            "customWidth": "20",
+            "customWidth": "25",
             "decimal places": "0",
             "settings": [ "fPostLoadUpdateTimeMS" ],
             "targetINIs": [ "Fallout4.ini" ],
@@ -956,7 +956,7 @@
           },
           "Max Allocated Memory": {
             "choices": [ "153600", "300000", "500000" ],
-            "customWidth": "20",
+            "customWidth": "25",
             "decimal places": "0",
             "settings": [ "iMaxAllocatedMemoryBytes" ],
             "targetINIs": [ "Fallout4.ini" ],
