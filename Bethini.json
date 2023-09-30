@@ -95,7 +95,6 @@
   "Default": "",
   "INIs": {
     "Bethini.ini": "",
-    "theme.ini": "sTheme",
     "Fallout4.ini": "sFallout 4INIPath",
     "Fallout4Prefs.ini": "sFallout 4INIPath"
   },
@@ -107,9 +106,7 @@
     "FUNCGamePath": "{}",
     "FUNCGamePathFormat": "getBethesdaGameFolder",
     "FUNCINIPath": "{}",
-    "FUNCINIPathFormat": "getINILocations",
-    "FUNCThemes": "{}",
-    "FUNCThemesFormat": "getThemes"
+    "FUNCINIPathFormat": "getINILocations"
   },
   "displayTabs": {
     "Setup": {
@@ -149,172 +146,6 @@
       }
     },
     "Preferences": {
-      "NoLabelFrame": {
-        "NumberOfVerticallyStackedSettings": "1",
-        "Settings": {
-          "Note: ": {
-            "Description": "These changes require a restart to take effect.",
-            "type": "description"
-          }
-        }
-      },
-      "Interface": {
-        "Pack": {
-          "Side": "Left"
-        },
-        "NumberOfVerticallyStackedSettings": "8",
-        "Settings": {
-          "Theme": {
-            "choices": "FUNCThemes",
-            "customWidth": "20",
-            "settings": [ "sTheme" ],
-            "targetINIs": [ "Bethini.ini" ],
-            "targetSections": [ "General" ],
-            "tooltip": "Select the theme.",
-            "type": "Dropdown"
-          },
-          "Font": {
-            "customWidth": "20",
-            "type": "Entry",
-            "settings": [ "sSmallFontName" ],
-            "targetINIs": [ "theme.ini" ],
-            "targetSections": [ "Fonts" ],
-            "tooltip": "Sets the font family.",
-            "entryWidth": "20"
-          },
-          "Font Size": {
-            "customWidth": "20",
-            "decimal places": "0",
-            "from": "8",
-            "increment": "1",
-            "settings": [ "iSmallFontSize" ],
-            "targetINIs": [ "theme.ini" ],
-            "targetSections": [ "Fonts" ],
-            "to": "36",
-            "tooltip": "Sets the font size.",
-            "type": "Spinbox",
-            "validate": "whole",
-            "width": "7"
-          },
-          "Base Color": {
-            "colorValueType": "hex",
-            "customWidth": "20",
-            "settings": [ "sSubContainerColor" ],
-            "targetINIs": [ "theme.ini" ],
-            "targetSections": [ "Colors" ],
-            "tooltip": "Sets the base color.",
-            "type": "Color"
-          },
-          "Canvas Color": {
-            "colorValueType": "hex",
-            "customWidth": "20",
-            "settings": [ "sContainerColor" ],
-            "targetINIs": [ "theme.ini" ],
-            "targetSections": [ "Colors" ],
-            "tooltip": "Sets the background canvas color.",
-            "type": "Color"
-          },
-          "Text Color": {
-            "colorValueType": "hex",
-            "customWidth": "20",
-            "settings": [ "sTextColor" ],
-            "targetINIs": [ "theme.ini" ],
-            "targetSections": [ "Colors" ],
-            "tooltip": "Sets the text color.",
-            "type": "Color"
-          },
-          "Disabled Text Color": {
-            "colorValueType": "hex",
-            "customWidth": "20",
-            "settings": [ "sTextColorDisabled" ],
-            "targetINIs": [ "theme.ini" ],
-            "targetSections": [ "Colors" ],
-            "tooltip": "Sets the disabled text color.",
-            "type": "Color"
-          },
-          "Pressed Text Color": {
-            "colorValueType": "hex",
-            "customWidth": "20",
-            "settings": [ "sTextColorPressed" ],
-            "targetINIs": [ "theme.ini" ],
-            "targetSections": [ "Colors" ],
-            "tooltip": "Sets the pressed text color.",
-            "type": "Color"
-          },
-          "Active Text Color": {
-            "colorValueType": "hex",
-            "customWidth": "25",
-            "settings": [ "sTextColorActive" ],
-            "targetINIs": [ "theme.ini" ],
-            "targetSections": [ "Colors" ],
-            "tooltip": "Sets the active text color.",
-            "type": "Color"
-          },
-          "Disabled Background Color": {
-            "colorValueType": "hex",
-            "customWidth": "25",
-            "settings": [ "sBackgroundColorDisabled" ],
-            "targetINIs": [ "theme.ini" ],
-            "targetSections": [ "Colors" ],
-            "tooltip": "Sets the disabled background color.",
-            "type": "Color"
-          },
-          "Pressed Background Color": {
-            "colorValueType": "hex",
-            "customWidth": "25",
-            "settings": [ "sBackgroundColorPressed" ],
-            "targetINIs": [ "theme.ini" ],
-            "targetSections": [ "Colors" ],
-            "tooltip": "Sets the pressed background color.",
-            "type": "Color"
-          },
-          "Active Background Color": {
-            "colorValueType": "hex",
-            "customWidth": "25",
-            "settings": [ "sBackgroundColorActive" ],
-            "targetINIs": [ "theme.ini" ],
-            "targetSections": [ "Colors" ],
-            "tooltip": "Sets the active background color.",
-            "type": "Color"
-          },
-          "Tab Color": {
-            "colorValueType": "hex",
-            "customWidth": "25",
-            "settings": [ "sButtonBarColor" ],
-            "targetINIs": [ "theme.ini" ],
-            "targetSections": [ "Colors" ],
-            "tooltip": "Sets the tab color.",
-            "type": "Color"
-          },
-          "Dropdown Color": {
-            "colorValueType": "hex",
-            "customWidth": "25",
-            "settings": [ "sDropDownColor" ],
-            "targetINIs": [ "theme.ini" ],
-            "targetSections": [ "Colors" ],
-            "tooltip": "Sets the dropdown color.",
-            "type": "Color"
-          },
-          "Field Color": {
-            "colorValueType": "hex",
-            "customWidth": "25",
-            "settings": [ "sFieldColor" ],
-            "targetINIs": [ "theme.ini" ],
-            "targetSections": [ "Colors" ],
-            "tooltip": "Sets the field color.",
-            "type": "Color"
-          },
-          "Checkbox Color": {
-            "colorValueType": "hex",
-            "customWidth": "25",
-            "settings": [ "sIndicatorColor" ],
-            "targetINIs": [ "theme.ini" ],
-            "targetSections": [ "Colors" ],
-            "tooltip": "Sets the checkbox color.",
-            "type": "Color"
-          }
-        }
-      },
       "General": {
         "NumberOfVerticallyStackedSettings": "6",
         "Settings": {
@@ -364,7 +195,7 @@
           "Fill": "None",
           "Expand": 0
         },
-        "NumberOfVerticallyStackedSettings": "4",
+        "NumberOfVerticallyStackedSettings": "6",
         "Settings": {
           "Resolution": {
             "choices": [ "FUNCCurrentResolution", "1920x1080", "1440x810", "1280x720", "800x450", "Manual..." ],
@@ -421,52 +252,8 @@
             "tooltip": "Sets the level of anisotropic filtering (AF), improving the texture quality of distant objects.",
             "type": "Dropdown"
           },
-          "Default World FOV": {
-            "customWidth": "22",
-            "decimal places": "0",
-            "from": "1",
-            "increment": "1",
-            "length": "100",
-            "settings": [ "fDefaultWorldFOV" ],
-            "targetINIs": [ "Fallout4.ini" ],
-            "targetSections": [ "Display" ],
-            "to": "120",
-            "tooltip": "Sets the default world field of view, primarily adjusting the third person view.",
-            "type": "Slider",
-            "validate": "integer",
-            "width": "7"
-          },
-          "Default FOV": {
-            "customWidth": "22",
-            "decimal places": "0",
-            "from": "1",
-            "increment": "1",
-            "length": "100",
-            "settings": [ "fDefaultFOV" ],
-            "targetINIs": [ "Fallout4.ini" ],
-            "targetSections": [ "Display" ],
-            "to": "120",
-            "tooltip": "Sets the default field of view for a few things.",
-            "type": "Slider",
-            "validate": "integer",
-            "width": "7"
-          },
-          "Default 1st Person FOV": {
-            "customWidth": "22",
-            "decimal places": "0",
-            "from": "1",
-            "increment": "1",
-            "length": "100",
-            "settings": [ "fDefault1stPersonFOV" ],
-            "targetINIs": [ "Fallout4.ini" ],
-            "targetSections": [ "Display" ],
-            "to": "120",
-            "tooltip": "Sets the default 1st person field of view and the Pip-boy. Unfortunately, because it changes the Pip-boy, it can only be tweaked so much, so be careful.",
-            "type": "Slider",
-            "validate": "integer",
-            "width": "7"
-          },
           "": "",
+          "EmptyLabel1": "",
           "Always Active": {
             "Offvalue": [ [ "0" ] ],
             "Onvalue": [ [ "1" ] ],
@@ -501,6 +288,123 @@
             "targetINIs": [ "Fallout4Prefs.ini" ],
             "targetSections": [ "Display" ],
             "tooltip": "Toggles vertical synchronization (VSync), which removes screen tearing.",
+            "type": "Checkbutton"
+          },
+          "Precombines": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bUseCombinedObjects" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "General" ],
+            "tooltip": "Toggles use of precombines, which significantly improves performance.",
+            "type": "Checkbutton"
+          },
+          "Previs": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bUsePreCulledObjects" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Toggles use of previs culling, which significantly improves performance.",
+            "type": "Checkbutton"
+          },
+          "Default World FOV": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "from": "40",
+            "increment": "1",
+            "length": "100",
+            "settings": [ "fDefaultWorldFOV" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "120",
+            "tooltip": "Sets the default world field of view, primarily adjusting the third person view.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7"
+          },
+          "3rd Person Aim FOV": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "from": "20",
+            "increment": "1",
+            "length": "100",
+            "settings": [ "f3rdPersonAimFOV" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Camera" ],
+            "to": "100",
+            "tooltip": "Sets the 3rd person aim FOV.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7"
+          },
+          "Texture Upgrade Distance Near": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "settings": [ "iTextureUpgradeDistance0" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "General" ],
+            "to": "3072",
+            "tooltip": "Sets the near texture mipmap upgrade distance. Once you approach the texture at this distance, the mipmap is upgraded, increasing resolution and VRAM usage. Set lower than the Texture Degrade Distance Near.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7"
+          },
+          "Texture Degrade Distance Near": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "settings": [ "iTextureDegradeDistance0" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "General" ],
+            "to": "3072",
+            "tooltip": "Sets the near texture mipmap degrade distance. Once you move away from the texture at this distance, the mipmap is degraded, lowering resolution and VRAM usage. Set higher than the Texture Upgrade Distance Near.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7"
+          },
+          "Texture Upgrade Distance Far": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "settings": [ "iTextureUpgradeDistance1" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "General" ],
+            "to": "4096",
+            "tooltip": "Sets the far texture mipmap upgrade distance. Once you approach the texture at this distance, the mipmap is upgraded, increasing resolution and VRAM usage. Set lower than the Texture Degrade Distance Far.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7"
+          },
+          "Texture Degrade Distance Far": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "settings": [ "iTextureDegradeDistance1" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "General" ],
+            "to": "4096",
+            "tooltip": "Sets the far texture mipmap degrade distance. Once you move away from the texture at this distance, the mipmap is degraded, lowering resolution and VRAM usage. Set higher than the Texture Upgrade Distance Far.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7"
+          },
+          "Force Update Diffuse Only": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bForceUpdateDiffuseOnly" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "General" ],
+            "tooltip": "Toggles force update diffuse textures only. It is recommended to be disabled so that the normal and specular maps are upgraded as well.",
             "type": "Checkbutton"
           }
         }
@@ -592,6 +496,37 @@
             "targetSections": [ "Archive", "Archive" ],
             "tooltip": "Toggles the ability of the game to load unarchived data files.",
             "type": "Checkbutton"
+          },
+          "Starting Console Command": {
+            "customWidth": "25",
+            "entry_width": "50",
+            "settings": [ "sStartingConsoleCommand" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "General" ],
+            "tooltip": "Sets the starting console command.",
+            "type": "Entry"
+          },
+          "Console Hotkeys": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bUseConsoleHotkeys" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Menu" ],
+            "tooltip": "Toggles console hotkeys.",
+            "type": "Checkbutton"
+          },
+          "Console INI": {
+            "settings": [ "sConsoleINI" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Menu" ],
+            "tooltip": "Sets the console ini file.",
+            "type": "Entry",
+            "dependentSettings": {
+              "Console Hotkeys": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
           }
         }
       }
@@ -629,13 +564,21 @@
             "type": "Checkbutton"
           },
           "Intro Music": {
-            "Offvalue": [ [ "" ] ],
-            "Onvalue": [ [ "\\Data\\Music\\Special\\MUS_MainTheme.xwm" ] ],
-            "settings": [ "sMainMenuMusic" ],
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bPlayMainMenuMusic" ],
             "targetINIs": [ "Fallout4.ini" ],
             "targetSections": [ "General" ],
             "tooltip": "Toggles the game intro music.",
             "type": "Checkbutton"
+          },
+          "Intro Music File": {
+            "entry_width": "45",
+            "settings": [ "sMainMenuMusic" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "General" ],
+            "tooltip": "Sets the game intro music file.",
+            "type": "Entry"
           },
           "Remove Borders": {
             "Offvalue": [ [ "1" ] ],
@@ -758,10 +701,10 @@
             "targetINIs": [ "Fallout4Prefs.ini" ],
             "targetSections": [ "SaveGame" ],
             "to": "100",
-            "tooltip": "Sets the timer to make a new autosave upon closing the Pip-boy.",
+            "tooltip": "Sets the timer in minutes to make a new autosave upon closing the Pip-boy.",
             "type": "Spinbox",
             "validate": "float",
-            "width": "5"
+            "width": "7"
           },
           "Save on Quit to Main Menu": {
             "Offvalue": [ [ "0" ] ],
@@ -825,13 +768,13 @@
             "tooltip": "Toggles the ability of the character to always run by default. If turned off, you can still run, but walking is the default action.",
             "type": "Checkbutton"
           },
-          "Disable Combat Dialogue": {
-            "Offvalue": [ [ "0" ] ],
-            "Onvalue": [ [ "1" ] ],
+          "Combat Dialogue": {
+            "Offvalue": [ [ "1" ] ],
+            "Onvalue": [ [ "0" ] ],
             "settings": [ "bDisableCombatDialogue" ],
             "targetINIs": [ "Fallout4.ini" ],
             "targetSections": [ "Combat" ],
-            "tooltip": "Toggles off those cheeky comments that enemies say while in combat.",
+            "tooltip": "Toggles those cheeky comments that enemies say while in combat.",
             "type": "Checkbutton"
           },
           "NPCs Use Ammo": {
@@ -853,12 +796,14 @@
             "type": "Checkbutton"
           },
           "Over-Encumbered Reminder": {
+            "choices": [ "30", "300", "3600" ],
             "settings": [ "fEncumberedReminderTimer" ],
             "targetINIs": [ "Fallout4.ini" ],
             "targetSections": [ "General" ],
             "tooltip": "Sets the time interval between subsequent \"You are carrying too much to be able to run\" messages in seconds.",
-            "type": "Entry",
-            "validate": "float"
+            "type": "Combobox",
+            "validate": "float",
+            "width": "8"
           }
         }
       },
@@ -901,7 +846,7 @@
           },
           "Filename": {
             "customWidth": "20",
-            "entryWidth": "20",
+            "entry_width": "20",
             "fileFormat": "file",
             "partial": [ "Screenshots Directory", "Filename" ],
             "settings": [ "sScreenShotBaseName" ],
@@ -1180,6 +1125,15 @@
         },
         "NumberOfVerticallyStackedSettings": "5",
         "Settings": {
+          "Pipboy FX": {
+            "tooltip": "Toggles Pipboy FX.",
+            "type": "Checkbutton",
+            "Onvalue": [ [ "1" ] ],
+            "Offvalue": [ [ "0" ] ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Pipboy" ],
+            "settings": [ "bPipboyDisableFX" ]
+          },
           "Pipboy Flashlight Color Fix": {
             "tooltip": "Disconnects the Pip-boy flashlight color from the Pip-boy color, so that the flashlight remains white.",
             "type": "Checkbutton",
@@ -1286,7 +1240,7 @@
           },
           "X Scale": {
             "customWidth": "26",
-            "entryWidth": "7",
+            "entry_width": "7",
             "settings": [ "fMouseHeadingXScale" ],
             "targetINIs": [ "Fallout4.ini" ],
             "targetSections": [ "Controls" ],
@@ -1296,7 +1250,7 @@
           },
           "Y Scale": {
             "customWidth": "26",
-            "entryWidth": "7",
+            "entry_width": "7",
             "settings": [ "fMouseHeadingYScale" ],
             "targetINIs": [ "Fallout4.ini" ],
             "targetSections": [ "Controls" ],
@@ -1306,7 +1260,7 @@
           },
           "Mouse Wheel Zoom Speed": {
             "customWidth": "26",
-            "entryWidth": "7",
+            "entry_width": "7",
             "settings": [ "fMouseWheelZoomSpeed" ],
             "targetINIs": [ "Fallout4.ini" ],
             "targetSections": [ "Camera" ],
@@ -1384,6 +1338,15 @@
             "targetINIs": [ "Fallout4Prefs.ini" ],
             "targetSections": [ "Imagespace" ],
             "tooltip": "Toggles motion blur.",
+            "type": "Checkbutton"
+          },
+          "Radial Blur": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bDoRadialBlur" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Imagespace" ],
+            "tooltip": "Toggles imagespace radial blur.",
             "type": "Checkbutton"
           },
           "NVFlex": {
@@ -1650,7 +1613,7 @@
         "Settings": {
           "Sun-Shadow Update Time": {
             "customWidth": "27",
-            "entryWidth": "5",
+            "entry_width": "5",
             "settings": [ "fSunShadowUpdateTime" ],
             "targetINIs": [ "Fallout4.ini" ],
             "targetSections": [ "Display" ],
@@ -1660,7 +1623,7 @@
           },
           "Sun-Shadow Update Threshold": {
             "customWidth": "27",
-            "entryWidth": "5",
+            "entry_width": "5",
             "settings": [ "fSunUpdateThreshold" ],
             "targetINIs": [ "Fallout4.ini" ],
             "targetSections": [ "Display" ],
@@ -1708,7 +1671,7 @@
           },
           "Shadow Splits": {
             "choices": [ "2", "3" ],
-            "customWidth": "20",
+            "customWidth": "25",
             "decimal places": "0",
             "settings": [ "iDirShadowSplits" ],
             "targetINIs": [ "Fallout4Prefs.ini" ],
@@ -1719,7 +1682,7 @@
             "width": "8"
           },
           "Shadow Split Blending": {
-            "customWidth": "20",
+            "customWidth": "25",
             "decimal places": "0",
             "from": "0",
             "increment": "8",
@@ -1734,7 +1697,7 @@
             "width": "8"
           },
           "Shadow Distance": {
-            "customWidth": "20",
+            "customWidth": "25",
             "decimal places": "0",
             "from": "0",
             "increment": "1",
@@ -1749,7 +1712,7 @@
             "width": "8"
           },
           "Focus Shadows": {
-            "customWidth": "20",
+            "customWidth": "25",
             "decimal places": "0",
             "from": "0",
             "increment": "1",
@@ -1759,6 +1722,21 @@
             "targetSections": [ "Display" ],
             "to": "8",
             "tooltip": "Sets the maximum number of objects to use very highly detailed shadows based on where you are looking. Too many will absolutely tank your performance.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "8"
+          },
+          "Focus Shadows Dialogue": {
+            "customWidth": "25",
+            "decimal places": "0",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "settings": [ "iMaxFocusShadowsDialogue" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "8",
+            "tooltip": "Sets the maximum number of objects to use very highly detailed shadows based on where you are looking while in dialogue with NPCs. Too many will absolutely tank your performance.",
             "type": "Slider",
             "validate": "integer",
             "width": "8"
@@ -2056,7 +2034,7 @@
         "NumberOfVerticallyStackedSettings": "5",
         "Settings": {
           "Terrain Multiplier": {
-            "customWidth": "20",
+            "customWidth": "25",
             "decimal places": "3",
             "from": "0",
             "increment": "0.005",
@@ -2071,7 +2049,7 @@
             "width": "7"
           },
           "Level 4 Block Distance": {
-            "customWidth": "20",
+            "customWidth": "25",
             "decimal places": "0",
             "from": "0",
             "increment": "1",
@@ -2086,7 +2064,7 @@
             "width": "7"
           },
           "Level 8 Block Distance": {
-            "customWidth": "20",
+            "customWidth": "25",
             "decimal places": "0",
             "from": "0",
             "increment": "1",
@@ -2102,7 +2080,7 @@
 
           },
           "Level 16 Block Distance": {
-            "customWidth": "20",
+            "customWidth": "25",
             "decimal places": "0",
             "from": "0",
             "increment": "1",
@@ -2117,7 +2095,7 @@
             "width": "7"
           },
           "Level 32 Block Distance": {
-            "customWidth": "20",
+            "customWidth": "25",
             "decimal places": "0",
             "from": "0",
             "increment": "1",

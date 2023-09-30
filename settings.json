@@ -692,7 +692,7 @@
       "alwaysPrint": true,
       "value": {
         "default": 0,
-        "fixedDefault": 1
+        "recommended": 1
       }
     },
     {
@@ -850,7 +850,7 @@
       "alwaysPrint": true,
       "value": {
         "default": "STRINGS\\",
-        "fixedDefault": ""
+        "recommended": ""
       }
     },
     {
@@ -4800,8 +4800,7 @@
       "type": "float",
       "alwaysPrint": true,
       "value": {
-        "default": 0.0210,
-        "fixedDefault": 0.042
+        "default": 0.0210
       }
     },
     {
@@ -9353,7 +9352,8 @@
       "alwaysPrint": true,
       "value": {
         "default": 47,
-        "fixedDefault": 36
+        "fixedDefault": 36,
+        "recommended": 36
       }
     },
     {
@@ -9727,17 +9727,7 @@
       "type": "float",
       "value": {
         "default": 1000.0000,
-        "fixedDefault": 0.0,
-        "recommended": 0.0,
-        "Vanilla Low": 1000.0,
-        "Vanilla Medium": 1000.0,
-        "Vanilla High": 1000.0,
-        "Vanilla Ultra": 1000.0,
-        "Bethini Poor": 0.0,
-        "Bethini Low": 0.0,
-        "Bethini Medium": 0.0,
-        "Bethini High": 0.0,
-        "Bethini Ultra": 0.0
+        "recommended": 0.0
       }
     },
     {
@@ -9811,7 +9801,7 @@
         "Vanilla High": 2,
         "Vanilla Ultra": 2,
         "Bethini Poor": 0,
-        "Bethini Low": 2,
+        "Bethini Low": 4,
         "Bethini Medium": 4,
         "Bethini High": 4,
         "Bethini Ultra": 4
@@ -14111,7 +14101,7 @@
       "alwaysPrint": true,
       "value": {
         "default": 0,
-        "fixedDefault": 1
+        "recommended": 1
       }
     },
     {
@@ -17718,7 +17708,7 @@
       "section": "SaveGame",
       "type": "float",
       "value": {
-        "default": -1.0000
+        "default": -1
       }
     },
     {
@@ -19084,7 +19074,8 @@
       "type": "boolean",
       "value": {
         "default": 1,
-        "fixedDefault": 0
+        "fixedDefault": 0,
+        "recommended": 0
       }
     },
     {
@@ -19094,7 +19085,8 @@
       "alwaysPrint": true,
       "value": {
         "default": 1,
-        "fixedDefault": 0
+        "fixedDefault": 0,
+        "recommended": 0
       }
     },
     {
@@ -19104,7 +19096,8 @@
       "alwaysPrint": true,
       "value": {
         "default": 1,
-        "fixedDefault": 0
+        "fixedDefault": 0,
+        "recommended": 0
       }
     },
     {
