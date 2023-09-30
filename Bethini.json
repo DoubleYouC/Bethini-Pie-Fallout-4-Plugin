@@ -402,7 +402,7 @@
             "Offvalue": [ [ "0" ] ],
             "Onvalue": [ [ "1" ] ],
             "settings": [ "bForceUpdateDiffuseOnly" ],
-            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetINIs": [ "Fallout4.ini" ],
             "targetSections": [ "General" ],
             "tooltip": "Toggles force update diffuse textures only. It is recommended to be disabled so that the normal and specular maps are upgraded as well.",
             "type": "Checkbutton"
@@ -480,7 +480,7 @@
           "Fill": "X",
           "Expand": 0
         },
-        "NumberOfVerticallyStackedSettings": "1",
+        "NumberOfVerticallyStackedSettings": "2",
         "Settings": {
           "Load Loose Files": {
             "Offvalue": [
@@ -497,14 +497,14 @@
             "tooltip": "Toggles the ability of the game to load unarchived data files.",
             "type": "Checkbutton"
           },
-          "Starting Console Command": {
-            "customWidth": "25",
-            "entry_width": "50",
-            "settings": [ "sStartingConsoleCommand" ],
-            "targetINIs": [ "Fallout4.ini" ],
-            "targetSections": [ "General" ],
-            "tooltip": "Sets the starting console command.",
-            "type": "Entry"
+          "Enable File Selection": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bEnableFileSelection" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Launcher" ],
+            "tooltip": "Toggles the ability of the game launcher to support mod plugins.",
+            "type": "Checkbutton"
           },
           "Console Hotkeys": {
             "Offvalue": [ [ "0" ] ],
@@ -527,6 +527,15 @@
                 "value": [ [ "1" ] ]
               }
             }
+          },
+          "Starting Console Command": {
+            "customWidth": "25",
+            "entry_width": "50",
+            "settings": [ "sStartingConsoleCommand" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "General" ],
+            "tooltip": "Sets the starting console command.",
+            "type": "Entry"
           }
         }
       }
