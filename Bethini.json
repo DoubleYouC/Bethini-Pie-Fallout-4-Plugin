@@ -1837,7 +1837,7 @@
             "width": "8"
           },
           "Shadow Splits": {
-            "choices": [ "2", "3" ],
+            "choices": [ "1", "2", "3" ],
             "customWidth": "25",
             "decimal places": "0",
             "settings": [ "iDirShadowSplits" ],
