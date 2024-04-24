@@ -1384,7 +1384,7 @@
             "settings": [ "bNVFlexEnable" ],
             "targetINIs": [ "Fallout4Prefs.ini" ],
             "targetSections": [ "NVFlex" ],
-            "tooltip": "Toggles NVidia Flex debris effects. It can cause crashes on some graphics cards if the \"Weapon Debris Crash Fix\" mod is not installed.",
+            "tooltip": "Toggles NVidia Flex debris effects. It can cause crashes on Nvidia graphics cards released after the Pascal (10xx) series if the \"Weapon Debris Crash Fix\" mod is not installed.",
             "type": "Checkbutton"
           },
           "Wetness": {
