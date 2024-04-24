@@ -506,6 +506,27 @@
             "tooltip": "Toggles the ability of the game launcher to support mod plugins.",
             "type": "Checkbutton"
           },
+          "Text Language": {
+            "choices": [ "English", "Brazilian Portuguese", "Chinese", "French", "German", "Italian", "Japanese", "Polish", "Russian", "Spanish", "Spanish - Latin America", "Manual..." ],
+            "settings": [ "sLanguage" ],
+            "settingChoices": {
+              "Chinese": [ "cn" ],
+              "German": [ "de" ],
+              "English": [ "en" ],
+              "Spanish": [ "es" ],
+              "Spanish - Latin America": [ "esmx" ],
+              "French": [ "fr" ],
+              "Italian": [ "it" ],
+              "Japanese": [ "ja" ],
+              "Polish": [ "pl" ],
+              "Brazilian Portuguese": [ "ptbr" ],
+              "Russian": [ "ru" ]
+            },
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "General" ],
+            "tooltip": "Sets the language used for text elements.",
+            "type": "Dropdown"
+          },
           "Console Hotkeys": {
             "Offvalue": [ [ "0" ] ],
             "Onvalue": [ [ "1" ] ],
@@ -514,6 +535,14 @@
             "targetSections": [ "Menu" ],
             "tooltip": "Toggles console hotkeys.",
             "type": "Checkbutton"
+          },
+          "Starting Console Command": {
+            "entry_width": "50",
+            "settings": [ "sStartingConsoleCommand" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "General" ],
+            "tooltip": "Sets the starting console command.",
+            "type": "Entry"
           },
           "Console INI": {
             "settings": [ "sConsoleINI" ],
@@ -527,15 +556,6 @@
                 "value": [ [ "1" ] ]
               }
             }
-          },
-          "Starting Console Command": {
-            "customWidth": "25",
-            "entry_width": "50",
-            "settings": [ "sStartingConsoleCommand" ],
-            "targetINIs": [ "Fallout4.ini" ],
-            "targetSections": [ "General" ],
-            "tooltip": "Sets the starting console command.",
-            "type": "Entry"
           }
         }
       }
