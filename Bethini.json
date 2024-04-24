@@ -626,6 +626,15 @@
             "targetSections": [ "Gameplay" ],
             "tooltip": "If enabled, sprinting will be allowed even when nearby cells are not fully loaded.",
             "type": "Checkbutton"
+          },
+          "Dialogue Camera": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bDialogueCameraEnable" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Interface" ],
+            "tooltip": "Toggles the dialogue camera that focuses on characters while speaking to them.",
+            "type": "Checkbutton"
           }
         }
       },
@@ -1020,7 +1029,7 @@
             "targetSections": [ "Interface" ],
             "settings": [ "bAutoSizeQuickContainer" ]
           },
-          "Show Quest Markers": {
+          "Quest Markers": {
             "tooltip": "Toggles quest markers on the map and the compass.",
             "type": "Checkbutton",
             "Onvalue": [ [ "1" ] ],
@@ -1029,7 +1038,7 @@
             "targetSections": [ "GamePlay" ],
             "settings": [ "bShowQuestMarkers" ]
           },
-          "Show Floating Quest Markers": {
+          "Floating Quest Markers": {
             "tooltip": "Toggles floating quest markers on items and characters.",
             "type": "Checkbutton",
             "Onvalue": [ [ "1" ] ],
@@ -1038,7 +1047,7 @@
             "targetSections": [ "GamePlay" ],
             "settings": [ "bShowFloatingQuestMarkers" ]
           },
-          "Show Compass": {
+          "Compass": {
             "tooltip": "Toggles the compass.",
             "type": "Checkbutton",
             "Onvalue": [ [ "1" ] ],
@@ -1046,6 +1055,28 @@
             "targetINIs": [ "Fallout4Prefs.ini" ],
             "targetSections": [ "Interface" ],
             "settings": [ "bShowCompass" ]
+          },
+          "Crosshair": {
+            "tooltip": "Toggles the crosshair.",
+            "type": "Checkbutton",
+            "Onvalue": [ [ "1" ] ],
+            "Offvalue": [ [ "0" ] ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "MAIN" ],
+            "settings": [ "bCrosshairEnabled" ]
+          },
+          "HUD Active Effects": {
+            "choices": [ "None", "Detrimental Effects Only", "All Effects" ],
+            "settingChoices": {
+              "None": [ "0" ],
+              "Detrimental Effects Only": [ "1" ],
+              "All Effects": [ "2" ]
+            },
+            "settings": [ "uHUDActiveEffectWidget" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Interface" ],
+            "tooltip": "Sets the level of active effects shown on the head-up display (HUD).",
+            "type": "Dropdown"
           }
         }
       },
@@ -1148,14 +1179,15 @@
           }
         }
       },
-      "Pipboy": {
+      "Pip-Boy": {
         "Pack": {
+          "Side": "Left",
           "Fill": "Y"
         },
-        "NumberOfVerticallyStackedSettings": "5",
+        "NumberOfVerticallyStackedSettings": "12",
         "Settings": {
-          "Pipboy FX": {
-            "tooltip": "Toggles Pipboy FX.",
+          "Pip-Boy FX": {
+            "tooltip": "Toggles Pip-Boy FX.",
             "type": "Checkbutton",
             "Onvalue": [ [ "1" ] ],
             "Offvalue": [ [ "0" ] ],
@@ -1163,8 +1195,17 @@
             "targetSections": [ "Pipboy" ],
             "settings": [ "bPipboyDisableFX" ]
           },
-          "Pipboy Flashlight Color Fix": {
-            "tooltip": "Disconnects the Pip-boy flashlight color from the Pip-boy color, so that the flashlight remains white.",
+          "Companion App": {
+            "tooltip": "Toggles the use of the Pip-Boy Companion App.",
+            "type": "Checkbutton",
+            "Onvalue": [ [ "1" ] ],
+            "Offvalue": [ [ "0" ] ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "General" ],
+            "settings": [ "bPipboyCompanionEnabled" ]
+          },
+          "Pip-Boy Flashlight Color Fix": {
+            "tooltip": "Disconnects the Pip-boy flashlight color from the Pip-Boy color, so that the flashlight remains white.",
             "type": "Checkbutton",
             "Onvalue": [ [ "0" ] ],
             "Offvalue": [ [ "1" ] ],
@@ -1172,67 +1213,111 @@
             "targetSections": [ "Pipboy" ],
             "settings": [ "bPipboyEffectColorOnLight" ]
           },
-          "Pip-boy Resolution": {
+          "Pip-Boy Resolution": {
+            "customWidth": "20",
             "choices": [ "876x700", "1752x1400", "Manual..." ],
             "delimiter": "x",
             "settings": [ "uPipboyTargetWidth", "uPipboyTargetHeight" ],
             "targetINIs": [ "Fallout4Prefs.ini", "Fallout4Prefs.ini" ],
             "targetSections": [ "Display", "Display" ],
-            "tooltip": "Changes the Pip-boy resolution.",
+            "tooltip": "Changes the Pip-Boy resolution.",
             "type": "Dropdown"
+          },
+          "Constraint Width": {
+            "customWidth": "20",
+            "entry_width": "7",
+            "settings": [ "uPipboyConstraintWidth" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Pipboy" ],
+            "tooltip": "Sets the height constraint.",
+            "type": "Entry",
+            "validate": "whole"
+          },
+          "Constraint Height": {
+            "customWidth": "20",
+            "entry_width": "7",
+            "settings": [ "uPipboyConstraintHeight" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Pipboy" ],
+            "tooltip": "Sets the height constraint.",
+            "type": "Entry",
+            "validate": "whole"
+          },
+          "Constraint TLX": {
+            "customWidth": "20",
+            "entry_width": "7",
+            "settings": [ "uPipboyConstraintTLX" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Pipboy" ],
+            "tooltip": "Sets the TLX constraint.",
+            "type": "Entry",
+            "validate": "whole"
+          },
+          "Constraint TLY": {
+            "customWidth": "20",
+            "entry_width": "7",
+            "settings": [ "uPipboyConstraintTLY" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Pipboy" ],
+            "tooltip": "Sets the TLY constraint.",
+            "type": "Entry",
+            "validate": "whole"
           }
         }
       },
-      "Console": {
+      "Controller Settings": {
         "Pack": {
-          "Side": "Left",
           "Fill": "Y"
         },
         "NumberOfVerticallyStackedSettings": "5",
         "Settings": {
-          "Screen Percentage": {
-            "customWidth": "16",
+          "Controller": {
+            "tooltip": "Toggles the ability to use a controller.",
+            "type": "Checkbutton",
+            "Onvalue": [ [ "1" ] ],
+            "Offvalue": [ [ "0" ] ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "General" ],
+            "settings": [ "bGamepadEnable" ]
+          },
+          "Vibration": {
+            "tooltip": "Toggles controller vibration.",
+            "type": "Checkbutton",
+            "Onvalue": [ [ "1" ] ],
+            "Offvalue": [ [ "0" ] ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Controls" ],
+            "settings": [ "bGamePadRumble" ]
+          },
+          "Sensitivity": {
+            "customWidth": "20",
+            "decimal places": "4",
+            "from": "0.2500",
+            "increment": "0.0001",
+            "length": "110",
+            "settings": [ "fGamepadHeadingSensitivity" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "Controls" ],
+            "to": "1.7500",
+            "tooltip": "Sets the controller sensitivity.",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7"
+          },
+          "Pip-Boy Cursor Speed": {
             "decimal places": "0",
-            "from": "0",
-            "settings": [ "iConsoleSizeScreenPercent" ],
+            "customWidth": "20",
+            "from": "250",
+            "increment": "1",
+            "length": "110",
+            "settings": [ "fGamepadCursorSpeed" ],
             "targetINIs": [ "Fallout4.ini" ],
-            "targetSections": [ "Menu" ],
-            "to": "100",
-            "tooltip": "Sets the percentage of the screen that the in-game console can fill.",
-            "type": "Spinbox",
+            "targetSections": [ "Pipboy" ],
+            "to": "1000",
+            "tooltip": "Sets the Pip-Boy cursor speed.",
+            "type": "Slider",
             "validate": "whole",
-            "width": "5"
-          },
-          "Text Size": {
-            "customWidth": "16",
-            "decimal places": "0",
-            "from": "0",
-            "settings": [ "iConsoleTextSize" ],
-            "targetINIs": [ "Fallout4.ini" ],
-            "targetSections": [ "Menu" ],
-            "to": "100",
-            "tooltip": "Sets the size for text in the in-game console.",
-            "type": "Spinbox",
-            "validate": "whole",
-            "width": "5"
-          },
-          "Text Input Color": {
-            "colorValueType": "rgb",
-            "customWidth": "16",
-            "settings": [ "rConsoleTextColor" ],
-            "targetINIs": [ "Fallout4.ini" ],
-            "targetSections": [ "Menu" ],
-            "tooltip": "Sets the color of text typed into the console.",
-            "type": "Color"
-          },
-          "Text Output Color": {
-            "colorValueType": "rgb",
-            "customWidth": "16",
-            "settings": [ "rConsoleHistoryTextColor" ],
-            "targetINIs": [ "Fallout4.ini" ],
-            "targetSections": [ "Menu" ],
-            "tooltip": "Sets the color of the text output in the console.",
-            "type": "Color"
+            "width": "7"
           }
         }
       },
@@ -1296,6 +1381,59 @@
             "tooltip": "Sets the transition speed when zooming in and out in third person mode using the mouse wheel. This also affects how fast the transition from first to third person occurs.",
             "type": "Entry",
             "validate": "float"
+          }
+        }
+      },
+      "Console": {
+        "Pack": {
+          "Side": "Left",
+          "Fill": "Y"
+        },
+        "NumberOfVerticallyStackedSettings": "5",
+        "Settings": {
+          "Screen Percentage": {
+            "customWidth": "16",
+            "decimal places": "0",
+            "from": "0",
+            "settings": [ "iConsoleSizeScreenPercent" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Menu" ],
+            "to": "100",
+            "tooltip": "Sets the percentage of the screen that the in-game console can fill.",
+            "type": "Spinbox",
+            "validate": "whole",
+            "width": "5"
+          },
+          "Text Size": {
+            "customWidth": "16",
+            "decimal places": "0",
+            "from": "0",
+            "settings": [ "iConsoleTextSize" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Menu" ],
+            "to": "100",
+            "tooltip": "Sets the size for text in the in-game console.",
+            "type": "Spinbox",
+            "validate": "whole",
+            "width": "5"
+          },
+          "Text Input Color": {
+            "colorValueType": "rgb",
+            "customWidth": "16",
+            "settings": [ "rConsoleTextColor" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Menu" ],
+            "tooltip": "Sets the color of text typed into the console.",
+            "type": "Color"
+          },
+          "Text Output Color": {
+            "colorValueType": "rgb",
+            "customWidth": "16",
+            "settings": [ "rConsoleHistoryTextColor" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Menu" ],
+            "tooltip": "Sets the color of the text output in the console.",
+            "type": "Color"
           }
         }
       }
