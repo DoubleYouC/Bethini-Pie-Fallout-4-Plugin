@@ -1189,8 +1189,8 @@
           "Pip-Boy FX": {
             "tooltip": "Toggles Pip-Boy FX.",
             "type": "Checkbutton",
-            "Onvalue": [ [ "1" ] ],
-            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "0" ] ],
+            "Offvalue": [ [ "1" ] ],
             "targetINIs": [ "Fallout4.ini" ],
             "targetSections": [ "Pipboy" ],
             "settings": [ "bPipboyDisableFX" ]
