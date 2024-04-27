@@ -2186,6 +2186,14 @@
       }
     },
     {
+      "name": "uTitleStorageBufferSize",
+      "section": "Bethesda.net",
+      "type": "number",
+      "value": {
+        "default": 1048576
+      }
+    },
+    {
       "name": "uPersistentUuidData0",
       "section": "Bethesda.net",
       "ini": "Fallout4Prefs.ini",
@@ -6373,8 +6381,8 @@
       "value": {
         "default": 3500.0000,
         "Vanilla Low": 4000,
-        "Vanilla Medium": 6000,
-        "Vanilla High": 8000,
+        "Vanilla Medium": 4000,
+        "Vanilla High": 6000,
         "Vanilla Ultra": 999999,
         "Bethini Poor": 2048,
         "Bethini Low": 4096,
@@ -6958,9 +6966,9 @@
       "value": {
         "default": 0,
         "Vanilla Low": 0,
-        "Vanilla Medium": 0,
-        "Vanilla High": 1,
-        "Vanilla Ultra": 2,
+        "Vanilla Medium": 1,
+        "Vanilla High": 2,
+        "Vanilla Ultra": 3,
         "Bethini Poor": 0,
         "Bethini Low": 0,
         "Bethini Medium": 3,
@@ -7882,6 +7890,16 @@
       "type": "boolean",
       "value": {
         "default": 1
+      }
+    },
+    {
+      "name": "bIncludedContentMessageSeen",
+      "section": "General",
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
+      "type": "boolean",
+      "value": {
+        "default": 0
       }
     },
     {
@@ -12522,7 +12540,7 @@
       "section": "Interface",
       "type": "float",
       "value": {
-        "default": 340282346638528860000000000000000000000.0000
+        "default": 340282346638528859811704183484516925440.0000
       }
     },
     {
@@ -13444,6 +13462,14 @@
       }
     },
     {
+      "name": "sFlatModelNifUW",
+      "section": "Interface",
+      "type": "string",
+      "value": {
+        "default": "Interface/Objects/HUDGlassFlatUW.nif"
+      }
+    },
+    {
       "name": "sForcedLoadScreenEditorID",
       "section": "Interface",
       "type": "string",
@@ -13465,6 +13491,14 @@
       "type": "string",
       "value": {
         "default": "Interface/Objects/HUDGlassFlat.nif"
+      }
+    },
+    {
+      "name": "sHUDGlassNifUW",
+      "section": "Interface",
+      "type": "string",
+      "value": {
+        "default": "Interface/Objects/HUDGlassFlatUW.nif"
       }
     },
     {
@@ -14472,7 +14506,7 @@
       "value": {
         "default": 6.0000,
         "Vanilla Low": 5,
-        "Vanilla Medium": 7,
+        "Vanilla Medium": 5,
         "Vanilla High": 9,
         "Vanilla Ultra": 15,
         "Bethini Poor": 2,
@@ -14510,7 +14544,7 @@
       "value": {
         "default": 4.5000,
         "Vanilla Low": 5,
-        "Vanilla Medium": 7,
+        "Vanilla Medium": 5,
         "Vanilla High": 9,
         "Vanilla Ultra": 30,
         "Bethini Poor": 2,
@@ -14678,6 +14712,16 @@
       "type": "boolean",
       "value": {
         "default": 1
+      }
+    },
+    {
+      "name": "bPerformanceModeEnabled",
+      "section": "MAIN",
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
+      "type": "boolean",
+      "value": {
+        "default": 0
       }
     },
     {
@@ -15194,6 +15238,102 @@
       "type": "number",
       "value": {
         "default": 32
+      }
+    },
+    {
+      "name": "iGfxCacheableLarge",
+      "section": "Memory",
+      "type": "number",
+      "value": {
+        "default": 16
+      }
+    },
+    {
+      "name": "iGfxCacheableNonCoherentGPUReadOnlyLarge",
+      "section": "Memory",
+      "type": "number",
+      "value": {
+        "default": 16
+      }
+    },
+    {
+      "name": "iGfxCacheableNonCoherentGPUReadOnlySmall",
+      "section": "Memory",
+      "type": "number",
+      "value": {
+        "default": 16
+      }
+    },
+    {
+      "name": "iGfxCacheableSmall",
+      "section": "Memory",
+      "type": "number",
+      "value": {
+        "default": 16
+      }
+    },
+    {
+      "name": "iGfxCommandBufferCacheableLarge",
+      "section": "Memory",
+      "type": "number",
+      "value": {
+        "default": 16
+      }
+    },
+    {
+      "name": "iGfxCommandBufferCacheableSmall",
+      "section": "Memory",
+      "type": "number",
+      "value": {
+        "default": 16
+      }
+    },
+    {
+      "name": "iGfxCommandBufferWriteCombineLarge",
+      "section": "Memory",
+      "type": "number",
+      "value": {
+        "default": 16
+      }
+    },
+    {
+      "name": "iGfxCommandBufferWriteCombineSmall",
+      "section": "Memory",
+      "type": "number",
+      "value": {
+        "default": 16
+      }
+    },
+    {
+      "name": "iGfxWriteCombineLarge",
+      "section": "Memory",
+      "type": "number",
+      "value": {
+        "default": 16
+      }
+    },
+    {
+      "name": "iGfxWriteCombineSmall",
+      "section": "Memory",
+      "type": "number",
+      "value": {
+        "default": 16
+      }
+    },
+    {
+      "name": "iWriteCombineGPUReadOnlyLarge",
+      "section": "Memory",
+      "type": "number",
+      "value": {
+        "default": 16
+      }
+    },
+    {
+      "name": "iWriteCombineGPUReadOnlySmall",
+      "section": "Memory",
+      "type": "number",
+      "value": {
+        "default": 16
       }
     },
     {
@@ -19073,7 +19213,7 @@
       "alwaysPrint": true,
       "type": "boolean",
       "value": {
-        "default": 1,
+        "default": 0,
         "fixedDefault": 0,
         "recommended": 0
       }
@@ -19084,7 +19224,7 @@
       "type": "boolean",
       "alwaysPrint": true,
       "value": {
-        "default": 1,
+        "default": 0,
         "fixedDefault": 0,
         "recommended": 0
       }
@@ -19095,7 +19235,7 @@
       "type": "boolean",
       "alwaysPrint": true,
       "value": {
-        "default": 1,
+        "default": 0,
         "fixedDefault": 0,
         "recommended": 0
       }
