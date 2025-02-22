@@ -789,7 +789,7 @@
               "Normal": [ "2" ],
               "Hard": [ "3" ],
               "Very Hard": [ "4" ],
-              "Survival": [ "5" ]
+              "Survival": [ "6" ]
             },
             "settings": [ "iDifficulty" ],
             "targetINIs": [ "Fallout4Prefs.ini" ],
