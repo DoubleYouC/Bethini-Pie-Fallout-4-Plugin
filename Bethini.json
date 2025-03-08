@@ -1435,6 +1435,15 @@
             "targetSections": [ "Menu" ],
             "tooltip": "Sets the color of the text output in the console.",
             "type": "Color"
+          },
+          "Selection Color": {
+            "colorValueType": "abgr decimal",
+            "customWidth": "16",
+            "settings": [ "iConsoleSelectedRefColor" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Menu" ],
+            "tooltip": "Sets the color items selected while in the console.",
+            "type": "Color"
           }
         }
       }
