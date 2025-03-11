@@ -99,8 +99,6 @@
     "Fallout4Prefs.ini": "sFallout 4INIPath"
   },
   "customFunctions": {
-    "FUNCBackups": "{}",
-    "FUNCBackupsFormat": "getBackups",
     "FUNCCurrentResolution": "{}",
     "FUNCCurrentResolutionFormat": "getCurrentResolution",
     "FUNCGamePath": "{}",
@@ -135,57 +133,6 @@
             "targetSections": [ "Directories" ],
             "tooltip": "Specifies the path to the INI files.",
             "type": "Dropdown"
-          },
-          "Restore Backup": {
-            "choices": "FUNCBackups",
-            "custom_function": "restore_backup",
-            "customWidth": "18",
-            "tooltip": "Select the backup you wish to restore.",
-            "type": "Dropdown"
-          }
-        }
-      }
-    },
-    "Preferences": {
-      "General": {
-        "NumberOfVerticallyStackedSettings": "6",
-        "Settings": {
-          "Max Backups to Keep": {
-            "customWidth": "20",
-            "decimal places": "0",
-            "from": "-1",
-            "increment": "1",
-            "settings": [ "iMaxBackups" ],
-            "targetINIs": [ "Bethini.ini" ],
-            "targetSections": [ "General" ],
-            "to": "10",
-            "tooltip": "Select the maximum number of backups to be kept.",
-            "type": "Spinbox",
-            "validate": "integer",
-            "width": "7"
-          },
-          "Max Logs to Keep": {
-            "customWidth": "20",
-            "decimal places": "0",
-            "from": "-1",
-            "increment": "1",
-            "settings": [ "iMaxLogs" ],
-            "targetINIs": [ "Bethini.ini" ],
-            "targetSections": [ "General" ],
-            "to": "10",
-            "tooltip": "Select the maximum number of log files to be kept.",
-            "type": "Spinbox",
-            "validate": "integer",
-            "width": "7"
-          },
-          "Always Select Game": {
-            "Offvalue": [ [ "0" ] ],
-            "Onvalue": [ [ "1" ] ],
-            "settings": [ "bAlwaysSelectGame" ],
-            "targetINIs": [ "Bethini.ini" ],
-            "targetSections": [ "General" ],
-            "tooltip": "Toggles whether or not you must always select the game at startup.",
-            "type": "Checkbutton"
           }
         }
       }
