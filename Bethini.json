@@ -244,7 +244,7 @@
             "settings": [ "bUseCombinedObjects" ],
             "targetINIs": [ "Fallout4.ini" ],
             "targetSections": [ "General" ],
-            "tooltip": "Toggles use of precombines, which significantly improves performance.",
+            "tooltip": "Toggles the use of precombines. It is recommended to be enabled, as precombines improve performance by lowering draw calls.",
             "type": "Checkbutton"
           },
           "Previs": {
@@ -253,7 +253,7 @@
             "settings": [ "bUsePreCulledObjects" ],
             "targetINIs": [ "Fallout4.ini" ],
             "targetSections": [ "Display" ],
-            "tooltip": "Toggles use of previs culling, which significantly improves performance.",
+            "tooltip": "Toggles the use of previs culling. It is recommended to be enabled, as previs improves performance by culling the loading of objects hidden behind other objects.",
             "type": "Checkbutton"
           },
           "Default World FOV": {
