@@ -1337,12 +1337,13 @@
           "Side": "left",
           "Fill": "y"
         },
-        "NumberOfVerticallyStackedSettings": "5",
+        "NumberOfVerticallyStackedSettings": "6",
         "Settings": {
           "Screen Percentage": {
             "customWidth": "16",
             "decimal places": "0",
             "from": "0",
+            "increment": "1",
             "settings": [ "iConsoleSizeScreenPercent" ],
             "targetINIs": [ "Fallout4.ini" ],
             "targetSections": [ "Menu" ],
@@ -1356,6 +1357,7 @@
             "customWidth": "16",
             "decimal places": "0",
             "from": "0",
+            "increment": "1",
             "settings": [ "iConsoleTextSize" ],
             "targetINIs": [ "Fallout4.ini" ],
             "targetSections": [ "Menu" ],
@@ -1364,6 +1366,18 @@
             "type": "Spinbox",
             "validate": "whole",
             "width": "5"
+          },
+          "Buffer Size": {
+            "customWidth": "16",
+            "choices": [ "16384", "32768", "65536", "131072", "327680", "655360" ],
+            "decimal places": "0",
+            "settings": [ "iConsoleHistoryCharBufferSize" ],
+            "targetINIs": [ "Fallout4.ini" ],
+            "targetSections": [ "Menu" ],
+            "tooltip": "Sets the console history buffer size.",
+            "type": "Combobox",
+            "validate": "whole",
+            "width": "8"
           },
           "Text Input Color": {
             "colorValueType": "rgb",
