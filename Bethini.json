@@ -125,7 +125,6 @@
           "INI Path": {
             "browse": [ "directory", "Fallout4.ini", "file" ],
             "choices": "FUNCINIPath",
-            "custom_function": "refresh_backups",
             "customWidth": "18",
             "forceSelect": "1",
             "settings": [ "sFallout 4INIPath" ],
