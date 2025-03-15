@@ -2124,7 +2124,7 @@
           },
           "Flickering Light Distance": {
             "customWidth": "22",
-            "decimal places": "1",
+            "decimal places": "0",
             "from": "0",
             "increment": "1",
             "length": "100",
