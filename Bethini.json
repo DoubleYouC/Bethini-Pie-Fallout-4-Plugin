@@ -96,7 +96,12 @@
   "INIs": {
     "Bethini.ini": "",
     "Fallout4.ini": "sFallout 4INIPath",
+    "Fallout4Custom.ini": "sFallout 4INIPath",
     "Fallout4Prefs.ini": "sFallout 4INIPath"
+  },
+  "INI_pecking_order": {
+    "Fallout4.ini": [ "Fallout4.ini", "Fallout4Custom.ini" ],
+    "Fallout4Prefs.ini": [ "Fallout4.ini", "Fallout4Custom.ini", "Fallout4Prefs.ini" ]
   },
   "customFunctions": {
     "FUNCCurrentResolution": "{}",
