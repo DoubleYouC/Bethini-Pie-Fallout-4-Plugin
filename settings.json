@@ -2170,6 +2170,14 @@
       }
     },
     {
+      "name": "uDownloadBufferSize",
+      "section": "Bethesda.net",
+      "type": "number",
+      "value": {
+        "default": "0"
+      }
+    },
+    {
       "name": "uModLimitRefreshFrameCount",
       "section": "Bethesda.net",
       "type": "number",
@@ -2191,6 +2199,14 @@
       "type": "number",
       "value": {
         "default": 1048576
+      }
+    },
+    {
+      "name": "uUploadBufferSize",
+      "section": "Bethesda.net",
+      "type": "number",
+      "value": {
+        "default": 0
       }
     },
     {
@@ -2231,6 +2247,198 @@
       "type": "number",
       "value": {
         "default": 4104173247
+      }
+    },
+    {
+      "name": "bBIClientPerformanceContextLogging",
+      "section": "BIEvents",
+      "type": "boolean",
+      "value": {
+        "default": 0
+      }
+    },
+    {
+      "name": "bBIDebug",
+      "section": "BIEvents",
+      "type": "boolean",
+      "value": {
+        "default": 0
+      }
+    },
+    {
+      "name": "fClientPerformanceFrametimeFirstThreshold",
+      "section": "BIEvents",
+      "type": "float",
+      "value": {
+        "default": 16.7
+      }
+    },
+    {
+      "name": "fClientPerformanceFrametimeFourthThreshold",
+      "section": "BIEvents",
+      "type": "float",
+      "value": {
+        "default": 100.0
+      }
+    },
+    {
+      "name": "fClientPerformanceFrametimeSecondThreshold",
+      "section": "BIEvents",
+      "type": "float",
+      "value": {
+        "default": 33.0
+      }
+    },
+    {
+      "name": "fClientPerformanceFrametimeThirdThreshold",
+      "section": "BIEvents",
+      "type": "float",
+      "value": {
+        "default": 50.0
+      }
+    },
+    {
+      "name": "iBIClientNextPrebuildHTTPSPostTimeMS",
+      "section": "BIEvents",
+      "type": "number",
+      "value": {
+        "default": 300000
+      }
+    },
+    {
+      "name": "iBIClientPerformanceContextSendRateMinMS",
+      "section": "BIEvents",
+      "type": "number",
+      "value": {
+        "default": 5000
+      }
+    },
+    {
+      "name": "iBIEventBulkSendRateMS",
+      "section": "BIEvents",
+      "type": "number",
+      "value": {
+        "default": 30000
+      }
+    },
+    {
+      "name": "iClientCrashFrequencyMS",
+      "section": "BIEvents",
+      "type": "number",
+      "value": {
+        "default": 0
+      }
+    },
+    {
+      "name": "iClientCrashLevel",
+      "section": "BIEvents",
+      "type": "number",
+      "value": {
+        "default": 1
+      }
+    },
+    {
+      "name": "iClientHardwareSpecificationFrequencyMS",
+      "section": "BIEvents",
+      "type": "number",
+      "value": {
+        "default": 0
+      }
+    },
+    {
+      "name": "iClientHardwareSpecificationLevel",
+      "section": "BIEvents",
+      "type": "number",
+      "value": {
+        "default": 1
+      }
+    },
+    {
+      "name": "iClientHeartBeatFrequencyMS",
+      "section": "BIEvents",
+      "type": "number",
+      "value": {
+        "default": 60000
+      }
+    },
+    {
+      "name": "iClientHeartBeatLevel",
+      "section": "BIEvents",
+      "type": "number",
+      "value": {
+        "default": 1
+      }
+    },
+    {
+      "name": "iClientLoadedEsmFrequencyMS",
+      "section": "BIEvents",
+      "type": "number",
+      "value": {
+        "default": 0
+      }
+    },
+    {
+      "name": "iClientLoadedEsmLevel",
+      "section": "BIEvents",
+      "type": "number",
+      "value": {
+        "default": 1
+      }
+    },
+    {
+      "name": "iClientShutdownFrequencyMS",
+      "section": "BIEvents",
+      "type": "number",
+      "value": {
+        "default": 0
+      }
+    },
+    {
+      "name": "iClientShutdownLevel",
+      "section": "BIEvents",
+      "type": "number",
+      "value": {
+        "default": 1
+      }
+    },
+    {
+      "name": "iClientStartupFrequencyMS",
+      "section": "BIEvents",
+      "type": "number",
+      "value": {
+        "default": 0
+      }
+    },
+    {
+      "name": "iClientStartupLevel",
+      "section": "BIEvents",
+      "type": "number",
+      "value": {
+        "default": 1
+      }
+    },
+    {
+      "name": "iIdentity",
+      "section": "BIEvents",
+      "type": "number",
+      "value": {
+        "default": 0
+      }
+    },
+    {
+      "name": "uiMaxNumberOfBulkBIEventsSentPerFrame",
+      "section": "BIEvents",
+      "type": "number",
+      "value": {
+        "default": 2
+      }
+    },
+    {
+      "name": "uShutdownCallbackTimeout",
+      "section": "BIEvents",
+      "type": "number",
+      "value": {
+        "default": 5000
       }
     },
     {
@@ -5132,6 +5340,16 @@
       }
     },
     {
+      "name": "bMusicOn",
+      "section": "CreationsMenu",
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
       "name": "bDebugFaceGenCriticalSection",
       "section": "Debug",
       "type": "boolean",
@@ -6417,7 +6635,7 @@
         "Bethini Low": 2048,
         "Bethini Medium": 4096,
         "Bethini High": 6144,
-        "Bethini Ultra": 16384
+        "Bethini Ultra": 12288
       }
     },
     {
@@ -7506,6 +7724,16 @@
       }
     },
     {
+      "name": "bCheckForMissingContentOnStartup",
+      "section": "GamePlay",
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
       "name": "bShowFloatingQuestMarkers",
       "section": "GamePlay",
       "ini": "Fallout4Prefs.ini",
@@ -7883,6 +8111,16 @@
       }
     },
     {
+      "name": "bFreebiesSeen",
+      "section": "General",
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
+      "type": "boolean",
+      "value": {
+        "default": 0
+      }
+    },
+    {
       "name": "bGamepadEnable",
       "section": "General",
       "ini": "Fallout4Prefs.ini",
@@ -8153,6 +8391,16 @@
       }
     },
     {
+      "name": "bShowDownloadAnniversaryContent",
+      "section": "General",
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
       "name": "bShowGunTarget",
       "section": "General",
       "type": "boolean",
@@ -8179,6 +8427,16 @@
     {
       "name": "bTrackAllDeaths",
       "section": "General",
+      "type": "boolean",
+      "value": {
+        "default": 0
+      }
+    },
+    {
+      "name": "bUpsellOwned",
+      "section": "General",
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
       "type": "boolean",
       "value": {
         "default": 0
@@ -9382,6 +9640,16 @@
       "type": "number",
       "value": {
         "default": 25000
+      }
+    },
+    {
+      "name": "uiMarketplaceUpdatedHash",
+      "section": "General",
+      "ini": "Fallout4Prefs.ini",
+      "alwaysPrint": true,
+      "type": "number",
+      "value": {
+        "default": 4294967295
       }
     },
     {
@@ -12328,11 +12596,27 @@
       }
     },
     {
+      "name": "fLongRangeUICameraFarDistanceUW",
+      "section": "Interface",
+      "type": "float",
+      "value": {
+        "default": 50000.0
+      }
+    },
+    {
       "name": "fLongRangeUICameraNearDistance",
       "section": "Interface",
       "type": "float",
       "value": {
         "default": 100.0000
+      }
+    },
+    {
+      "name": "fLongRangeUICameraNearDistanceUW",
+      "section": "Interface",
+      "type": "float",
+      "value": {
+        "default": 1.0
       }
     },
     {
@@ -13454,6 +13738,14 @@
       }
     },
     {
+      "name": "sFlatModelNifSUW",
+      "section": "Interface",
+      "type": "string",
+      "value": {
+        "default": "Interface/Objects/HUDGlassFlatSUW.nif"
+      }
+    },
+    {
       "name": "sFlatModelNifUW",
       "section": "Interface",
       "type": "string",
@@ -13483,6 +13775,14 @@
       "type": "string",
       "value": {
         "default": "Interface/Objects/HUDGlassFlat.nif"
+      }
+    },
+    {
+      "name": "sHUDGlassNifSUW",
+      "section": "Interface",
+      "type": "string",
+      "value": {
+        "default": "Interface/Objects/HUDGlassFlatSUW.nif"
       }
     },
     {
@@ -17703,6 +18003,78 @@
       "type": "number",
       "value": {
         "default": 555
+      }
+    },
+    {
+      "name": "bClientLatencyEnabled",
+      "section": "Platform",
+      "type": "boolean",
+      "value": {
+        "default": 0
+      }
+    },
+    {
+      "name": "bPlatformEnabled",
+      "section": "Platform",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
+      "name": "fAPIFailureRate",
+      "section": "Platform",
+      "type": "float",
+      "value": {
+        "default": 0.0
+      }
+    },
+    {
+      "name": "uClientLantencyMax",
+      "section": "Platform",
+      "type": "number",
+      "value": {
+        "default": 2000
+      }
+    },
+    {
+      "name": "uClientLatencyMin",
+      "section": "Platform",
+      "type": "number",
+      "value": {
+        "default": 500
+      }
+    },
+    {
+      "name": "uDefaultBIRetries",
+      "section": "Platform",
+      "type": "number",
+      "value": {
+        "default": 0
+      }
+    },
+    {
+      "name": "uDefaultRetries",
+      "section": "Platform",
+      "type": "number",
+      "value": {
+        "default": 3
+      }
+    },
+    {
+      "name": "uHttpDefaultConnectionTimeout",
+      "section": "Platform",
+      "type": "number",
+      "value": {
+        "default": 10000
+      }
+    },
+    {
+      "name": "uHttpDefaultTimeout",
+      "section": "Platform",
+      "type": "number",
+      "value": {
+        "default": 30000
       }
     },
     {
