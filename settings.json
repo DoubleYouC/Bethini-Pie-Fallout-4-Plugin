@@ -7731,7 +7731,8 @@
       "type": "boolean",
       "value": {
         "default": 1
-      }
+      },
+      "notes": "bCheckForMissingContentOnStartup toggles checking for missing Creations on game load."
     },
     {
       "name": "bShowFloatingQuestMarkers",
