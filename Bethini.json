@@ -181,7 +181,7 @@
         "NumberOfVerticallyStackedSettings": "6",
         "Settings": {
           "Resolution": {
-            "choices": [ "FUNCCurrentResolution", "1920x1080", "1440x810", "1280x720", "800x450", "Manual..." ],
+            "choices": "FUNCCurrentResolution",
             "customWidth": "18",
             "delimiter": "x",
             "settings": [ "iSize W", "iSize H" ],
