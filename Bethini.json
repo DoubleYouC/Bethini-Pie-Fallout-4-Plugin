@@ -929,7 +929,7 @@
             "type": "Checkbutton"
           },
           "Max Allocated Memory": {
-            "choices": [ "153600", "300000", "500000" ],
+            "choices": [ "153600", "307200", "524288" ],
             "customWidth": "25",
             "decimal places": "0",
             "settings": [ "iMaxAllocatedMemoryBytes" ],
@@ -1003,13 +1003,19 @@
             "settings": [ "bGeneralSubtitles" ]
           },
           "Bethesda Modding Platform": {
-            "tooltip": "Toggles Bethesda's built-in modding platform, including the Creation Club. If disabled, \"Mods\" will be removed from the menus, the \"Creation Club\" will be disabled, and Creation Club news will not show.",
+            "tooltip": "Toggles Bethesda's built-in modding platform, including the Creation Club. This can solve issues related to Bethesda's built in mod platform causing plugins to randomly disable themselves at the expense of making the Creations menu inaccessible.",
             "type": "Checkbutton",
-            "Onvalue": [ [ "1" ] ],
-            "Offvalue": [ [ "0" ] ],
-            "targetINIs": [ "Fallout4.ini" ],
-            "targetSections": [ "Bethesda.net" ],
-            "settings": [ "bEnablePlatform" ]
+            "Onvalue": [
+              [ "1" ],
+              [ "1" ]
+            ],
+            "Offvalue": [
+              [ "0" ],
+              [ "0" ]
+            ],
+            "targetINIs": [ "Fallout4.ini", "Fallout4.ini" ],
+            "targetSections": [ "Bethesda.net", "Platform" ],
+            "settings": [ "bEnablePlatform", "bPlatformEnabled" ]
           },
           "Autosize Quick Containers": {
             "tooltip": "Toggles the ability for the quick-loot box to expand or contract with the size of its contents when hovering over containers.",
@@ -1206,53 +1212,71 @@
           },
           "Pip-Boy Resolution": {
             "customWidth": "20",
-            "choices": [ "876x700", "1752x1400", "Manual..." ],
-            "delimiter": "x",
-            "settings": [ "uPipboyTargetWidth", "uPipboyTargetHeight" ],
-            "targetINIs": [ "Fallout4Prefs.ini", "Fallout4Prefs.ini" ],
-            "targetSections": [ "Display", "Display" ],
+            "choices": [ "876x700", "1752x1400" ],
+            "settingChoices": {
+              "876x700": [
+                "876",
+                "700",
+                "725",
+                "510",
+                "555",
+                "380",
+                "75",
+                "95",
+                "160",
+                "160"
+              ],
+              "1752x1400": [
+                "1752",
+                "1400",
+                "1450",
+                [ "1020", "510" ],
+                [ "1110", "555" ],
+                [ "760", "380" ],
+                [ "150", "75" ],
+                [ "190", "95" ],
+                [ "320", "160" ],
+                [ "320", "160" ]
+              ]
+            },
+            "settings": [
+              "uPipboyTargetWidth",
+              "uPipboyTargetHeight",
+              "uPipboyConstraintWidth",
+              "uPipboyConstraintHeight",
+              "uPipboyConstraintWidth_PowerArmor",
+              "uPipboyConstraintHeight_PowerArmor",
+              "uPipboyConstraintTLX",
+              "uPipboyConstraintTLY",
+              "uPipboyConstraintTLX_PowerArmor",
+              "uPipboyConstraintTLY_PowerArmor"
+            ],
+            "targetINIs": [
+              "Fallout4Prefs.ini",
+              "Fallout4Prefs.ini",
+              "Fallout4.ini",
+              "Fallout4.ini",
+              "Fallout4.ini",
+              "Fallout4.ini",
+              "Fallout4.ini",
+              "Fallout4.ini",
+              "Fallout4.ini",
+              "Fallout4.ini"
+            ],
+            "targetSections": [
+              "Display",
+              "Display",
+              "Pipboy",
+              "Pipboy",
+              "Pipboy",
+              "Pipboy",
+              "Pipboy",
+              "Pipboy",
+              "Pipboy",
+              "Pipboy"
+            ],
             "tooltip": "Changes the Pip-Boy resolution.",
             "type": "Dropdown"
-          },
-          "Constraint Width": {
-            "customWidth": "20",
-            "entry_width": "7",
-            "settings": [ "uPipboyConstraintWidth" ],
-            "targetINIs": [ "Fallout4.ini" ],
-            "targetSections": [ "Pipboy" ],
-            "tooltip": "Sets the height constraint.",
-            "type": "Entry",
-            "validate": "whole"
-          },
-          "Constraint Height": {
-            "customWidth": "20",
-            "entry_width": "7",
-            "settings": [ "uPipboyConstraintHeight" ],
-            "targetINIs": [ "Fallout4.ini" ],
-            "targetSections": [ "Pipboy" ],
-            "tooltip": "Sets the height constraint.",
-            "type": "Entry",
-            "validate": "whole"
-          },
-          "Constraint TLX": {
-            "customWidth": "20",
-            "entry_width": "7",
-            "settings": [ "uPipboyConstraintTLX" ],
-            "targetINIs": [ "Fallout4.ini" ],
-            "targetSections": [ "Pipboy" ],
-            "tooltip": "Sets the TLX constraint.",
-            "type": "Entry",
-            "validate": "whole"
-          },
-          "Constraint TLY": {
-            "customWidth": "20",
-            "entry_width": "7",
-            "settings": [ "uPipboyConstraintTLY" ],
-            "targetINIs": [ "Fallout4.ini" ],
-            "targetSections": [ "Pipboy" ],
-            "tooltip": "Sets the TLY constraint.",
-            "type": "Entry",
-            "validate": "whole"
           }
         }
       },

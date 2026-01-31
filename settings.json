@@ -16233,7 +16233,7 @@
       "type": "number",
       "value": {
         "default": 153600,
-        "recommended": 500000
+        "recommended": 524288
       }
     },
     {
