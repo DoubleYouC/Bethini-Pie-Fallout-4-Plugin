@@ -709,6 +709,15 @@
             "tooltip": "Toggles the missing content warning when loading a saved game missing a previously enabled plugin.",
             "type": "Checkbutton"
           },
+          "Missing Content Search": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bCheckForMissingContentOnStartup" ],
+            "targetINIs": [ "Fallout4Prefs.ini" ],
+            "targetSections": [ "GamePlay" ],
+            "tooltip": "Toggles the search for missing content on the Creations store prompt when loading a saved game missing a previously enabled plugin.",
+            "type": "Checkbutton"
+          },
           "Max Autosaves": {
             "decimal places": "0",
             "from": "1",
